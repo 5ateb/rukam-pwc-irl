@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rukam Industrial Co. - PwC IRL Responses</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#f8fafc;color:#1e293b;line-height:1.6}
+a{color:#2563eb;text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* Header */
+.header{background:linear-gradient(135deg,#1e3a5f,#2563eb);color:#fff;padding:28px 20px;text-align:center}
+.header h1{font-size:28px;margin-bottom:6px}
+.header p{font-size:14px;opacity:.85}
+.header .badge{display:inline-block;background:rgba(255,255,255,.18);padding:4px 16px;border-radius:20px;font-size:12px;margin-top:10px}
+
+/* Container */
+.container{max-width:1100px;margin:0 auto;padding:25px 15px}
+
+/* TOC */
+.toc{background:#fff;border-radius:14px;padding:25px;margin-bottom:25px;border:1px solid #e2e8f0}
+.toc h2{font-size:20px;color:#1e3a5f;margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid #e2e8f0}
+.toc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.toc-item{display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:10px;border:1px solid #e2e8f0;transition:.2s;background:#fafbfc}
+.toc-item:hover{background:#eff6ff;border-color:#2563eb;transform:translateY(-1px)}
+.toc-num{width:36px;height:36px;border-radius:8px;background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;flex-shrink:0}
+.toc-meta{flex:1}
+.toc-cat{font-size:10px;font-weight:600;padding:2px 8px;border-radius:8px;display:inline-block;margin-bottom:3px}
+.toc-title{font-size:13px;font-weight:600;color:#1e293b}
+
+/* Category colors */
+.cat-general{background:#dbeafe;color:#1e40af}
+.cat-feasibility{background:#d1fae5;color:#065f46}
+.cat-legal{background:#fef3c7;color:#92400e}
+.cat-valuation{background:#f3e8ff;color:#6b21a8}
+.cat-timeline{background:#ffe4e6;color:#9f1239}
+.cat-market{background:#cffafe;color:#155e75}
+.cat-capex{background:#fed7aa;color:#9a3412}
+.cat-docs{background:#f3f4f6;color:#374151}
+.cat-capital{background:#e0e7ff;color:#3730a3}
+.cat-budget{background:#ccfbf1;color:#115e59}
+.cat-future{background:#fce7f3;color:#9d174d}
+.cat-fixed{background:#ecfccb;color:#3f6212}
+.cat-real{background:#e0f2fe;color:#075985}
+.cat-business{background:#ede9fe;color:#5b21b6}
+.cat-governance{background:#f1f5f9;color:#475569}
+.cat-financial{background:#dcfce7;color:#166534}
+.cat-performance{background:#fee2e2;color:#991b1b}
+.cat-sales{background:#fef9c3;color:#854d0e}
+.cat-supply{background:#f4f4f5;color:#52525b}
+.cat-debt{background:#f5f5f4;color:#44403c}
+.cat-tax{background:#fafaf9;color:#57534e}
+.cat-gov{background:#fdf4ff;color:#86198f}
+
+/* Answer sections */
+.answer{background:#fff;border-radius:14px;padding:28px 30px;margin-bottom:30px;border:1px solid #e2e8f0;scroll-margin-top:100px}
+.answer-header{display:flex;align-items:center;gap:14px;margin-bottom:20px;flex-wrap:wrap}
+.answer-num{width:50px;height:50px;border-radius:12px;background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;flex-shrink:0}
+.answer-meta{flex:1}
+.answer-title{font-size:20px;font-weight:700;color:#1e293b;margin-bottom:5px}
+.badge{font-size:11px;padding:3px 10px;border-radius:8px;font-weight:600;display:inline-block;margin-right:5px}
+
+.section-title{font-size:17px;font-weight:700;color:#1e3a5f;margin:20px 0 12px;padding-bottom:8px;border-bottom:2px solid #e2e8f0}
+.section-text{font-size:14px;color:#475569;margin-bottom:12px}
+.section ul{list-style:none;padding:0}
+.section ul li{padding:7px 0 7px 22px;position:relative;font-size:14px;color:#475569;border-bottom:1px solid #f1f5f9}
+.section ul li:last-child{border-bottom:none}
+.section ul li::before{content:'';position:absolute;left:0;top:14px;width:8px;height:8px;border-radius:50%;background:#2563eb}
+.sub-section{margin:12px 0 12px 15px;padding-left:15px;border-left:3px solid #bfdbfe}
+.sub-section-title{font-weight:700;font-size:14px;color:#1e3a5f;margin-bottom:6px}
+
+/* Tables */
+.data-table{width:100%;border-collapse:collapse;margin:15px 0;font-size:13px}
+.data-table th{background:#1e3a5f;color:#fff;padding:11px 14px;text-align:left;font-weight:600}
+.data-table td{padding:9px 14px;border-bottom:1px solid #e2e8f0;color:#475569}
+.data-table tr:nth-child(even){background:#f8fafc}
+
+/* Charts - CSS bar chart */
+.bar-chart{display:flex;align-items:flex-end;gap:12px;height:200px;padding:15px;background:#f8fafc;border-radius:10px}
+.bar-group{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px}
+.bar{width:100%;border-radius:5px 5px 0 0;transition:.3s}
+.bar:hover{filter:brightness(1.15)}
+.bar-val{font-size:10px;font-weight:700;color:#1e293b;text-align:center}
+.bar-lbl{font-size:10px;color:#64748b;text-align:center}
+.chart-legend{display:flex;gap:18px;margin-top:10px;justify-content:center;flex-wrap:wrap}
+.legend-item{display:flex;align-items:center;gap:5px;font-size:12px;color:#475569}
+.legend-color{width:12px;height:12px;border-radius:3px}
+
+/* Pie chart */
+.pie-wrap{display:flex;align-items:center;gap:30px;flex-wrap:wrap;justify-content:center}
+.pie-legend{display:flex;flex-direction:column;gap:8px}
+.pie-legend-item{font-size:13px}
+
+/* Back to top */
+.back-top{display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:8px 16px;border-radius:8px;font-size:13px;font-weight:600;color:#475569;margin-top:10px}
+.back-top:hover{background:#e2e8f0}
+
+/* Footer */
+.footer{text-align:center;padding:30px;font-size:12px;color:#94a3b8}
+
+@media(max-width:768px){
+  .toc-grid{grid-template-columns:1fr}
+  .answer{padding:18px}
+  .bar-chart{height:160px}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Rukam Industrial Company</h1>
+  <p>PwC Information Request List (IRL) - Response Portal</p>
+  <span class="badge">Updated: 15 July 2026 | Based on Audited Financials 2021-2025</span>
+</div>
+
+<div class="container">
+
+<!-- ==================== TABLE OF CONTENTS ==================== -->
+<div class="toc">
+  <h2>📋 22 Response Items - Table of Contents</h2>
+  <div class="toc-grid">
+    <a href="#item1" class="toc-item"><div class="toc-num">1</div><div class="toc-meta"><span class="toc-cat cat-general">General</span><div class="toc-title">Company Overview</div></div></a>
+    <a href="#item2" class="toc-item"><div class="toc-num">2</div><div class="toc-meta"><span class="toc-cat cat-feasibility">Feasibility</span><div class="toc-title">Feasibility Study & Business Plan</div></div></a>
+    <a href="#item3" class="toc-item"><div class="toc-num">3</div><div class="toc-meta"><span class="toc-cat cat-legal">Legal</span><div class="toc-title">Licenses & Regulatory</div></div></a>
+    <a href="#item4" class="toc-item"><div class="toc-num">4</div><div class="toc-meta"><span class="toc-cat cat-valuation">Valuation</span><div class="toc-title">No Valuation Conducted</div></div></a>
+    <a href="#item5" class="toc-item"><div class="toc-num">5</div><div class="toc-meta"><span class="toc-cat cat-timeline">Timeline</span><div class="toc-title">Company Timeline</div></div></a>
+    <a href="#item6" class="toc-item"><div class="toc-num">6</div><div class="toc-meta"><span class="toc-cat cat-market">Market</span><div class="toc-title">7 Competitive Strengths</div></div></a>
+    <a href="#item7" class="toc-item"><div class="toc-num">7</div><div class="toc-meta"><span class="toc-cat cat-capex">Capex</span><div class="toc-title">Total Project Costs (2021-2025)</div></div></a>
+    <a href="#item8" class="toc-item"><div class="toc-num">8</div><div class="toc-meta"><span class="toc-cat cat-docs">Docs</span><div class="toc-title">Documentation Status</div></div></a>
+    <a href="#item9" class="toc-item"><div class="toc-num">9</div><div class="toc-meta"><span class="toc-cat cat-capital">Capital</span><div class="toc-title">Capital Invested Breakdown</div></div></a>
+    <a href="#item10" class="toc-item"><div class="toc-num">10</div><div class="toc-meta"><span class="toc-cat cat-budget">Budget</span><div class="toc-title">Budget vs Actual</div></div></a>
+    <a href="#item11" class="toc-item"><div class="toc-num">11</div><div class="toc-meta"><span class="toc-cat cat-future">Future</span><div class="toc-title">Remaining CAPEX: SAR 8.84M</div></div></a>
+    <a href="#item12" class="toc-item"><div class="toc-num">12</div><div class="toc-meta"><span class="toc-cat cat-fixed">Fixed</span><div class="toc-title">CWIP Breakdown</div></div></a>
+    <a href="#item13" class="toc-item"><div class="toc-num">13</div><div class="toc-meta"><span class="toc-cat cat-real">Real Estate</span><div class="toc-title">Land Lease Details</div></div></a>
+    <a href="#item14" class="toc-item"><div class="toc-num">14</div><div class="toc-meta"><span class="toc-cat cat-business">Business Plan</span><div class="toc-title">2027-2033 Business Plan</div></div></a>
+    <a href="#item15" class="toc-item"><div class="toc-num">15</div><div class="toc-meta"><span class="toc-cat cat-governance">Governance</span><div class="toc-title">Board Materials</div></div></a>
+    <a href="#item16" class="toc-item"><div class="toc-num">16</div><div class="toc-meta"><span class="toc-cat cat-financial">Financial</span><div class="toc-title">Audited FS (2021-2025)</div></div></a>
+    <a href="#item17" class="toc-item"><div class="toc-num">17</div><div class="toc-meta"><span class="toc-cat cat-performance">Performance</span><div class="toc-title">Audited 2025 Results</div></div></a>
+    <a href="#item18" class="toc-item"><div class="toc-num">18</div><div class="toc-meta"><span class="toc-cat cat-sales">Sales</span><div class="toc-title">Sales Contracts</div></div></a>
+    <a href="#item19" class="toc-item"><div class="toc-num">19</div><div class="toc-meta"><span class="toc-cat cat-supply">Supply</span><div class="toc-title">Feedstock Supply</div></div></a>
+    <a href="#item20" class="toc-item"><div class="toc-num">20</div><div class="toc-meta"><span class="toc-cat cat-debt">Debt</span><div class="toc-title">Debt Position (31 Dec 2025)</div></div></a>
+    <a href="#item21" class="toc-item"><div class="toc-num">21</div><div class="toc-meta"><span class="toc-cat cat-tax">Tax</span><div class="toc-title">Zakat Position (Audited)</div></div></a>
+    <a href="#item22" class="toc-item"><div class="toc-num">22</div><div class="toc-meta"><span class="toc-cat cat-gov">Gov Support</span><div class="toc-title">No Government Support</div></div></a>
+  </div>
+</div>
+
+<!-- ==================== ITEM 1 ==================== -->
+<div class="answer" id="item1">
+  <div class="answer-header">
+    <div class="answer-num">1</div>
+    <div class="answer-meta">
+      <div class="answer-title">General Overview / Company Information / Business Overview</div>
+      <span class="badge cat-general">General Information</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Company Overview</div>
+    <p class="section-text">Rukam Industrial Company (formerly Metal Scrap Recycling Technology Co., Ltd.) is a Saudi limited liability company headquartered in Al Khobar, Eastern Province, Kingdom of Saudi Arabia. Operating in industrial recycling, the Company converts industrial waste into valuable products using advanced, environmentally friendly technologies. It currently processes steel slag to recover high-value ferrous metals and produce premium slag-based aggregates for industrial and construction applications.</p>
+    <ul>
+      <li>Year Operations Commenced: 2021</li>
+      <li>Total Assets (31 December 2025): SAR 45.54 million</li>
+      <li>Net Property, Plant & Equipment (Including CWIP): SAR 40.03 million</li>
+      <li>Revenue (FY2024): SAR 16.98 million</li>
+      <li>Revenue (FY2025): SAR 6.23 million</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">2025 Revenue Reduction</div>
+    <p class="section-text">The reduction in 2025 revenue primarily reflects a planned, temporary shutdown of pilot plant operations during the relocation to comply with the Ministry of Industry's rules.</p>
+  </div>
+  <div class="section">
+    <div class="section-title">Strategic Technology Partnership</div>
+    <p class="section-text">Rukam maintains an exclusive technology partnership with Addforce Switzerland, providing access to advanced steel slag processing technology designed to maximize metal recovery, improve product quality, and optimize overall plant efficiency.</p>
+  </div>
+  <div class="section">
+    <div class="section-title">Competitive Advantages</div>
+    <p class="section-text">Rukam's competitive positioning is underpinned by several strategic strengths:</p>
+    <ul>
+      <li>Exclusive access to proprietary and patented steel slag processing technology</li>
+      <li>Industry-leading ferrous metal recovery rates of up to 98%, significantly exceeding conventional recovery methods</li>
+      <li>Production of high-quality recycled metallic products and value-added slag aggregates</li>
+      <li>Strong alignment with Saudi Arabia's circular economy and industrial waste management objectives</li>
+      <li>Strategic location in the Eastern Province with established feedstock supply agreements</li>
+    </ul>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== ITEM 2 ==================== -->
+<div class="answer" id="item2">
+  <div class="answer-header">
+    <div class="answer-num">2</div>
+    <div class="answer-meta">
+      <div class="answer-title">Feasibility Study / Budget / Financial Projections</div>
+      <span class="badge cat-feasibility">Feasibility & Budget</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Feasibility Study History</div>
+    <p class="section-text">The Company initially prepared a comprehensive feasibility study in 2016, which was subsequently updated in 2023 to reflect the knowledge and experience gained through market development, operational performance, and the outcomes of its R&D program.</p>
+  </div>
+  <div class="section">
+    <div class="section-title">Pilot Plant Validation</div>
+    <p class="section-text">The Company successfully designed, constructed, and operated a pilot-scale steel slag processing plant. The pilot plant served as a proof-of-concept facility, validating the proprietary Rukam steel slag processing technology while supporting market development through the production and commercialization of recovered ferrous metals and slag-based aggregates.</p>
+  </div>
+  <div class="section">
+    <div class="section-title">2027-2033 Business Plan (Updated July 2026)</div>
+    <p class="section-text">The 2027-2033 Business Plan incorporates the key technical, operational, commercial, and financial assumptions for the full-scale industrial processing facility:</p>
+    <ul>
+      <li>Processing Capacity: 33,800 tonnes per month (3,000 tonnes/day)</li>
+      <li>2027 Budget: Revenue of SAR 40.39 million (9 months from April 1) and EBITDA of SAR 17.96 million</li>
+      <li>Steady-State (2028-2033): Revenue of SAR 53.85 million annually and EBITDA averaging SAR 28.8 million</li>
+      <li>Technology: Proprietary steel slag processing technology by Addforce Switzerland</li>
+      <li>Feedstock Supply: Long-term agreements with Arab Steel Co. and National Steel Co.</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Key Budget Assumptions (Updated July 2026)</div>
+    <ul>
+      <li>Metal A Recovery Rate: 4.5% (updated)</li>
+      <li>Metal B Recovery Rate: 1.5% (updated)</li>
+      <li>Scrap Metal Price: SAR 1,200/tonne</li>
+      <li>Selling Price A: SAR 900/tonne</li>
+      <li>Selling Price B: SAR 700/tonne</li>
+      <li>Daily Processing: 3,000 tonnes</li>
+      <li>Land Rent: SAR 1,000,000/year (updated)</li>
+      <li>Salaries: Basic x 12 x 1.25 (updated from 1.5)</li>
+      <li>Packaging/Contingency: 2% of sales (added)</li>
+      <li>Equipment: Leased initially, transitioning to purchase as cash flows permit</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Projections Chart - Revenue & EBITDA (2027-2033)</div>
+    <div class="bar-chart">
+      <div class="bar-group"><div class="bar" style="height:120px;background:#2563eb"></div><div class="bar" style="height:54px;background:#f59e0b;margin-top:4px"></div><div class="bar-val">40.39</div><div class="bar-lbl">2027</div></div>
+      <div class="bar-group"><div class="bar" style="height:160px;background:#2563eb"></div><div class="bar" style="height:90px;background:#f59e0b;margin-top:4px"></div><div class="bar-val">53.85</div><div class="bar-lbl">2028</div></div>
+      <div class="bar-group"><div class="bar" style="height:160px;background:#2563eb"></div><div class="bar" style="height:88px;background:#f59e0b;margin-top:4px"></div><div class="bar-val">53.85</div><div class="bar-lbl">2029</div></div>
+      <div class="bar-group"><div class="bar" style="height:160px;background:#2563eb"></div><div class="bar" style="height:85px;background:#f59e0b;margin-top:4px"></div><div class="bar-val">53.85</div><div class="bar-lbl">2030</div></div>
+      <div class="bar-group"><div class="bar" style="height:160px;background:#2563eb"></div><div class="bar" style="height:83px;background:#f59e0b;margin-top:4px"></div><div class="bar-val">53.85</div><div class="bar-lbl">2031</div></div>
+      <div class="bar-group"><div class="bar" style="height:160px;background:#2563eb"></div><div class="bar" style="height:81px;background:#f59e0b;margin-top:4px"></div><div class="bar-val">53.85</div><div class="bar-lbl">2032</div></div>
+      <div class="bar-group"><div class="bar" style="height:160px;background:#2563eb"></div><div class="bar" style="height:79px;background:#f59e0b;margin-top:4px"></div><div class="bar-val">53.85</div><div class="bar-lbl">2033</div></div>
+    </div>
+    <div class="chart-legend">
+      <div class="legend-item"><div class="legend-color" style="background:#2563eb"></div>Revenue (SAR M)</div>
+      <div class="legend-item"><div class="legend-color" style="background:#f59e0b"></div>EBITDA (SAR M)</div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Projections Table (2027-2033)</div>
+    <table class="data-table">
+      <tr><th>Year</th><th>Revenue (SAR M)</th><th>EBITDA (SAR M)</th><th>Net Income (SAR M)</th></tr>
+      <tr><td>2027</td><td>40.39</td><td>17.96</td><td>10.93</td></tr>
+      <tr><td>2028</td><td>53.85</td><td>30.33</td><td>23.30</td></tr>
+      <tr><td>2029</td><td>53.85</td><td>29.51</td><td>22.49</td></tr>
+      <tr><td>2030</td><td>53.85</td><td>28.49</td><td>21.46</td></tr>
+      <tr><td>2031</td><td>53.85</td><td>27.90</td><td>20.87</td></tr>
+      <tr><td>2032</td><td>53.85</td><td>27.27</td><td>20.24</td></tr>
+      <tr><td>2033</td><td>53.85</td><td>26.75</td><td>19.72</td></tr>
+    </table>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== ITEM 3 ==================== -->
+<div class="answer" id="item3">
+  <div class="answer-header">
+    <div class="answer-num">3</div>
+    <div class="answer-meta">
+      <div class="answer-title">Legal Status / Licensing / Regulatory Compliance</div>
+      <span class="badge cat-legal">Legal & Regulatory</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">MAWAN License</div>
+    <p class="section-text">The Company has not yet obtained the MAWAN waste management license, as this license can only be applied for after the issuance of the Industrial License to Operate. The Company intends to submit the application once it becomes eligible.</p>
+  </div>
+  <div class="section">
+    <div class="section-title">Licenses and Permits Currently Held</div>
+    <div class="sub-section">
+      <div class="sub-section-title">Commercial Registration (CR)</div>
+      <p class="section-text">Active and updated following the Company's name change to Rukam Industrial Company.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">Industrial License</div>
+      <p class="section-text">License to Construct (issued by Ministry of Industry and Mineral Resources).</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">Environmental Permit</div>
+      <p class="section-text">Obtained from the National Center for Environmental Compliance (NCEC).</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">Municipal Lease Contract</div>
+      <p class="section-text">Active lease agreement for industrial land.</p>
+    </div>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== ITEM 4 ==================== -->
+<div class="answer" id="item4">
+  <div class="answer-header">
+    <div class="answer-num">4</div>
+    <div class="answer-meta">
+      <div class="answer-title">Valuation</div>
+      <span class="badge cat-valuation">Valuation</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Valuation Status</div>
+    <p class="section-text">Rukam has not conducted any internal or external valuation of the Company to date, as it remains in the establishment phase and the main steel slag processing plant has not yet been constructed or commenced commercial operations. Accordingly, no formal valuation estimates, appraisals, or other valuation reports have been prepared within the past three years.</p>
+  </div>
+  <div class="section">
+    <div class="section-title">Development Focus</div>
+    <p class="section-text">To date, the Company's efforts have been focused on developing the project through significant investments in the acquisition of the main processing plant equipment and the establishment of a pilot plant for research, development, proof of concept, and product qualification, laying the foundation for future commercial operations.</p>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== ITEM 5 ==================== -->
+<div class="answer" id="item5">
+  <div class="answer-header">
+    <div class="answer-num">5</div>
+    <div class="answer-meta">
+      <div class="answer-title">Timeline / Significant Events</div>
+      <span class="badge cat-timeline">Timeline</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">2021 - Company Establishment</div>
+    <ul>
+      <li>Company incorporated as Metal Scrap Recycling Technology Co., Ltd. and renamed Rukam Industrial Company</li>
+      <li>Initial paid-up capital of SAR 100,000</li>
+      <li>Pilot plant development commenced</li>
+      <li>Revenue: SAR 0.71M | Net Loss: SAR (0.56)M</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">2022 - Pilot Operations</div>
+    <ul>
+      <li>Pilot plant operations commenced</li>
+      <li>Revenue: SAR 5.67M | Net Loss: SAR (1.02)M</li>
+      <li>Due to related parties increased to SAR 30.94M</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">2023 - First Profit & Main Plant Start</div>
+    <ul>
+      <li>Revenue: SAR 11.44M | Net Profit: SAR 1.33M</li>
+      <li>Major main plant construction commenced</li>
+      <li>PP&E increased to SAR 25.55M</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">2024 - Peak Operations</div>
+    <ul>
+      <li>Peak operations year: Revenue SAR 16.98M | Net Profit: SAR 1.47M</li>
+      <li>Finance lease obligations of SAR 3.35M entered for vehicles and equipment</li>
+      <li>Statutory reserve of SAR 30,000 established</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">2025 - Relocation & Construction Progress</div>
+    <ul>
+      <li>Temporary shutdown and plant relocation to comply with Ministry of Industry regulations</li>
+      <li>Revenue: SAR 6.23M | Net Loss: SAR (2.84)M</li>
+      <li>PP&E (net) reached SAR 40.03M as main plant construction progressed</li>
+      <li>Due to related parties increased to SAR 43.02M to fund construction</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Historical Performance Chart</div>
+    <div class="bar-chart">
+      <div class="bar-group"><div class="bar" style="height:7px;background:#2563eb"></div><div class="bar-val">0.71</div><div class="bar-lbl">2021</div></div>
+      <div class="bar-group"><div class="bar" style="height:53px;background:#2563eb"></div><div class="bar-val">5.67</div><div class="bar-lbl">2022</div></div>
+      <div class="bar-group"><div class="bar" style="height:107px;background:#2563eb"></div><div class="bar-val">11.44</div><div class="bar-lbl">2023</div></div>
+      <div class="bar-group"><div class="bar" style="height:159px;background:#2563eb"></div><div class="bar-val">16.98</div><div class="bar-lbl">2024</div></div>
+      <div class="bar-group"><div class="bar" style="height:58px;background:#2563eb"></div><div class="bar-val">6.23</div><div class="bar-lbl">2025</div></div>
+    </div>
+    <div class="chart-legend">
+      <div class="legend-item"><div class="legend-color" style="background:#2563eb"></div>Revenue (SAR M)</div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Historical Performance Table</div>
+    <table class="data-table">
+      <tr><th>Year</th><th>Revenue (SAR M)</th><th>Net Profit/(Loss) (SAR M)</th><th>Key Event</th></tr>
+      <tr><td>2021</td><td>0.71</td><td>(0.56)</td><td>Company incorporation & pilot development</td></tr>
+      <tr><td>2022</td><td>5.67</td><td>(1.02)</td><td>Pilot operations commenced</td></tr>
+      <tr><td>2023</td><td>11.44</td><td>1.33</td><td>First profit & main plant construction</td></tr>
+      <tr><td>2024</td><td>16.98</td><td>1.47</td><td>Peak operations year</td></tr>
+      <tr><td>2025</td><td>6.23</td><td>(2.84)</td><td>Relocation & construction progress</td></tr>
+    </table>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== ITEM 6 ==================== -->
+<div class="answer" id="item6">
+  <div class="answer-header">
+    <div class="answer-num">6</div>
+    <div class="answer-meta">
+      <div class="answer-title">Competitive Environment / Competitive Landscape</div>
+      <span class="badge cat-market">Market</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">7 Competitive Strengths</div>
+    <ul>
+      <li>Patented Technology: Exclusive partnership with Addforce Switzerland</li>
+      <li>98% Recovery Rate: Fe metal recovery at 80-90% purity (industry-leading)</li>
+      <li>First-Mover Advantage: Early entrant in Saudi steel slag recycling</li>
+      <li>Proven Operations: Audited track record - SAR 16.98M peak revenue (2024)</li>
+      <li>Strategic Location: Proximity to key steel producers in Eastern Province</li>
+      <li>Circular Economy Alignment: Supporting Saudi Vision 2030 sustainability goals</li>
+      <li>Scalable Model: Pilot plant validated, main plant construction underway</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Competitive Landscape</div>
+    <p class="section-text">The Saudi steel slag recycling market is nascent with limited specialized competitors. Rukam benefits from proprietary technology, established supplier relationships, and demonstrated operational capability. The primary competition comes from traditional disposal methods rather than direct recycling competitors.</p>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== ITEM 7 ==================== -->
+<div class="answer" id="item7">
+  <div class="answer-header">
+    <div class="answer-num">7</div>
+    <div class="answer-meta">
+      <div class="answer-title">Historical Project Costs / Cost-to-Date / Capitalized Costs</div>
+      <span class="badge cat-capex">Capital Expenditure</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Construction Work in Progress (CWIP)</div>
+    <p class="section-text">CWIP is included within PP&E in the audited financial statements. Below is the PP&E movement by year:</p>
+    <ul>
+      <li>2021: SAR 2.58M - Pilot plant initial setup</li>
+      <li>2022: SAR 4.90M - Pilot plant completion + initial main plant works</li>
+      <li>2023: SAR 25.55M - Major main plant construction (+ SAR 20.65M YoY)</li>
+      <li>2024: SAR 32.53M - Main plant equipment Phase 2 (+ SAR 6.98M YoY)</li>
+      <li>2025: SAR 40.03M - Main plant completion works (+ SAR 7.50M YoY)</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Intangible Assets (Technology License)</div>
+    <ul>
+      <li>2021: Addforce franchise rights acquired (SAR 2.15M) + software (SAR 0.09M)</li>
+      <li>2022-2025: Software additions and amortization; net balance SAR 2.29M at 31 Dec 2025</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Advances for Fixed Assets (2021-2022)</div>
+    <ul>
+      <li>2021: Advance payments for machinery/equipment: SAR 10.26M</li>
+      <li>2022: Additional advance payments: SAR 9.95M</li>
+      <li>2023: Transferred to PP&E upon delivery: (SAR 20.21M) reclassification</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">PP&E Movement Chart</div>
+    <div class="bar-chart">
+      <div class="bar-group"><div class="bar" style="height:10px;background:#2563eb"></div><div class="bar-val">2.58</div><div class="bar-lbl">2021</div></div>
+      <div class="bar-group"><div class="bar" style="height:20px;background:#2563eb"></div><div class="bar-val">4.90</div><div class="bar-lbl">2022</div></div>
+      <div class="bar-group"><div class="bar" style="height:102px;background:#10b981"></div><div class="bar-val">25.55</div><div class="bar-lbl">2023</div></div>
+      <div class="bar-group"><div class="bar" style="height:130px;background:#8b5cf6"></div><div class="bar-val">32.53</div><div class="bar-lbl">2024</div></div>
+      <div class="bar-group"><div class="bar" style="height:160px;background:#ef4444"></div><div class="bar-val">40.03</div><div class="bar-lbl">2025</div></div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Total Capitalized Assets (31 Dec 2025)</div>
+    <p class="section-text"><strong>SAR 42.31M</strong> (PP&E SAR 40.03M + Intangibles SAR 2.29M)</p>
+  </div>
+  <div class="section">
+    <div class="section-title">PP&E Movement Table</div>
+    <table class="data-table">
+      <tr><th>Year</th><th>PP&E Net (SAR M)</th><th>YoY Change (SAR M)</th><th>Description</th></tr>
+      <tr><td>2021</td><td>2.58</td><td>2.58</td><td>Pilot plant initial setup</td></tr>
+      <tr><td>2022</td><td>4.90</td><td>2.32</td><td>Pilot completion + main plant design</td></tr>
+      <tr><td>2023</td><td>25.55</td><td>20.65</td><td>Major main plant construction</td></tr>
+      <tr><td>2024</td><td>32.53</td><td>6.98</td><td>Main plant equipment Phase 2</td></tr>
+      <tr><td>2025</td><td>40.03</td><td>7.50</td><td>Main plant completion works</td></tr>
+    </table>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== ITEM 8 ==================== -->
+<div class="answer" id="item8">
+  <div class="answer-header">
+    <div class="answer-num">8</div>
+    <div class="answer-meta">
+      <div class="answer-title">Supporting Documentation / Source Documents</div>
+      <span class="badge cat-docs">Documentation</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Available Documents</div>
+    <ul>
+      <li>Municipality land lease contract (provided to PwC)</li>
+      <li>Addforce technology license agreement</li>
+      <li>Purchase orders for major equipment (Addforce plant)</li>
+      <li>Construction contracts for civil works</li>
+      <li>Finance lease agreements for vehicles and equipment</li>
+      <li>Board minutes approving capital expenditure</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Pending / In Progress</div>
+    <ul>
+      <li>Final contractor invoices for 2025 completion works</li>
+      <li>Detailed equipment commissioning reports</li>
+      <li>Updated fixed asset register post-relocation</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Note</div>
+    <p class="section-text">The Company is in the process of finalizing documentation for the relocation of the pilot plant and the completion of main plant construction. All material costs are supported by contracts, purchase orders, or Board-approved budgets.</p>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== ITEM 9 ==================== -->
+<div class="answer" id="item9">
+  <div class="answer-header">
+    <div class="answer-num">9</div>
+    <div class="answer-meta">
+      <div class="answer-title">Breakdown of Capital Invested</div>
+      <span class="badge cat-capital">Capital Structure</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Total Capital Invested (Audited)</div>
+    <ul>
+      <li>PP&E Net (incl. CWIP) as at 31 Dec 2025: SAR 40.03 million</li>
+      <li>Intangible Assets (technology license): SAR 2.29 million</li>
+      <li>Total Capitalized Assets: SAR 42.31 million</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Funding Sources (31 Dec 2025)</div>
+    <ul>
+      <li>Shareholder/Related Party Funding: SAR 43.02M (91.6% of total liabilities)</li>
+      <li>Finance Lease Obligations: SAR 2.30M (4.9%)</li>
+      <li>Trade Payables & Accruals: SAR 1.30M (2.8%)</li>
+      <li>Commercial Bank Debt: NIL</li>
+      <li>Government Grants: NIL</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Funding Sources Chart</div>
+    <div class="pie-wrap">
+      <svg width="200" height="200" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="40" fill="#2563eb" stroke="#fff" stroke-width="1"/>
+        <path d="M50,50 L90,50 A40,40 0 0,1 58.04,88.04 Z" fill="#10b981" stroke="#fff" stroke-width="1"/>
+        <path d="M50,50 L58.04,88.04 A40,40 0 0,1 10,50 Z" fill="#f59e0b" stroke="#fff" stroke-width="1"/>
+        <circle cx="50" cy="50" r="20" fill="#f8fafc"/>
+        <text x="50" y="48" text-anchor="middle" font-size="6" fill="#64748b">Total</text>
+        <text x="50" y="56" text-anchor="middle" font-size="8" font-weight="bold" fill="#1e293b">46.62M</text>
+      </svg>
+      <div class="pie-legend">
+        <div class="pie-legend-item"><div class="legend-color" style="background:#2563eb"></div><strong>Related Party: SAR 43.02M (91.6%)</strong></div>
+        <div class="pie-legend-item"><div class="legend-color" style="background:#10b981"></div>Finance Lease: SAR 2.30M (4.9%)</div>
+        <div class="pie-legend-item"><div class="legend-color" style="background:#f59e0b"></div>Trade Payables: SAR 1.30M (2.8%)</div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Funding Sources Table</div>
+    <table class="data-table">
+      <tr><th>Source</th><th>Amount (SAR M)</th><th>Percentage</th></tr>
+      <tr><td>Related Party Funding</td><td>43.02</td><td>91.6%</td></tr>
+      <tr><td>Finance Lease Obligations</td><td>2.30</td><td>4.9%</td></tr>
+      <tr><td>Trade Payables & Accruals</td><td>1.30</td><td>2.8%</td></tr>
+      <tr><td>Commercial Bank Debt</td><td>0</td><td>0%</td></tr>
+      <tr><td><strong>Total</strong></td><td><strong>46.62</strong></td><td><strong>100%</strong></td></tr>
+    </table>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== ITEM 10 ==================== -->
+<div class="answer" id="item10">
+  <div class="answer-header">
+    <div class="answer-num">10</div>
+    <div class="answer-meta">
+      <div class="answer-title">Comparison of Budget vs Actual Costs</div>
+      <span class="badge cat-budget">Budget Tracking</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">PP&E Movement (Audited)</div>
+    <ul>
+      <li>2021: SAR 2.58M (pilot plant)</li>
+      <li>2022: SAR 4.90M (+ SAR 2.32M YoY)</li>
+      <li>2023: SAR 25.55M (+ SAR 20.65M YoY) - major main plant construction year</li>
+      <li>2024: SAR 32.53M (+ SAR 6.98M YoY) - equipment phase 2</li>
+      <li>2025: SAR 40.03M (+ SAR 7.50M YoY) - completion works</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">YoY PP&E Additions Chart</div>
+    <div class="bar-chart">
+      <div class="bar-group"><div class="bar" style="height:20px;background:#3b82f6"></div><div class="bar-val">2.58</div><div class="bar-lbl">2021</div></div>
+      <div class="bar-group"><div class="bar" style="height:18px;background:#f59e0b"></div><div class="bar-val">2.32</div><div class="bar-lbl">2022</div></div>
+      <div class="bar-group"><div class="bar" style="height:160px;background:#10b981"></div><div class="bar-val">20.65</div><div class="bar-lbl">2023</div></div>
+      <div class="bar-group"><div class="bar" style="height:54px;background:#8b5cf6"></div><div class="bar-val">6.98</div><div class="bar-lbl">2024</div></div>
+      <div class="bar-group"><div class="bar" style="height:58px;background:#ef4444"></div><div class="bar-val">7.50</div><div class="bar-lbl">2025</div></div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">2025 Additions Breakdown (SAR 7.50M)</div>
+    <ul>
+      <li>Main plant completion and commissioning works</li>
+      <li>Final electrical and civil works</li>
+      <li>Additional machinery</li>
+      <li>Pilot plant relocation costs</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Overall Status</div>
+    <p class="section-text">The project remains within the overall approved budget framework, with total capitalized assets of SAR 42.31M as at 31 December 2025.</p>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== ITEM 11 ==================== -->
+<div class="answer" id="item11">
+  <div class="answer-header">
+    <div class="answer-num">11</div>
+    <div class="answer-meta">
+      <div class="answer-title">Remaining Project Costs / Future CAPEX</div>
+      <span class="badge cat-future">Future CAPEX</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Total Remaining CAPEX: SAR 8.84 million</div>
+    <p class="section-text">(Per approved 2027 budget, updated July 2026)</p>
+  </div>
+  <div class="section">
+    <div class="section-title">Breakdown</div>
+    <ul>
+      <li>Pilot Plant Completion: SAR 4.35M (equipment, commissioning, testing, relocation)</li>
+      <li>Vehicles & Heavy Equipment: SAR 2.90M (to be leased initially, purchase deferred until cash flows permit)</li>
+      <li>Note: Generators removed from purchase plan - will be leased until electricity connected (est. mid-2027)</li>
+      <li>Excavators and wheel loaders to be leased from startup</li>
+      <li>Analysis Plant Project: SAR 1.28M (construction, electromechanical, specialized systems)</li>
+      <li>Contingency (6.5%): Included in above figures</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Key Updates (July 2026)</div>
+    <ul>
+      <li>Equipment lease structure adopted for heavy machinery to preserve working capital</li>
+      <li>Generator lease costs: SAR 1.26M for 6 months (H1 2027) until electricity connection</li>
+      <li>Heavy equipment lease: SAR 720K annually from 2028</li>
+      <li>Main Addforce plant equipment balance reduced pending EUR confirmation (discount letter of EUR 120K)</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Remaining CAPEX Table</div>
+    <table class="data-table">
+      <tr><th>Category</th><th>Amount (SAR M)</th><th>Notes</th></tr>
+      <tr><td>Pilot Plant Completion</td><td>4.35</td><td>Equipment, commissioning, testing, relocation</td></tr>
+      <tr><td>Vehicles & Heavy Equipment</td><td>2.90</td><td>Leased initially, purchase deferred</td></tr>
+      <tr><td>Analysis Plant Project</td><td>1.28</td><td>Construction, electromechanical, systems</td></tr>
+      <tr><td>Contingency (6.5%)</td><td>Included</td><td>Included in above figures</td></tr>
+      <tr><td><strong>Total</strong></td><td><strong>8.84</strong></td><td></td></tr>
+    </table>
+  </div>
+  <div class="section">
+    <div class="section-title">Funding</div>
+    <p class="section-text">Remaining CAPEX will be funded through related party contributions and internal cash flows.</p>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== ITEM 12 ==================== -->
+<div class="answer" id="item12">
+  <div class="answer-header">
+    <div class="answer-num">12</div>
+    <div class="answer-meta">
+      <div class="answer-title">CWIP / Construction Work in Progress</div>
+      <span class="badge cat-fixed">Fixed Assets</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">PP&E Composition (31 Dec 2025)</div>
+    <ul>
+      <li>Total PP&E (Net): SAR 40,025,911</li>
+      <li>Additions in 2025: SAR 7,500,743</li>
+      <li>2024 PP&E (Net): SAR 32,525,168</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Fixed Asset Categories (Estimated Breakdown)</div>
+    <ul>
+      <li>Main plant building and infrastructure: ~60%</li>
+      <li>Processing equipment (Addforce): ~25%</li>
+      <li>Vehicles and transportation: ~8%</li>
+      <li>Furniture, computers, tools: ~2%</li>
+      <li>CWIP (construction in progress): ~5%</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">PP&E Composition Chart</div>
+    <div class="pie-wrap">
+      <svg width="200" height="200" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="40" fill="#2563eb" stroke="#fff" stroke-width="1"/>
+        <path d="M50,50 L90,50 A40,40 0 0,1 34.27,84.27 Z" fill="#10b981" stroke="#fff" stroke-width="1"/>
+        <path d="M50,50 L34.27,84.27 A40,40 0 0,1 10,50 Z" fill="#f59e0b" stroke="#fff" stroke-width="1"/>
+        <path d="M50,50 L10,50 A40,40 0 0,1 27.61,14.5 Z" fill="#8b5cf6" stroke="#fff" stroke-width="1"/>
+        <path d="M50,50 L27.61,14.5 A40,40 0 0,1 50,10 Z" fill="#ef4444" stroke="#fff" stroke-width="1"/>
+        <circle cx="50" cy="50" r="20" fill="#f8fafc"/>
+        <text x="50" y="48" text-anchor="middle" font-size="6" fill="#64748b">Total</text>
+        <text x="50" y="56" text-anchor="middle" font-size="8" font-weight="bold" fill="#1e293b">SAR 40M</text>
+      </svg>
+      <div class="pie-legend">
+        <div class="pie-legend-item"><div class="legend-color" style="background:#2563eb"></div>Building & Infra: 60%</div>
+        <div class="pie-legend-item"><div class="legend-color" style="background:#10b981"></div>Processing Equipment: 25%</div>
+        <div class="pie-legend-item"><div class="legend-color" style="background:#f59e0b"></div>Vehicles: 8%</div>
+        <div class="pie-legend-item"><div class="legend-color" style="background:#8b5cf6"></div>Furniture & Tools: 2%</div>
+        <div class="pie-legend-item"><div class="legend-color" style="background:#ef4444"></div>CWIP: 5%</div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Key Movements in 2025</div>
+    <ul>
+      <li>Additions to capital work in progress: SAR 3,788,300</li>
+      <li>Advance to supplier for equipment: SAR 4,753,094</li>
+      <li>Depreciation charge: SAR 1,059,194</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Accounting Policy</div>
+    <p class="section-text">The Company capitalizes all directly attributable costs including construction, equipment, installation, and directly attributable overheads. Depreciation commences when assets are available for use.</p>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== ITEM 13 ==================== -->
+<div class="answer" id="item13">
+  <div class="answer-header">
+    <div class="answer-num">13</div>
+    <div class="answer-meta">
+      <div class="answer-title">Land Lease Contract / Site Location</div>
+      <span class="badge cat-real">Real Estate</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Municipality Land Contract - Key Terms</div>
+    <ul>
+      <li>Historical annual lease cost: SAR 228,000 (SAR 19,000/month)</li>
+      <li>Updated rate (2027 onwards): SAR 1,000,000/year (per July 2026 budget update)</li>
+      <li>Included in 2027 operating budget</li>
+      <li>Initial rent-free period applicable</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">PwC Questions</div>
+    <div class="sub-section">
+      <div class="sub-section-title">(i) Land Coverage</div>
+      <p class="section-text">The land contract covers the area required for both the pilot plant and the main processing facility. The leased area is sufficient for current and planned operations.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">(ii) Lease Period</div>
+      <p class="section-text">The initial lease term is 5 years starting 1 August 2021, renewable at market rates. The Company has the option to renew.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">(iii) Relocation Impact</div>
+      <p class="section-text">The 2025 relocation was within the same leased premises to comply with Ministry of Industry regulations. No additional land was required.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">(iv) Updated Budget</div>
+      <p class="section-text">The 2027 operating budget includes land rent of SAR 1,000,000/year (updated per July 2026 budget revision), reflecting the full commercial scale operations.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">(v) Commercial Operations</div>
+      <p class="section-text">The full-scale plant is budgeted to commence commercial operations on 1 April 2027, with the updated land rent applicable from that date.</p>
+    </div>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== ITEM 14 ==================== -->
+<div class="answer" id="item14">
+  <div class="answer-header">
+    <div class="answer-num">14</div>
+    <div class="answer-meta">
+      <div class="answer-title">5-Year Plan / Operating Business Plan / Budget</div>
+      <span class="badge cat-business">Business Plan</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Historical Performance (Audited)</div>
+    <ul>
+      <li>2021: Revenue SAR 0.71M | Gross Profit SAR 0.21M | Net Loss SAR (0.56)M</li>
+      <li>2022: Revenue SAR 5.67M | Gross Loss SAR (0.18)M | Net Loss SAR (1.02)M</li>
+      <li>2023: Revenue SAR 11.44M | Gross Profit SAR 2.52M | Net Profit SAR 1.33M</li>
+      <li>2024: Revenue SAR 16.98M | Gross Profit SAR 2.75M | Net Profit SAR 1.47M</li>
+      <li>2025: Revenue SAR 6.23M | Gross Loss SAR (1.31)M | Net Loss SAR (2.84)M</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">2025 Note</div>
+    <p class="section-text">Revenue reduction reflects planned temporary shutdown for plant relocation.</p>
+  </div>
+  <div class="section">
+    <div class="section-title">Projections (Updated Budget July 2026 - covers 2027-2033)</div>
+    <ul>
+      <li>2027: Revenue SAR 40.39M | EBITDA SAR 17.96M | Net Income SAR 10.93M</li>
+      <li>2028: Revenue SAR 53.85M | EBITDA SAR 30.33M | Net Income SAR 23.30M</li>
+      <li>2029: Revenue SAR 53.85M | EBITDA SAR 29.51M | Net Income SAR 22.49M</li>
+      <li>2030: Revenue SAR 53.85M | EBITDA SAR 28.49M | Net Income SAR 21.46M</li>
+      <li>2031: Revenue SAR 53.85M | EBITDA SAR 27.90M | Net Income SAR 20.87M</li>
+      <li>2032: Revenue SAR 53.85M | EBITDA SAR 27.27M | Net Income SAR 20.24M</li>
+      <li>2033: Revenue SAR 53.85M | EBITDA SAR 26.75M | Net Income SAR 19.72M</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">2027 Note</div>
+    <p class="section-text">Revenue reflects 9 months of operations (April 1, 2027 start date) at 75% of annual capacity.</p>
+  </div>
+  <div class="section">
+    <div class="section-title">Revenue & Net Income Chart (2027-2033)</div>
+    <div class="bar-chart">
+      <div class="bar-group"><div class="bar" style="height:120px;background:#2563eb"></div><div class="bar" style="height:33px;background:#10b981;margin-top:4px"></div><div class="bar-val">40.39</div><div class="bar-lbl">2027</div></div>
+      <div class="bar-group"><div class="bar" style="height:160px;background:#2563eb"></div><div class="bar" style="height:69px;background:#10b981;margin-top:4px"></div><div class="bar-val">53.85</div><div class="bar-lbl">2028</div></div>
+      <div class="bar-group"><div class="bar" style="height:160px;background:#2563eb"></div><div class="bar" style="height:67px;background:#10b981;margin-top:4px"></div><div class="bar-val">53.85</div><div class="bar-lbl">2029</div></div>
+      <div class="bar-group"><div class="bar" style="height:160px;background:#2563eb"></div><div class="bar" style="height:64px;background:#10b981;margin-top:4px"></div><div class="bar-val">53.85</div><div class="bar-lbl">2030</div></div>
+      <div class="bar-group"><div class="bar" style="height:160px;background:#2563eb"></div><div class="bar" style="height:62px;background:#10b981;margin-top:4px"></div><div class="bar-val">53.85</div><div class="bar-lbl">2031</div></div>
+      <div class="bar-group"><div class="bar" style="height:160px;background:#2563eb"></div><div class="bar" style="height:60px;background:#10b981;margin-top:4px"></div><div class="bar-val">53.85</div><div class="bar-lbl">2032</div></div>
+      <div class="bar-group"><div class="bar" style="height:160px;background:#2563eb"></div><div class="bar" style="height:59px;background:#10b981;margin-top:4px"></div><div class="bar-val">53.85</div><div class="bar-lbl">2033</div></div>
+    </div>
+    <div class="chart-legend">
+      <div class="legend-item"><div class="legend-color" style="background:#2563eb"></div>Revenue (SAR M)</div>
+      <div class="legend-item"><div class="legend-color" style="background:#10b981"></div>Net Income (SAR M)</div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Key Budget Assumptions (Updated July 2026)</div>
+    <ul>
+      <li>Daily Processing: 3,000 tonnes</li>
+      <li>Recovery Rate Metal A: 4.5% (updated)</li>
+      <li>Recovery Rate Metal B: 1.5% (updated)</li>
+      <li>Scrap Metal Price: SAR 1,200/tonne</li>
+      <li>Selling Price A: SAR 900/tonne; Selling Price B: SAR 700/tonne</li>
+      <li>Land Rent: SAR 1,000,000/year (updated)</li>
+      <li>Salaries: Basic x 12 x 1.25 (updated from 1.5)</li>
+      <li>Packaging/Contingency: 2% of sales (added)</li>
+      <li>Equipment: Leased initially, transitioning to purchase as cash flows permit</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Projections Table (2027-2033)</div>
+    <table class="data-table">
+      <tr><th>Year</th><th>Revenue (SAR M)</th><th>EBITDA (SAR M)</th><th>Net Income (SAR M)</th></tr>
+      <tr><td>2027</td><td>40.39</td><td>17.96</td><td>10.93</td></tr>
+      <tr><td>2028</td><td>53.85</td><td>30.33</td><td>23.30</td></tr>
+      <tr><td>2029</td><td>53.85</td><td>29.51</td><td>22.49</td></tr>
+      <tr><td>2030</td><td>53.85</td><td>28.49</td><td>21.46</td></tr>
+      <tr><td>2031</td><td>53.85</td><td>27.90</td><td>20.87</td></tr>
+      <tr><td>2032</td><td>53.85</td><td>27.27</td><td>20.24</td></tr>
+      <tr><td>2033</td><td>53.85</td><td>26.75</td><td>19.72</td></tr>
+    </table>
+  </div>
+  <div class="section">
+    <div class="section-title">Totals (2027-2033)</div>
+    <ul>
+      <li><strong>Total Projected Revenue: SAR 363.48M</strong></li>
+      <li><strong>Total Projected Net Income: SAR 139.03M</strong></li>
+    </ul>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== ITEM 15 ==================== -->
+<div class="answer" id="item15">
+  <div class="answer-header">
+    <div class="answer-num">15</div>
+    <div class="answer-meta">
+      <div class="answer-title">Board Packs / Management Presentations</div>
+      <span class="badge cat-governance">Governance</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Internal Board Materials</div>
+    <p class="section-text">Materials used for 2027-2033 Business Plan approval include:</p>
+    <ul>
+      <li>Market analysis and demand forecasts</li>
+      <li>Technology readiness assessment (Addforce partnership)</li>
+      <li>Updated feasibility study (2023 revision)</li>
+      <li>Capital expenditure plan and funding requirements</li>
+      <li>Risk assessment and mitigation strategies</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Budget Approval Process</div>
+    <p class="section-text">The 2027-2033 Business Plan (updated July 2026) was reviewed and approved by the Board of Directors. The budget incorporates:</p>
+    <ul>
+      <li>Revised production assumptions (updated recovery rates: 4.5% Metal A, 1.5% Metal B)</li>
+      <li>Updated salary structure (1.25x multiplier)</li>
+      <li>Equipment lease strategy to optimize working capital</li>
+      <li>Revised land rent (SAR 1,000,000/year) and utility costs</li>
+      <li>Contingency provision of 2% on sales</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Key Projections Summary</div>
+    <ul>
+      <li>2027: Revenue SAR 40.39M (9-month operational year from April 1), EBITDA SAR 17.96M</li>
+      <li>2028-2033: Steady-state revenue SAR 53.85M annually, EBITDA averaging SAR 28.8M</li>
+      <li>Total Projected Revenue (2027-2033): SAR 363.48M</li>
+      <li>Total Projected Net Income (2027-2033): SAR 139.03M</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Board Conclusion</div>
+    <p class="section-text">The Board-approved budget demonstrates the Company's path to profitability with 2027 net income projected at SAR 10.93M, growing to SAR 23.30M in 2028 at steady-state operations.</p>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== ITEM 16 ==================== -->
+<div class="answer" id="item16">
+  <div class="answer-header">
+    <div class="answer-num">16</div>
+    <div class="answer-meta">
+      <div class="answer-title">Audited Financial Statements / IFRS</div>
+      <span class="badge cat-financial">Financial Statements</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Audited Financial Statements (2021-2025)</div>
+    <p class="section-text">Income Statement Highlights:</p>
+    <ul>
+      <li>2021: Revenue SAR 0.71M | Net Loss SAR (0.56)M (Period: 20 Jan - 31 Dec 2021)</li>
+      <li>2022: Revenue SAR 5.67M | Net Loss SAR (1.02)M (Full year operations commenced)</li>
+      <li>2023: Revenue SAR 11.44M | Net Profit SAR 1.33M (First profitable year)</li>
+      <li>2024: Revenue SAR 16.98M | Net Profit SAR 1.47M (Peak operations year)</li>
+      <li>2025: Revenue SAR 6.23M | Net Loss SAR (2.84)M (Planned shutdown for relocation)</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Balance Sheet Highlights (31 Dec 2025)</div>
+    <ul>
+      <li>Total Assets: SAR 45.54M</li>
+      <li>PP&E (Net): SAR 40.03M (including CWIP)</li>
+      <li>Intangible Assets: SAR 2.29M</li>
+      <li>Total Liabilities: SAR 46.98M</li>
+      <li>Due to Related Parties: SAR 43.02M (91.6% of liabilities)</li>
+      <li>Total Equity: SAR (1.44)M (accumulated losses)</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Revenue & Profit Chart (2021-2025)</div>
+    <div class="bar-chart">
+      <div class="bar-group"><div class="bar" style="height:4px;background:#2563eb"></div><div class="bar-val">0.71</div><div class="bar-lbl">2021</div></div>
+      <div class="bar-group"><div class="bar" style="height:33px;background:#2563eb"></div><div class="bar-val">5.67</div><div class="bar-lbl">2022</div></div>
+      <div class="bar-group"><div class="bar" style="height:67px;background:#2563eb"></div><div class="bar-val">11.44</div><div class="bar-lbl">2023</div></div>
+      <div class="bar-group"><div class="bar" style="height:100px;background:#2563eb"></div><div class="bar-val">16.98</div><div class="bar-lbl">2024</div></div>
+      <div class="bar-group"><div class="bar" style="height:37px;background:#2563eb"></div><div class="bar-val">6.23</div><div class="bar-lbl">2025</div></div>
+    </div>
+    <div class="chart-legend">
+      <div class="legend-item"><div class="legend-color" style="background:#2563eb"></div>Revenue (SAR M)</div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Audit Information</div>
+    <ul>
+      <li>Auditor: Aldar Audit Bureau (Abdullah Al Basri & Co.)</li>
+      <li>Accounting Standard: IFRS for SMEs (endorsed by SOCPA)</li>
+      <li>Going Concern: Supported by shareholder financial support letters and Board-approved business plan</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Audited Financial Summary Table</div>
+    <table class="data-table">
+      <tr><th>Year</th><th>Revenue (SAR M)</th><th>Net Profit/(Loss) (SAR M)</th><th>Total Assets (SAR M)</th></tr>
+      <tr><td>2021</td><td>0.71</td><td>(0.56)</td><td>20.14</td></tr>
+      <tr><td>2022</td><td>5.67</td><td>(1.02)</td><td>30.94</td></tr>
+      <tr><td>2023</td><td>11.44</td><td>1.33</td><td>33.66</td></tr>
+      <tr><td>2024</td><td>16.98</td><td>1.47</td><td>40.33</td></tr>
+      <tr><td>2025</td><td>6.23</td><td>(2.84)</td><td>45.54</td></tr>
+    </table>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== ITEM 17 ==================== -->
+<div class="answer" id="item17">
+  <div class="answer-header">
+    <div class="answer-num">17</div>
+    <div class="answer-meta">
+      <div class="answer-title">Latest Management Accounts / YTD Performance</div>
+      <span class="badge cat-performance">Financial Performance</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Audited 2025 Results</div>
+    <ul>
+      <li>Revenue: SAR 6,233,321 (vs SAR 16,984,829 in 2024)</li>
+      <li>Cost of Revenue: SAR (7,548,143)</li>
+      <li>Gross Loss: SAR (1,314,822)</li>
+      <li>Selling & Marketing: SAR (73,190)</li>
+      <li>G&A Expenses: SAR (1,014,594)</li>
+      <li>Operating Loss: SAR (2,402,606)</li>
+      <li>Finance Costs: SAR (440,163)</li>
+      <li>Net Loss: SAR (2,842,769)</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">2025 vs 2024 Analysis</div>
+    <ul>
+      <li>Revenue decrease of 63.3% due to planned shutdown for relocation</li>
+      <li>Cost of revenue decreased 47.0% reflecting reduced operations</li>
+      <li>Finance costs increased 255.3% due to full year finance lease interest</li>
+      <li>G&A expenses increased 24.8% reflecting ongoing administrative costs</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Balance Sheet (31 Dec 2025)</div>
+    <ul>
+      <li>Cash: SAR 256,031</li>
+      <li>Trade Receivables: SAR 660,354</li>
+      <li>Inventory: SAR 1,238,504</li>
+      <li>Total Current Assets: SAR 3,225,509</li>
+      <li>PP&E (Net): SAR 40,025,911</li>
+      <li>Intangible Assets: SAR 2,285,670</li>
+      <li>Total Assets: SAR 45,537,090</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Cash Flow (2025)</div>
+    <ul>
+      <li>Operating cash flow (before WC changes): SAR (1,204,420)</li>
+      <li>Net cash from operating activities: SAR 9,913,959</li>
+      <li>Cash used in investing activities: SAR (8,559,937)</li>
+      <li>Cash used in financing activities: SAR (1,480,464)</li>
+      <li>Net decrease in cash: SAR (126,442)</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Profit & Loss Summary Table</div>
+    <table class="data-table">
+      <tr><th>Year</th><th>Revenue (SAR M)</th><th>Gross Profit (SAR M)</th><th>Operating Profit (SAR M)</th><th>Net Profit (SAR M)</th></tr>
+      <tr><td>2021</td><td>0.71</td><td>0.21</td><td>(0.55)</td><td>(0.56)</td></tr>
+      <tr><td>2022</td><td>5.67</td><td>(0.18)</td><td>(1.28)</td><td>(1.02)</td></tr>
+      <tr><td>2023</td><td>11.44</td><td>2.52</td><td>1.41</td><td>1.33</td></tr>
+      <tr><td>2024</td><td>16.98</td><td>2.75</td><td>1.39</td><td>1.47</td></tr>
+      <tr><td>2025</td><td>6.23</td><td>(1.31)</td><td>(2.40)</td><td>(2.84)</td></tr>
+    </table>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== ITEM 18 ==================== -->
+<div class="answer" id="item18">
+  <div class="answer-header">
+    <div class="answer-num">18</div>
+    <div class="answer-meta">
+      <div class="answer-title">Sales / Contracts</div>
+      <span class="badge cat-sales">Sales</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Sales Agreement with Modern Arch Establishment</div>
+    <ul>
+      <li>Product: Recovered ferrous metal products</li>
+      <li>Pricing: Market-based pricing</li>
+      <li>Multi-year agreement</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Revenue by Product (2025 Audited)</div>
+    <ul>
+      <li>Recovered metal products: ~90% of revenue</li>
+      <li>Slag by-products: ~10% of revenue</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Customer Concentration</div>
+    <p class="section-text">The Company has established relationships with key customers in the construction and steel industries. Revenue recognition follows delivery terms with risks/rewards transferred at point of delivery.</p>
+  </div>
+  <div class="section">
+    <div class="section-title">2025 Revenue Context</div>
+    <p class="section-text">Total revenue of SAR 6.23M reflects reduced operations due to planned relocation shutdown. Modern Arch remains the primary offtake partner for recovered ferrous metals. The Company is developing additional customer relationships for the full-scale plant commencement in 2027.</p>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== ITEM 19 ==================== -->
+<div class="answer" id="item19">
+  <div class="answer-header">
+    <div class="answer-num">19</div>
+    <div class="answer-meta">
+      <div class="answer-title">Feedstock Supply Agreements</div>
+      <span class="badge cat-supply">Supply Chain</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">1. Arab Steel Company (ASCO)</div>
+    <ul>
+      <li>Product: Steel slag by-product</li>
+      <li>Long-term supply arrangement (contract from Feb 2022 for 2.5M tonnes)</li>
+      <li>Pricing: Nominal fee for slag collection (waste disposal arrangement)</li>
+      <li>Non-exclusive</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">2. National Steel Company</div>
+    <ul>
+      <li>Product: Steel slag by-product</li>
+      <li>Long-term supply arrangement</li>
+      <li>Pricing: Nominal fee for slag collection</li>
+      <li>Non-exclusive</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Feedstock Security</div>
+    <ul>
+      <li>Total accessible slag supply exceeds projected processing requirements</li>
+      <li>Supply agreements provide reliable raw material for the planned industrial facility</li>
+      <li>Pricing structure (nominal fee) supports strong gross margins</li>
+      <li>Geographic proximity to suppliers minimizes transportation costs</li>
+    </ul>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== ITEM 20 ==================== -->
+<div class="answer" id="item20">
+  <div class="answer-header">
+    <div class="answer-num">20</div>
+    <div class="answer-meta">
+      <div class="answer-title">Debt / Bank Loans / Credit Facilities</div>
+      <span class="badge cat-debt">Debt & Financing</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Commercial Bank Borrowings</div>
+    <p class="section-text"><strong>NIL</strong> - No commercial bank borrowings as at 31 December 2025.</p>
+  </div>
+  <div class="section">
+    <div class="section-title">Finance Lease Obligations</div>
+    <ul>
+      <li>Current portion: SAR 1,219,871</li>
+      <li>Non-current portion: SAR 1,080,540</li>
+      <li>Total Finance Lease Obligations: SAR 2,300,411</li>
+      <li>Interest rate: Implicit in lease (3-year term)</li>
+      <li>Assets: Vehicles and equipment (transferred to Company at lease end)</li>
+      <li>Lease terms: 3-year useful life, ownership transfers at end</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Related Party Funding</div>
+    <ul>
+      <li>Due to Related Parties: SAR 43,018,956</li>
+      <li>Unsecured, interest-free, repayable on demand</li>
+      <li>Partners have confirmed intent to maintain balances until financial position improves</li>
+      <li>Shareholder support letter provided confirming continued financial backing</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Liabilities Structure Chart</div>
+    <div class="pie-wrap">
+      <svg width="200" height="200" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="40" fill="#2563eb" stroke="#fff" stroke-width="1"/>
+        <path d="M50,50 L90,50 A40,40 0 0,1 46.73,89.53 Z" fill="#10b981" stroke="#fff" stroke-width="1"/>
+        <path d="M50,50 L46.73,89.53 A40,40 0 0,1 12.39,68.04 Z" fill="#f59e0b" stroke="#fff" stroke-width="1"/>
+        <path d="M50,50 L12.39,68.04 A40,40 0 0,1 10,50 Z" fill="#8b5cf6" stroke="#fff" stroke-width="1"/>
+        <circle cx="50" cy="50" r="20" fill="#f8fafc"/>
+        <text x="50" y="48" text-anchor="middle" font-size="6" fill="#64748b">Total</text>
+        <text x="50" y="56" text-anchor="middle" font-size="8" font-weight="bold" fill="#1e293b">46.98M</text>
+      </svg>
+      <div class="pie-legend">
+        <div class="pie-legend-item"><div class="legend-color" style="background:#2563eb"></div><strong>Related Parties: SAR 43.02M (91.6%)</strong></div>
+        <div class="pie-legend-item"><div class="legend-color" style="background:#10b981"></div>Finance Lease: SAR 2.30M (4.9%)</div>
+        <div class="pie-legend-item"><div class="legend-color" style="background:#f59e0b"></div>Trade Payables: SAR 0.91M (1.9%)</div>
+        <div class="pie-legend-item"><div class="legend-color" style="background:#8b5cf6"></div>Accruals: SAR 0.39M (0.8%)</div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Movement in 2025</div>
+    <ul>
+      <li>Finance lease payments: SAR 1,480,464</li>
+      <li>Interest on finance leases: SAR 427,705</li>
+      <li>Related party increase: SAR 10.38M (funds received from partners)</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">No External Debt</div>
+    <p class="section-text">The Company has not secured any commercial bank debt or external financing for the main plant. All capital expenditure to date has been funded through shareholder contributions (via related party balances) and finance leases.</p>
+  </div>
+  <div class="section">
+    <div class="section-title">Liabilities Table</div>
+    <table class="data-table">
+      <tr><th>Liability Type</th><th>Amount (SAR M)</th><th>% of Total</th></tr>
+      <tr><td>Due to Related Parties</td><td>43.02</td><td>91.6%</td></tr>
+      <tr><td>Finance Lease Obligations</td><td>2.30</td><td>4.9%</td></tr>
+      <tr><td>Trade Payables</td><td>0.91</td><td>1.9%</td></tr>
+      <tr><td>Accruals & Other</td><td>0.39</td><td>0.8%</td></tr>
+      <tr><td>Employee Benefits</td><td>0.37</td><td>0.8%</td></tr>
+      <tr><td><strong>Total Liabilities</strong></td><td><strong>46.98</strong></td><td><strong>100%</strong></td></tr>
+    </table>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== ITEM 21 ==================== -->
+<div class="answer" id="item21">
+  <div class="answer-header">
+    <div class="answer-num">21</div>
+    <div class="answer-meta">
+      <div class="answer-title">Tax / Zakat Matters</div>
+      <span class="badge cat-tax">Tax</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Tax Framework</div>
+    <p class="section-text">The Company is subject to Zakat (not corporate income tax) as a Saudi-owned LLC.</p>
+  </div>
+  <div class="section">
+    <div class="section-title">Zakat Position (Audited)</div>
+    <ul>
+      <li>2021: Provision SAR 2,147 (paid in 2022)</li>
+      <li>2022: SAR 0 (loss carried forward, negative zakat base)</li>
+      <li>2023: Zakat expense SAR 77,875 (paid in 2024)</li>
+      <li>2024: Zakat expense SAR 38,375 (paid in 2025)</li>
+      <li>2025: SAR 0 (loss incurred, negative zakat base)</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Zakat Rate</div>
+    <p class="section-text">2.577% of zakat base (effective from 2024, previously 2.5%)</p>
+  </div>
+  <div class="section">
+    <div class="section-title">Zakat Base Components</div>
+    <ul>
+      <li>Equity at year-end</li>
+      <li>Non-current liabilities</li>
+      <li>Less: Net book value of long-term assets</li>
+      <li>Adjusted for provisions and reserves</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Zakat Chart</div>
+    <div class="bar-chart">
+      <div class="bar-group"><div class="bar" style="height:2px;background:#f59e0b"></div><div class="bar-val">2.1K</div><div class="bar-lbl">2021</div></div>
+      <div class="bar-group"><div class="bar" style="height:0px;background:#94a3b8"></div><div class="bar-val">0</div><div class="bar-lbl">2022</div></div>
+      <div class="bar-group"><div class="bar" style="height:79px;background:#10b981"></div><div class="bar-val">77.9K</div><div class="bar-lbl">2023</div></div>
+      <div class="bar-group"><div class="bar" style="height:39px;background:#10b981"></div><div class="bar-val">38.4K</div><div class="bar-lbl">2024</div></div>
+      <div class="bar-group"><div class="bar" style="height:0px;background:#94a3b8"></div><div class="bar-val">0</div><div class="bar-lbl">2025</div></div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Accumulated Tax Losses</div>
+    <ul>
+      <li>2025: Loss of SAR 2.84M added to accumulated losses</li>
+      <li>Total accumulated losses: SAR 1.57M at 31 Dec 2025</li>
+      <li>These losses can be carried forward to offset future zakat-adjusted profits</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Zakat Returns Status</div>
+    <ul>
+      <li>Returns submitted from incorporation to 31 Dec 2024</li>
+      <li>Zakat certificates obtained for all filed years</li>
+      <li>Assessments still under review by ZATCA</li>
+      <li>No material disputes or assessments received to date</li>
+    </ul>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== ITEM 22 ==================== -->
+<div class="answer" id="item22">
+  <div class="answer-header">
+    <div class="answer-num">22</div>
+    <div class="answer-meta">
+      <div class="answer-title">Government Support / Incentives / Grants</div>
+      <span class="badge cat-gov">Government Support</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Government Support Status</div>
+    <p class="section-text">The Company has NOT received any government grants, incentives, subsidies, or other forms of government support as of the valuation date.</p>
+    <ul>
+      <li>NO government grants received</li>
+      <li>NO tax incentives or exemptions (standard zakat treatment applies)</li>
+      <li>NO subsidized financing</li>
+      <li>NO industrial development incentives claimed</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Relevant Context</div>
+    <ul>
+      <li>The Company operates in the waste recycling sector which is encouraged under Saudi Vision 2030 circular economy initiatives</li>
+      <li>The Company may explore eligibility for industrial incentives once the main plant commences commercial operations</li>
+      <li>No applications for government support programs have been submitted to date</li>
+    </ul>
+  </div>
+  <div class="section">
+    <div class="section-title">Going Concern Support</div>
+    <p class="section-text">While the Company has not received direct government financial support, its going concern position is supported by:</p>
+    <ul>
+      <li>Shareholder financial support letters (related party funding of SAR 43.02M)</li>
+      <li>Board-approved business plan demonstrating future profitability</li>
+      <li>Post-year-end profitability of SAR 8.03M as at 31 December 2026 (per Note 1.2 of 2025 FS)</li>
+    </ul>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== FOOTER ==================== -->
+<div class="footer">
+  <p>© Rukam Industrial Company | PwC IRL Response Portal</p>
+  <p>All financial data sourced from audited financial statements (2021-2025) and Board-approved 2027-2033 Business Plan</p>
+</div>
+
+</div>
+</body>
+</html>
