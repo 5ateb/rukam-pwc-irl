@@ -3,59 +3,72 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rukam Industrial Co. - PwC IRL Responses</title>
+<title>Rukam Budget 2033 - Detailed Financial Projections</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Segoe UI',Arial,sans-serif;background:#f8fafc;color:#1e293b;line-height:1.6}
 a{color:#2563eb;text-decoration:none}
 
-.header{background:linear-gradient(135deg,#0f2847,#2563eb);color:#fff;padding:32px 20px;text-align:center;position:sticky;top:0;z-index:100}
+.header{background:linear-gradient(135deg,#0f2847,#2563eb);color:#fff;padding:32px 20px;text-align:center}
 .header h1{font-size:30px;margin-bottom:6px}
 .header p{font-size:15px;opacity:.9}
 .badge{display:inline-block;background:rgba(255,255,255,.18);padding:4px 16px;border-radius:20px;font-size:12px;margin:4px}
-.link-btn{display:inline-block;background:#f59e0b;color:#1e293b;padding:12px 28px;border-radius:10px;font-size:15px;font-weight:700;margin-top:14px;text-decoration:none;transition:.2s}
-.link-btn:hover{background:#fbbf24;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.2)}
+.back-btn-header{display:inline-block;background:#fff;color:#1e3a5f;padding:10px 22px;border-radius:8px;font-size:14px;font-weight:700;margin-top:12px;text-decoration:none;transition:.2s}
+.back-btn-header:hover{background:#f1f5f9;transform:translateY(-1px)}
 
 .container{max-width:1200px;margin:0 auto;padding:25px 15px}
 
 .toc{background:#fff;border-radius:14px;padding:25px;margin-bottom:25px;border:1px solid #e2e8f0}
 .toc h2{font-size:20px;color:#1e3a5f;margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid #e2e8f0}
-.toc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px}
+.toc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px}
 .toc-item{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:10px;border:1px solid #e2e8f0;background:#fafbfc;cursor:pointer;transition:.2s;text-decoration:none;color:inherit}
 .toc-item:hover{background:#eff6ff;border-color:#2563eb;transform:translateY(-2px)}
-.toc-num{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;flex-shrink:0}
-.toc-cat{font-size:10px;font-weight:700;padding:2px 8px;border-radius:8px;display:inline-block;margin-bottom:3px}
+.toc-num{width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex-shrink:0}
 .toc-title{font-size:13px;font-weight:600}
 
 .section{background:#fff;border-radius:14px;padding:28px 30px;margin-bottom:25px;border:1px solid #e2e8f0;scroll-margin-top:90px}
 .section-title{font-size:19px;font-weight:700;color:#1e3a5f;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid #e2e8f0}
+.section-subtitle{font-size:16px;font-weight:700;color:#2563eb;margin:20px 0 12px}
 .section-text{font-size:14px;color:#475569;margin-bottom:14px}
-.section ul{list-style:none;padding:0}
-.section ul li{padding:8px 0 8px 22px;position:relative;font-size:14px;color:#475569;border-bottom:1px solid #f1f5f9}
-.section ul li:last-child{border-bottom:none}
-.section ul li::before{content:'';position:absolute;left:0;top:14px;width:8px;height:8px;border-radius:50%;background:#2563eb}
-.sub-section{margin:12px 0 12px 15px;padding-left:15px;border-left:3px solid #bfdbfe}
-.sub-section-title{font-weight:700;font-size:15px;color:#1e3a5f;margin-bottom:6px}
+
+.formula-box{background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:16px 20px;margin:12px 0;font-family:'Courier New',monospace;font-size:13px}
+.formula-box .label{font-family:'Segoe UI',Arial,sans-serif;font-weight:700;color:#1e40af;font-size:12px;margin-bottom:6px;display:block}
+
+.highlight-box{background:#fefce8;border:1px solid #fde047;border-radius:10px;padding:14px 18px;margin:12px 0;font-size:13px;color:#854d0e}
+.highlight-box .label{font-weight:700;color:#a16207;font-size:12px;margin-bottom:4px;display:block}
+
+.info-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:15px 0}
+.info-card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px;text-align:center}
+.info-card .value{font-size:22px;font-weight:700;color:#2563eb}
+.info-card .label{font-size:11px;color:#64748b;margin-top:4px}
 
 .data-table{width:100%;border-collapse:collapse;margin:15px 0;font-size:12px}
 .data-table th{background:#1e3a5f;color:#fff;padding:10px 12px;text-align:left;font-weight:600}
 .data-table td{padding:8px 12px;border-bottom:1px solid #e2e8f0;color:#475569}
 .data-table tr:nth-child(even){background:#f8fafc}
+.data-table .total-row{background:#dbeafe;font-weight:700}
+.data-table .subtotal-row{background:#ecfdf5;font-weight:700}
 
-/* Charts */
 .bar-chart{display:flex;align-items:flex-end;gap:12px;height:240px;padding:25px 15px 8px;background:#f8fafc;border-radius:12px}
 .bar-group{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;min-width:0}
-.bar{width:75%;border-radius:6px 6px 0 0;display:flex;align-items:flex-start;justify-content:center;padding-top:6px}
-.bar-inner-label{font-size:10px;font-weight:800;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.5);text-align:center}
+.bar{width:75%;border-radius:6px 6px 0 0;display:flex;align-items:flex-start;justify-content:center;padding-top:6px;position:relative}
+.bar-inner-label{font-size:10px;font-weight:800;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.5);text-align:center;line-height:1.2}
 .bar-val{font-size:12px;font-weight:700;color:#1e293b;text-align:center;margin-top:4px}
 .bar-lbl{font-size:11px;color:#64748b;text-align:center;font-weight:600}
 
 .multi-bar-chart{display:flex;align-items:flex-end;gap:10px;height:260px;padding:25px 15px 8px;background:#f8fafc;border-radius:12px}
 .multi-group{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;min-width:0}
 .multi-bars{width:85%;display:flex;flex-direction:column;align-items:stretch;border-radius:6px 6px 0 0;overflow:hidden;gap:2px}
-.multi-bar-seg{display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.5)}
+.multi-bar-seg{position:relative;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.5)}
 .multi-total{font-size:12px;font-weight:700;text-align:center;margin-top:3px}
 .multi-lbl{font-size:11px;color:#64748b;text-align:center;font-weight:600}
+
+.stacked-chart{display:flex;align-items:flex-end;gap:12px;height:280px;padding:25px 15px 8px;background:#f8fafc;border-radius:12px}
+.stacked-group{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;min-width:0}
+.stacked-bars{width:80%;display:flex;flex-direction:column;align-items:stretch;border-radius:6px 6px 0 0;overflow:hidden;gap:1px}
+.stacked-seg{position:relative;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:800;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.5);min-height:28px}
+.stacked-total{font-size:12px;font-weight:700;color:#1e40af;text-align:center;margin-top:3px}
+.stacked-lbl{font-size:11px;color:#64748b;text-align:center;font-weight:600}
 
 .pie-wrap{display:flex;align-items:center;gap:35px;flex-wrap:wrap;justify-content:center;padding:20px;background:#f8fafc;border-radius:12px}
 .pie-svg-container{position:relative;width:200px;height:200px}
@@ -70,42 +83,19 @@ a{color:#2563eb;text-decoration:none}
 .legend-item{display:flex;align-items:center;gap:6px;font-size:13px;color:#475569}
 .legend-color{width:14px;height:14px;border-radius:4px}
 
-.answer-header{display:flex;align-items:center;gap:14px;margin-bottom:20px;flex-wrap:wrap}
-.answer-num{width:50px;height:50px;border-radius:12px;background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;flex-shrink:0}
-.answer-title{font-size:20px;font-weight:700;color:#1e293b}
+.sub-section{margin:12px 0 12px 15px;padding-left:15px;border-left:3px solid #bfdbfe}
+.sub-section-title{font-weight:700;font-size:15px;color:#1e3a5f;margin-bottom:8px}
 
-.back-top{display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:8px 16px;border-radius:8px;font-size:13px;font-weight:600;color:#475569;margin-top:10px}
+.back-top{display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:8px 16px;border-radius:8px;font-size:13px;font-weight:600;color:#475569;margin-top:10px;text-decoration:none}
 .back-top:hover{background:#e2e8f0}
 
 .footer{text-align:center;padding:30px;font-size:12px;color:#94a3b8}
 
-.cat-general{background:#dbeafe;color:#1e40af}
-.cat-feasibility{background:#d1fae5;color:#065f46}
-.cat-legal{background:#fef3c7;color:#92400e}
-.cat-valuation{background:#f3e8ff;color:#6b21a8}
-.cat-timeline{background:#ffe4e6;color:#9f1239}
-.cat-market{background:#cffafe;color:#155e75}
-.cat-capex{background:#fed7aa;color:#9a3412}
-.cat-docs{background:#f3f4f6;color:#374151}
-.cat-capital{background:#e0e7ff;color:#3730a3}
-.cat-budget{background:#ccfbf1;color:#115e59}
-.cat-future{background:#fce7f3;color:#9d174d}
-.cat-fixed{background:#ecfccb;color:#3f6212}
-.cat-real{background:#e0f2fe;color:#075985}
-.cat-business{background:#ede9fe;color:#5b21b6}
-.cat-governance{background:#f1f5f9;color:#475569}
-.cat-financial{background:#dcfce7;color:#166534}
-.cat-performance{background:#fee2e2;color:#991b1b}
-.cat-sales{background:#fef9c3;color:#854d0e}
-.cat-supply{background:#f4f4f5;color:#52525b}
-.cat-debt{background:#f5f5f4;color:#44403c}
-.cat-tax{background:#fafaf9;color:#57534e}
-.cat-gov{background:#fdf4ff;color:#86198f}
-
 @media(max-width:768px){
   .toc-grid{grid-template-columns:1fr}
-  .bar-chart,.multi-bar-chart{height:200px}
+  .bar-chart,.multi-bar-chart,.stacked-chart{height:200px}
   .section{padding:18px}
+  .pie-wrap{flex-direction:column}
 }
 </style>
 </head>
@@ -113,971 +103,982 @@ a{color:#2563eb;text-decoration:none}
 
 <div class="header">
   <h1>Rukam Industrial Company</h1>
-  <p>PwC Information Request List (IRL) - Response Portal</p>
-  <span class="badge">Updated: 15 July 2026</span>
-  <br><a href="rukambudget-2033.html" class="link-btn">📊 View Budget 2027-2033 Dashboard →</a>
+  <p>Comprehensive Budget Projections 2027-2033 Dashboard</p>
+  <span class="badge">Updated: 16 July 2026</span>
+  <span class="badge">Board-Approved Business Plan</span>
+  <span class="badge">Addforce Technology Partnership</span>
+  <div><a href="index.html" class="back-btn-header">&larr; Back to IRL Responses</a></div>
 </div>
 
 <div class="container">
 
+<!-- ==================== TOC ==================== -->
 <div class="toc">
-  <h2>📋 22 Response Items - Table of Contents</h2>
+  <h2>Table of Contents</h2>
   <div class="toc-grid">
-    <a href="#item1" class="toc-item"><div class="toc-num">1</div><div><span class="toc-cat cat-general">General</span><div class="toc-title">Company Overview</div></div></a>
-    <a href="#item2" class="toc-item"><div class="toc-num">2</div><div><span class="toc-cat cat-feasibility">Feasibility</span><div class="toc-title">Feasibility Study & Business Plan</div></div></a>
-    <a href="#item3" class="toc-item"><div class="toc-num">3</div><div><span class="toc-cat cat-legal">Legal</span><div class="toc-title">Licenses & Regulatory</div></div></a>
-    <a href="#item4" class="toc-item"><div class="toc-num">4</div><div><span class="toc-cat cat-valuation">Valuation</span><div class="toc-title">No Valuation Conducted</div></div></a>
-    <a href="#item5" class="toc-item"><div class="toc-num">5</div><div><span class="toc-cat cat-timeline">Timeline</span><div class="toc-title">Company Timeline</div></div></a>
-    <a href="#item6" class="toc-item"><div class="toc-num">6</div><div><span class="toc-cat cat-market">Market</span><div class="toc-title">7 Competitive Strengths</div></div></a>
-    <a href="#item7" class="toc-item"><div class="toc-num">7</div><div><span class="toc-cat cat-capex">Capex</span><div class="toc-title">Total Project Costs (2021-2025)</div></div></a>
-    <a href="#item8" class="toc-item"><div class="toc-num">8</div><div><span class="toc-cat cat-docs">Docs</span><div class="toc-title">Documentation Status</div></div></a>
-    <a href="#item9" class="toc-item"><div class="toc-num">9</div><div><span class="toc-cat cat-capital">Capital</span><div class="toc-title">Capital Invested Breakdown</div></div></a>
-    <a href="#item10" class="toc-item"><div class="toc-num">10</div><div><span class="toc-cat cat-budget">Budget</span><div class="toc-title">Budget vs Actual</div></div></a>
-    <a href="#item11" class="toc-item"><div class="toc-num">11</div><div><span class="toc-cat cat-future">Future</span><div class="toc-title">Remaining CAPEX: SAR 8.84M</div></div></a>
-    <a href="#item12" class="toc-item"><div class="toc-num">12</div><div><span class="toc-cat cat-fixed">Fixed</span><div class="toc-title">CWIP Breakdown</div></div></a>
-    <a href="#item13" class="toc-item"><div class="toc-num">13</div><div><span class="toc-cat cat-real">Real Estate</span><div class="toc-title">Land Lease Details</div></div></a>
-    <a href="#item14" class="toc-item"><div class="toc-num">14</div><div><span class="toc-cat cat-business">Business Plan</span><div class="toc-title">2027-2033 Business Plan</div></div></a>
-    <a href="#item15" class="toc-item"><div class="toc-num">15</div><div><span class="toc-cat cat-governance">Governance</span><div class="toc-title">Board Materials</div></div></a>
-    <a href="#item16" class="toc-item"><div class="toc-num">16</div><div><span class="toc-cat cat-financial">Financial</span><div class="toc-title">Audited FS (2021-2025)</div></div></a>
-    <a href="#item17" class="toc-item"><div class="toc-num">17</div><div><span class="toc-cat cat-performance">Performance</span><div class="toc-title">Audited 2025 Results</div></div></a>
-    <a href="#item18" class="toc-item"><div class="toc-num">18</div><div><span class="toc-cat cat-sales">Sales</span><div class="toc-title">Sales Contracts</div></div></a>
-    <a href="#item19" class="toc-item"><div class="toc-num">19</div><div><span class="toc-cat cat-supply">Supply</span><div class="toc-title">Feedstock Supply</div></div></a>
-    <a href="#item20" class="toc-item"><div class="toc-num">20</div><div><span class="toc-cat cat-debt">Debt</span><div class="toc-title">Debt Position (31 Dec 2025)</div></div></a>
-    <a href="#item21" class="toc-item"><div class="toc-num">21</div><div><span class="toc-cat cat-tax">Tax</span><div class="toc-title">Zakat Position (Audited)</div></div></a>
-    <a href="#item22" class="toc-item"><div class="toc-num">22</div><div><span class="toc-cat cat-gov">Gov Support</span><div class="toc-title">No Government Support</div></div></a>
-    <div style="grid-column:1/-1;font-weight:700;color:#1e3a5f;padding:8px 0;border-top:2px solid #e2e8f0;margin-top:8px">Additional Details from General Overview</div>
-    <a href="#item14b" class="toc-item"><div class="toc-num">14b</div><div><span class="toc-cat cat-business">Business Plan</span><div class="toc-title">2027-2033 Projections & Assumptions</div></div></a>
-    <a href="#item15b" class="toc-item"><div class="toc-num">15b</div><div><span class="toc-cat cat-governance">Governance</span><div class="toc-title">Board Materials & Budget Approval</div></div></a>
-    <a href="#item16b" class="toc-item"><div class="toc-num">16b</div><div><span class="toc-cat cat-financial">Financial</span><div class="toc-title">Audit Information & Standards</div></div></a>
-    <a href="#item17b" class="toc-item"><div class="toc-num">17b</div><div><span class="toc-cat cat-performance">Performance</span><div class="toc-title">2025 Balance Sheet & Cash Flow</div></div></a>
-    <a href="#item18b" class="toc-item"><div class="toc-num">18b</div><div><span class="toc-cat cat-sales">Sales</span><div class="toc-title">Sales Contracts & Customers</div></div></a>
-    <a href="#item19b" class="toc-item"><div class="toc-num">19b</div><div><span class="toc-cat cat-supply">Supply</span><div class="toc-title">Feedstock Supply Agreements Detail</div></div></a>
-    <a href="#item20b" class="toc-item"><div class="toc-num">20b</div><div><span class="toc-cat cat-debt">Debt</span><div class="toc-title">Finance Lease Terms & Movements</div></div></a>
-    <a href="#item21b" class="toc-item"><div class="toc-num">21b</div><div><span class="toc-cat cat-tax">Tax</span><div class="toc-title">Zakat Rate, Base & Status</div></div></a>
-    <a href="#item22b" class="toc-item"><div class="toc-num">22b</div><div><span class="toc-cat cat-gov">Governance</span><div class="toc-title">Going Concern Support</div></div></a>
+    <a href="#exec" class="toc-item"><div class="toc-num">1</div><div class="toc-title">Executive Summary</div></a>
+    <a href="#assumptions" class="toc-item"><div class="toc-num">2</div><div class="toc-title">Key Assumptions & Operating Parameters</div></a>
+    <a href="#sales-target" class="toc-item"><div class="toc-num">3</div><div class="toc-title">2022 Sales Target (Historical Reference)</div></a>
+    <a href="#pnl" class="toc-item"><div class="toc-num">4</div><div class="toc-title">P&L Statement (2027-2033)</div></a>
+    <a href="#sales-detail" class="toc-item"><div class="toc-num">5</div><div class="toc-title">Sales Revenue Detailed Breakdown</div></a>
+    <a href="#cogs" class="toc-item"><div class="toc-num">6</div><div class="toc-title">Cost of Sales & Raw Materials</div></a>
+    <a href="#opex" class="toc-item"><div class="toc-num">7</div><div class="toc-title">Operating Expenses (OPEX) Full Detail</div></a>
+    <a href="#salaries" class="toc-item"><div class="toc-num">8</div><div class="toc-title">Personnel & Salaries (24 Employees)</div></a>
+    <a href="#capex" class="toc-item"><div class="toc-num">9</div><div class="toc-title">Capital Expenditure (CAPEX)</div></a>
+    <a href="#addforce" class="toc-item"><div class="toc-num">10</div><div class="toc-title">Addforce Main Plant CAPEX</div></a>
+    <a href="#vehicles" class="toc-item"><div class="toc-num">11</div><div class="toc-title">Vehicles & Heavy Equipment</div></a>
+    <a href="#equipment-lease" class="toc-item"><div class="toc-num">12</div><div class="toc-title">Equipment Lease & Fuel Costs</div></a>
+    <a href="#cashflow" class="toc-item"><div class="toc-num">13</div><div class="toc-title">Project Cash Flow Analysis</div></a>
+    <a href="#ratios" class="toc-item"><div class="toc-num">14</div><div class="toc-title">Key Financial Ratios</div></a>
   </div>
 </div>
-<!-- ITEM 1 -->
-<div class="section" id="item1">
-<div class="answer-header"><div class="answer-num">1</div><div><div class="answer-title">General Overview / Company Information</div><span class="toc-cat cat-general">General Information</span></div></div>
-<div class="section"><div class="section-title">Company Overview</div>
-<p class="section-text">Rukam Industrial Company (formerly "Metal Scrap Recycling Technology Co., Ltd.") is a Saudi limited liability company headquartered in Al Khobar, Eastern Province, operating in industrial recycling. It converts industrial waste into valuable products using advanced, environmentally friendly technologies.</p>
-<ul><li>Year Established: 2021 (commenced operations)</li><li>Total Assets (31 Dec 2025): SAR 45.54 million</li><li>Net PP&E: SAR 40.03 million</li><li>Revenue (FY2024): SAR 16.98 million</li><li>Revenue (FY2025): SAR 6.23 million</li></ul>
-</div>
-<div class="section"><div class="section-title">2025 Revenue Reduction</div><p class="section-text">The reduction reflects a planned, temporary shutdown of pilot plant operations during relocation to comply with Ministry of Industry rules.</p></div>
-<div class="section"><div class="section-title">Strategic Technology Partnership</div><p class="section-text">Exclusive partnership with Addforce Switzerland providing advanced steel slag processing technology.</p></div>
-<div class="section"><div class="section-title">Competitive Advantages</div>
-<ul><li>Patented technology via Addforce Switzerland</li><li>98% Fe metal recovery rate (industry-leading)</li><li>First-mover in Saudi steel slag recycling</li><li>Audited track record - SAR 16.98M peak revenue (2024)</li><li>Strategic location in Eastern Province</li></ul>
-</div><a href="#" class="back-top">Back to Top</a></div>
 
-<!-- ITEM 2 -->
-<div class="section" id="item2">
-<div class="answer-header"><div class="answer-num">2</div><div><div class="answer-title">Feasibility Study / Budget / Financial Projections</div><span class="toc-cat cat-feasibility">Feasibility & Budget</span></div></div>
-<div class="section"><div class="section-title">Feasibility Study Status</div><p class="section-text">The Company does not maintain a separate feasibility study. The approved 2026 business plan (Board-approved) contains all key assumptions.</p></div>
-<div class="section"><div class="section-title">2026 Board-Approved Budget</div>
-<ul><li>Processing Capacity: 33,800 tonnes/month</li><li>Revenue: SAR 16.78M (Metal SAR 15.21M 91%, Slag SAR 1.57M 9%)</li><li>EBITDA: SAR 8.92M (53.1% margin)</li><li>Net Income: SAR 8.03M</li><li>Technology: Addforce Switzerland proprietary slag processing</li><li>Feedstock: Secured with Arab Steel Co. & National Steel Co.</li></ul>
-</div>
-<div class="section"><div class="section-title">Historical Performance (Audited)</div>
-<table class="data-table"><tr><th>Year</th><th>Revenue (SAR M)</th><th>Gross Profit (SAR M)</th><th>Net Profit/(Loss) (SAR M)</th></tr>
-<tr><td>2021</td><td>0.71</td><td>0.21</td><td>(0.56)</td></tr>
-<tr><td>2022</td><td>5.67</td><td>(0.18)</td><td>(1.02)</td></tr>
-<tr><td>2023</td><td>11.44</td><td>2.52</td><td>1.33</td></tr>
-<tr><td>2024</td><td>16.98</td><td>2.75</td><td>1.47</td></tr>
-<tr><td>2025</td><td>6.23</td><td>(1.31)</td><td>(2.84)</td></tr>
-</table>
-<p class="section-text">Historical performance validates operational viability (2024: SAR 16.98M revenue, SAR 1.47M net profit).</p>
-</div>
-<div class="section"><div class="section-title">Revenue & EBITDA Chart</div>
-<div class="bar-chart">
-<div class="bar-group"><div class="bar" style="height:90px;background:#2563eb"><span class="bar-inner-label">40.4</span></div><div class="bar-val">Rev</div><div class="bar-lbl">2027</div></div>
-<div class="bar-group"><div class="bar" style="height:120px;background:#2563eb"><span class="bar-inner-label">53.9</span></div><div class="bar-val">Rev</div><div class="bar-lbl">2028</div></div>
-<div class="bar-group"><div class="bar" style="height:120px;background:#2563eb"><span class="bar-inner-label">53.9</span></div><div class="bar-val">Rev</div><div class="bar-lbl">2029</div></div>
-<div class="bar-group"><div class="bar" style="height:120px;background:#2563eb"><span class="bar-inner-label">53.9</span></div><div class="bar-val">Rev</div><div class="bar-lbl">2030</div></div>
-<div class="bar-group"><div class="bar" style="height:120px;background:#2563eb"><span class="bar-inner-label">53.9</span></div><div class="bar-val">Rev</div><div class="bar-lbl">2031</div></div>
-<div class="bar-group"><div class="bar" style="height:120px;background:#2563eb"><span class="bar-inner-label">53.9</span></div><div class="bar-val">Rev</div><div class="bar-lbl">2032</div></div>
-<div class="bar-group"><div class="bar" style="height:120px;background:#2563eb"><span class="bar-inner-label">53.9</span></div><div class="bar-val">Rev</div><div class="bar-lbl">2033</div></div>
-</div>
-<div class="chart-legend"><div class="legend-item"><div class="legend-color" style="background:#2563eb"></div>Revenue (SAR M)</div></div>
-</div><a href="#" class="back-top">Back to Top</a></div>
+<!-- ==================== 1. EXECUTIVE SUMMARY ==================== -->
+<div class="section" id="exec">
+  <div class="section-title">Executive Summary</div>
+  <div class="section-text">The Board-approved 2027-2033 Business Plan projects a total revenue of <strong>SAR 363.48 million</strong> and cumulative net income of <strong>SAR 139.74 million</strong> over the 7-year projection period. Operations commence on <strong>1 April 2027</strong>, reaching full steady-state from 2028 onwards.</div>
 
-<!-- ITEM 3 -->
-<div class="section" id="item3">
-<div class="answer-header"><div class="answer-num">3</div><div><div class="answer-title">Legal Status / Licensing / Regulatory Compliance</div><span class="toc-cat cat-legal">Legal & Regulatory</span></div></div>
-<div class="section"><div class="section-title">MAWAN License</div><p class="section-text">Not yet obtained - can only apply after Industrial License to Operate is issued.</p></div>
-<div class="section"><div class="section-title">Licenses Held</div>
-<div class="sub-section"><div class="sub-section-title">Commercial Registration (CR)</div><p class="section-text">Active and updated following name change to Rukam Industrial Company.</p></div>
-<div class="sub-section"><div class="sub-section-title">Industrial License</div><p class="section-text">License to Construct (Ministry of Industry and Mineral Resources).</p></div>
-<div class="sub-section"><div class="sub-section-title">Environmental Permit</div><p class="section-text">Obtained from NCEC.</p></div>
-<div class="sub-section"><div class="sub-section-title">Municipal Lease Contract</div><p class="section-text">Active lease agreement for industrial land. Initial lease term: 25 years starting 1 August 2021, renewable at market rates. The Company has the option to renew. The 2025 relocation was within the same leased premises to comply with Ministry of Industry regulations.</p></div>
-</div><a href="#" class="back-top">Back to Top</a></div>
+  <div class="info-grid">
+    <div class="info-card"><div class="value">SAR 40.39M</div><div class="label">2027 Revenue (9 months)</div></div>
+    <div class="info-card"><div class="value">SAR 53.85M</div><div class="label">Steady-State Revenue (2028+)</div></div>
+    <div class="info-card"><div class="value">SAR 17.96M</div><div class="label">2027 EBITDA</div></div>
+    <div class="info-card"><div class="value">SAR 33.34M</div><div class="label">2028 EBITDA</div></div>
+    <div class="info-card"><div class="value">SAR 11.02M</div><div class="label">2027 Net Income</div></div>
+    <div class="info-card"><div class="value">SAR 23.40M</div><div class="label">2028 Net Income</div></div>
+    <div class="info-card"><div class="value">SAR 363.48M</div><div class="label">Total 7-Year Revenue</div></div>
+    <div class="info-card"><div class="value">SAR 139.74M</div><div class="label">Total 7-Year Net Income</div></div>
+    <div class="info-card"><div class="value">24</div><div class="label">Total Employees (2027)</div></div>
+    <div class="info-card"><div class="value">SAR 62.23M</div><div class="label">Total CAPEX</div></div>
+    <div class="info-card"><div class="value">38.4%</div><div class="label">Avg Net Margin</div></div>
+    <div class="info-card"><div class="value">3,000</div><div class="label">Daily Processing (Tonnes)</div></div>
+  </div>
 
-<!-- ITEM 4 -->
-<div class="section" id="item4">
-<div class="answer-header"><div class="answer-num">4</div><div><div class="answer-title">Valuation</div><span class="toc-cat cat-valuation">Valuation</span></div></div>
-<div class="section"><div class="section-title">Valuation Status</div><p class="section-text">No internal or external valuation conducted. The Company remains in establishment phase and the main plant has not commenced commercial operations. No formal valuation estimates prepared in past three years.</p></div>
-<div class="section"><div class="section-title">Development Focus</div><p class="section-text">Efforts focused on project development through investments in main processing plant equipment and pilot plant establishment.</p></div>
-<a href="#" class="back-top">Back to Top</a></div>
-<!-- ITEM 5 -->
-<div class="section" id="item5">
-<div class="answer-header"><div class="answer-num">5</div><div><div class="answer-title">Timeline / Significant Events</div><span class="toc-cat cat-timeline">Timeline</span></div></div>
-<div class="section"><div class="section-title">Historical Revenue & Profit Chart</div>
-<div class="multi-bar-chart">
-<div class="multi-group"><div class="multi-bars" style="height:8px"><div class="multi-bar-seg" style="height:100%;background:#2563eb">0.71</div></div><div class="multi-total" style="color:#ef4444">(0.56)</div><div class="multi-lbl">2021</div></div>
-<div class="multi-group"><div class="multi-bars" style="height:68px"><div class="multi-bar-seg" style="height:100%;background:#2563eb">5.67</div></div><div class="multi-total" style="color:#ef4444">(1.02)</div><div class="multi-lbl">2022</div></div>
-<div class="multi-group"><div class="multi-bars" style="height:136px"><div class="multi-bar-seg" style="height:100%;background:#2563eb">11.44</div></div><div class="multi-total" style="color:#10b981">1.33</div><div class="multi-lbl">2023</div></div>
-<div class="multi-group"><div class="multi-bars" style="height:202px"><div class="multi-bar-seg" style="height:100%;background:#2563eb">16.98</div></div><div class="multi-total" style="color:#10b981">1.47</div><div class="multi-lbl">2024</div></div>
-<div class="multi-group"><div class="multi-bars" style="height:74px"><div class="multi-bar-seg" style="height:100%;background:#2563eb">6.23</div></div><div class="multi-total" style="color:#ef4444">(2.84)</div><div class="multi-lbl">2025</div></div>
-</div>
-<div class="chart-legend">
-<div class="legend-item"><div class="legend-color" style="background:#2563eb"></div>Revenue (SAR M)</div>
-<div class="legend-item"><div class="legend-color" style="background:#10b981"></div>Net Profit</div>
-<div class="legend-item"><div class="legend-color" style="background:#ef4444"></div>Net Loss</div>
-</div>
-</div>
-<div class="section"><div class="section-title">2021 - Company Establishment</div><ul><li>Company incorporated, renamed Rukam Industrial Company</li><li>Initial capital SAR 100,000</li><li>Pilot plant development commenced</li><li>Revenue: SAR 0.71M | Net Loss: (0.56)M</li></ul></div>
-<div class="section"><div class="section-title">2022 - Pilot Operations</div><ul><li>Pilot plant operations commenced</li><li>Revenue: SAR 5.67M | Net Loss: (1.02)M</li><li>Due to related parties: SAR 30.94M</li></ul></div>
-<div class="section"><div class="section-title">2023 - First Profit</div><ul><li>Revenue: SAR 11.44M | Net Profit: 1.33M</li><li>Major main plant construction commenced</li><li>PP&E: SAR 25.55M</li></ul></div>
-<div class="section"><div class="section-title">2024 - Peak Operations</div><ul><li>Revenue: SAR 16.98M | Net Profit: 1.47M</li><li>Finance lease obligations: SAR 2.30M</li><li>Statutory reserve: SAR 30,000 established</li></ul></div>
-<div class="section"><div class="section-title">2025 - Relocation</div><ul><li>Temporary shutdown for relocation</li><li>Revenue: SAR 6.23M | Net Loss: (2.84)M</li><li>PP&E reached SAR 40.03M</li></ul></div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 6 -->
-<div class="section" id="item6">
-<div class="answer-header"><div class="answer-num">6</div><div><div class="answer-title">Competitive Environment / Competitive Landscape</div><span class="toc-cat cat-market">Market</span></div></div>
-<div class="section"><div class="section-title">7 Competitive Strengths</div>
-<ul><li>Patented Technology: Exclusive partnership with Addforce Switzerland</li><li>98% Recovery Rate: Fe metal recovery at 80-90% purity (industry-leading)</li><li>First-Mover Advantage: Early entrant in Saudi steel slag recycling</li><li>Proven Operations: Audited track record - SAR 16.98M peak revenue (2024)</li><li>Strategic Location: Proximity to key steel producers in Eastern Province</li><li>Circular Economy Alignment: Supports Saudi Vision 2030</li><li>Secured Supply: Feedstock agreements with Arab Steel Co. & National Steel Co.</li></ul>
-</div>
-<div class="section"><div class="section-title">Competitive Landscape</div><p class="section-text">The Saudi steel slag recycling market is nascent with limited specialized competitors. The primary competition comes from traditional disposal methods rather than direct recycling competitors.</p></div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 7 -->
-<div class="section" id="item7">
-<div class="answer-header"><div class="answer-num">7</div><div><div class="answer-title">Historical Project Costs / Capitalized Costs</div><span class="toc-cat cat-capex">Capital Expenditure</span></div></div>
-<div class="section"><div class="section-title">PP&E Movement Chart</div>
-<div class="bar-chart">
-<div class="bar-group"><div class="bar" style="height:10px;background:#3b82f6"><span class="bar-inner-label">2.58</span></div><div class="bar-val">SAR 2.58M</div><div class="bar-lbl">2021</div></div>
-<div class="bar-group"><div class="bar" style="height:20px;background:#3b82f6"><span class="bar-inner-label">4.90</span></div><div class="bar-val">SAR 4.90M</div><div class="bar-lbl">2022</div></div>
-<div class="bar-group"><div class="bar" style="height:102px;background:#10b981"><span class="bar-inner-label">25.55</span></div><div class="bar-val">SAR 25.55M</div><div class="bar-lbl">2023</div></div>
-<div class="bar-group"><div class="bar" style="height:130px;background:#8b5cf6"><span class="bar-inner-label">32.53</span></div><div class="bar-val">SAR 32.53M</div><div class="bar-lbl">2024</div></div>
-<div class="bar-group"><div class="bar" style="height:160px;background:#ef4444"><span class="bar-inner-label">40.03</span></div><div class="bar-val">SAR 40.03M</div><div class="bar-lbl">2025</div></div>
-</div>
-</div>
-<div class="section"><div class="section-title">Construction Work in Progress</div><ul><li>2021: SAR 2.58M - Pilot plant setup</li><li>2022: SAR 4.90M - Pilot completion + initial main plant</li><li>2023: SAR 25.55M - Major main plant construction (+20.65M)</li><li>2024: SAR 32.53M - Equipment Phase 2 (+6.98M)</li><li>2025: SAR 40.03M - Completion works (+7.50M)</li></ul></div>
-<div class="section"><div class="section-title">Total Capitalized Assets (31 Dec 2025)</div><p class="section-text"><strong>SAR 42.31M</strong> (PP&E SAR 40.03M + Intangibles SAR 2.29M)</p></div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 8 -->
-<div class="section" id="item8">
-<div class="answer-header"><div class="answer-num">8</div><div><div class="answer-title">Supporting Documentation / Source Documents</div><span class="toc-cat cat-docs">Documentation</span></div></div>
-<div class="section"><div class="section-title">Available Documents</div><ul><li>Municipality land lease contract (provided to PwC)</li><li>Addforce technology license agreement</li><li>Purchase orders for major equipment</li><li>Construction contracts for civil works</li><li>Finance lease agreements for vehicles</li><li>Board minutes approving capital expenditure</li></ul></div>
-<div class="section"><div class="section-title">Pending</div><ul><li>Final contractor invoices for 2025 completion works</li><li>Detailed equipment commissioning reports</li><li>Updated fixed asset register post-relocation</li></ul></div>
-<div class="section"><div class="section-title">Note</div><p class="section-text">All material costs are supported by contracts, purchase orders, or Board-approved budgets.</p></div>
-<a href="#" class="back-top">Back to Top</a></div>
-<!-- ITEM 9 -->
-<div class="section" id="item9">
-<div class="answer-header"><div class="answer-num">9</div><div><div class="answer-title">Breakdown of Capital Invested</div><span class="toc-cat cat-capital">Capital Structure</span></div></div>
-<div class="section"><div class="section-title">Funding Sources Chart</div>
-<div class="pie-wrap">
-<div class="pie-svg-container">
-<svg width="200" height="200" viewBox="0 0 100 100">
-<circle cx="50" cy="50" r="40" fill="#2563eb" stroke="#fff" stroke-width="1.5"/>
-<path d="M50,50 L90,50 A40,40 0 0,1 58.04,88.04 Z" fill="#10b981" stroke="#fff" stroke-width="1.5"/>
-<path d="M50,50 L58.04,88.04 A40,40 0 0,1 10,50 Z" fill="#f59e0b" stroke="#fff" stroke-width="1.5"/>
-<text x="72" y="35" text-anchor="middle" font-size="6" fill="#fff" font-weight="800">91.6%</text>
-<text x="74" y="76" text-anchor="middle" font-size="5" fill="#fff" font-weight="700">4.9%</text>
-<text x="24" y="60" text-anchor="middle" font-size="5" fill="#fff" font-weight="700">2.8%</text>
-</svg>
-<div class="pie-center"><div class="pie-center-label">Total</div><div class="pie-center-value">46.62M</div></div>
-</div>
-<div class="pie-legend">
-<div class="pie-legend-item"><div class="pie-legend-color" style="background:#2563eb"></div><strong>Related Party: SAR 43.02M (91.6%)</strong></div>
-<div class="pie-legend-item"><div class="pie-legend-color" style="background:#10b981"></div>Finance Lease: SAR 2.30M (4.9%)</div>
-<div class="pie-legend-item"><div class="pie-legend-color" style="background:#f59e0b"></div>Trade Payables: SAR 1.30M (2.8%)</div>
-</div>
-</div>
-</div>
-<div class="section"><div class="section-title">Funding Sources Table</div>
-<table class="data-table">
-<tr><th>Source</th><th>Amount (SAR M)</th><th>Percentage</th></tr>
-<tr><td>Related Party Funding</td><td>43.02</td><td>91.6%</td></tr>
-<tr><td>Finance Lease Obligations</td><td>2.30</td><td>4.9%</td></tr>
-<tr><td>Trade Payables & Accruals</td><td>1.30</td><td>2.8%</td></tr>
-<tr><td>Commercial Bank Debt</td><td>0</td><td>0%</td></tr>
-</table>
-</div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 10 -->
-<div class="section" id="item10">
-<div class="answer-header"><div class="answer-num">10</div><div><div class="answer-title">Comparison of Budget vs Actual Costs</div><span class="toc-cat cat-budget">Budget Tracking</span></div></div>
-<div class="section"><div class="section-title">YoY PP&E Additions Chart</div>
-<div class="bar-chart">
-<div class="bar-group"><div class="bar" style="height:20px;background:#3b82f6"><span class="bar-inner-label">2.58</span></div><div class="bar-val">SAR 2.58M</div><div class="bar-lbl">2021</div></div>
-<div class="bar-group"><div class="bar" style="height:18px;background:#f59e0b"><span class="bar-inner-label">2.32</span></div><div class="bar-val">SAR 2.32M</div><div class="bar-lbl">2022</div></div>
-<div class="bar-group"><div class="bar" style="height:160px;background:#10b981"><span class="bar-inner-label">20.65</span></div><div class="bar-val">SAR 20.65M</div><div class="bar-lbl">2023</div></div>
-<div class="bar-group"><div class="bar" style="height:54px;background:#8b5cf6"><span class="bar-inner-label">6.98</span></div><div class="bar-val">SAR 6.98M</div><div class="bar-lbl">2024</div></div>
-<div class="bar-group"><div class="bar" style="height:58px;background:#ef4444"><span class="bar-inner-label">7.50</span></div><div class="bar-val">SAR 7.50M</div><div class="bar-lbl">2025</div></div>
-</div>
-</div>
-<div class="section"><div class="section-title">2025 Additions (SAR 7.50M)</div><ul><li>Main plant completion and commissioning</li><li>Final electrical and civil works</li><li>Additional machinery</li><li>Pilot plant relocation costs</li></ul></div>
-<div class="section"><div class="section-title">Overall Status</div><p class="section-text">Project remains within approved budget framework. Total capitalized assets: <strong>SAR 42.31M</strong>.</p></div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 11 -->
-<div class="section" id="item11">
-<div class="answer-header"><div class="answer-num">11</div><div><div class="answer-title">Remaining Project Costs / Future CAPEX</div><span class="toc-cat cat-future">Future CAPEX</span></div></div>
-<div class="section"><div class="section-title">Total Remaining CAPEX: SAR 8.84M</div>
-<table class="data-table">
-<tr><th>Category</th><th>Amount (SAR M)</th><th>Notes</th></tr>
-<tr><td>Pilot Plant Completion</td><td>4.35</td><td>Equipment, commissioning, testing</td></tr>
-<tr><td>Vehicles & Heavy Equipment</td><td>3.94</td><td>Trucks, loaders, machinery</td></tr>
-<tr><td>Contingency & Project Management</td><td>0.55</td><td>Budgeted buffer</td></tr>
-<tr class="total-row"><td>Total</td><td>8.84</td><td></td></tr>
-</table>
-</div>
-<div class="section"><div class="section-title">Funding Sources</div>
-<ul><li>Expected shareholder contributions: SAR 7.00M</li><li>Internal cash generation: SAR 1.84M</li></ul>
-<p class="section-text">Expected Completion: Q4 2026 / Q1 2027</p>
-</div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 12 -->
-<div class="section" id="item12">
-<div class="answer-header"><div class="answer-num">12</div><div><div class="answer-title">CWIP / Construction Work in Progress</div><span class="toc-cat cat-fixed">Fixed Assets</span></div></div>
-<div class="section"><div class="section-title">PP&E Composition Chart</div>
-<div class="pie-wrap">
-<div class="pie-svg-container">
-<svg width="200" height="200" viewBox="0 0 100 100">
-<circle cx="50" cy="50" r="40" fill="#2563eb" stroke="#fff" stroke-width="1.5"/>
-<path d="M50,50 L90,50 A40,40 0 0,1 34.27,84.27 Z" fill="#10b981" stroke="#fff" stroke-width="1.5"/>
-<path d="M50,50 L34.27,84.27 A40,40 0 0,1 10,50 Z" fill="#f59e0b" stroke="#fff" stroke-width="1.5"/>
-<path d="M50,50 L10,50 A40,40 0 0,1 27.61,14.5 Z" fill="#8b5cf6" stroke="#fff" stroke-width="1.5"/>
-<path d="M50,50 L27.61,14.5 A40,40 0 0,1 50,10 Z" fill="#ef4444" stroke="#fff" stroke-width="1.5"/>
-<text x="72" y="35" text-anchor="middle" font-size="6" fill="#fff" font-weight="800">60%</text>
-<text x="60" y="78" text-anchor="middle" font-size="5" fill="#fff" font-weight="700">25%</text>
-<text x="22" y="66" text-anchor="middle" font-size="4" fill="#fff" font-weight="700">8%</text>
-<text x="18" y="38" text-anchor="middle" font-size="3.5" fill="#fff" font-weight="700">2%</text>
-<text x="40" y="18" text-anchor="middle" font-size="4" fill="#fff" font-weight="700">5%</text>
-</svg>
-<div class="pie-center"><div class="pie-center-label">PP&E</div><div class="pie-center-value">SAR 40M</div></div>
-</div>
-<div class="pie-legend">
-<div class="pie-legend-item"><div class="pie-legend-color" style="background:#2563eb"></div><strong>Building & Infra: 60% (~SAR 24M)</strong></div>
-<div class="pie-legend-item"><div class="pie-legend-color" style="background:#10b981"></div>Processing Equipment: 25% (~SAR 10M)</div>
-<div class="pie-legend-item"><div class="pie-legend-color" style="background:#f59e0b"></div>Vehicles: 8% (~SAR 3.2M)</div>
-<div class="pie-legend-item"><div class="pie-legend-color" style="background:#8b5cf6"></div>Furniture & Tools: 2% (~SAR 0.8M)</div>
-<div class="pie-legend-item"><div class="pie-legend-color" style="background:#ef4444"></div>CWIP: 5% (~SAR 2M)</div>
-</div>
-</div>
-</div>
-<div class="section"><div class="section-title">PP&E Composition (31 Dec 2025)</div><ul><li>Total PP&E (Net): SAR 40,025,911</li><li>Additions in 2025: SAR 7,500,743</li><li>Building & Infrastructure: ~60%</li><li>Processing Equipment (Addforce): ~25%</li></ul></div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 13 -->
-<div class="section" id="item13">
-<div class="answer-header"><div class="answer-num">13</div><div><div class="answer-title">Land Lease Contract / Site Location</div><span class="toc-cat cat-real">Real Estate</span></div></div>
-<div class="section"><div class="section-title">Municipality Land Contract</div><ul><li>Historical: SAR 228,000/year (SAR 19,000/month)</li><li>Updated (2027+): SAR 1,000,000/year</li><li>Initial lease: 5 years from 1 Aug 2021, renewable</li><li>2025 relocation within same premises</li></ul></div>
-<div class="section"><div class="section-title">PwC Questions</div>
-<div class="sub-section"><div class="sub-section-title">Land Coverage</div><p class="section-text">Sufficient for pilot plant and main processing facility.</p></div>
-<div class="sub-section"><div class="sub-section-title">Commercial Operations</div><p class="section-text">Full-scale plant budgeted to commence 1 April 2027.</p></div>
-</div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-
-<!-- ITEM 14 -->
-<div class="section" id="item14">
-<div class="answer-header"><div class="answer-num">14</div><div><div class="answer-title">Marketing Strategy</div><span class="toc-cat cat-strategy">Strategy</span></div></div>
-<div class="section"><div class="section-title">Expenses on Sales (Budgeted)</div>
-<div class="highlight-box">
-<div class="highlight-title">Sales Commissions & Marketing (SAR)</div>
-<table class="data-table">
-<thead><tr><th>Year</th><th>Expenses on Sales (SAR)</th><th>% of Revenue</th></tr></thead>
-<tbody>
-<tr><td>2027</td><td>40,387</td><td>0.1%</td></tr>
-<tr><td>2028</td><td>53,849</td><td>0.1%</td></tr>
-<tr><td>2029</td><td>107,698</td><td>0.2%</td></tr>
-<tr><td>2030</td><td>107,698</td><td>0.2%</td></tr>
-<tr><td>2031</td><td>107,698</td><td>0.2%</td></tr>
-<tr><td>2032</td><td>161,546</td><td>0.3%</td></tr>
-<tr><td>2033</td><td>161,546</td><td>0.3%</td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="section"><div class="section-title">Marketing Approach</div>
-<ul>
-<li>B2B direct sales to construction and infrastructure contractors</li>
-<li>Sales commissions structure based on volume targets</li>
-<li>Industry partnerships with major waste generators</li>
-<li>Minimal traditional advertising; focus on relationship-based sales</li>
-<li>Commission rates scale with production volume growth</li>
-</ul></div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 14b - 2027-2033 Projections -->
-<div class="section" id="item14b">
-<div class="answer-header"><div class="answer-num">14b</div><div><div class="answer-title">2027-2033 Projections & Key Assumptions</div><span class="toc-cat cat-business">Business Plan</span></div></div>
-<div class="section"><div class="section-title">2027-2033 Projections (Updated Budget July 2026)</div>
-<div class="highlight-box">
-<table class="data-table">
-<thead><tr><th>Year</th><th>Revenue (SAR M)</th><th>EBITDA (SAR M)</th><th>Net Income (SAR M)</th></tr></thead>
-<tbody>
-<tr><td>2027</td><td>40.39</td><td>17.96</td><td>11.02</td></tr>
-<tr><td>2028</td><td>53.85</td><td>30.33</td><td>23.40</td></tr>
-<tr><td>2029</td><td>53.85</td><td>29.51</td><td>22.59</td></tr>
-<tr><td>2030</td><td>53.85</td><td>28.49</td><td>21.57</td></tr>
-<tr><td>2031</td><td>53.85</td><td>27.90</td><td>20.98</td></tr>
-<tr><td>2032</td><td>53.85</td><td>27.27</td><td>20.35</td></tr>
-<tr><td>2033</td><td>53.85</td><td>26.75</td><td>19.83</td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="section"><div class="section-title">Key Budget Assumptions (Updated July 2026)</div>
-<ul>
-<li>Daily Processing Capacity: 3,000 tonnes</li>
-<li>Recovery Rate of Metal (A): 4.5% (updated)</li>
-<li>Recovery Rate of Metal (B): 1.5% (updated)</li>
-<li>Pure Scrap Metal Price: SAR 1,200/tonne (base of selling price)</li>
-<li>Selling Price of Metal A: SAR 900/tonne</li>
-<li>Selling Price of Metal B: SAR 700/tonne</li>
-<li>Land Rent: SAR 1,000,000/year (updated)</li>
-<li>Salaries: Basic x 12 x 1.25 (updated from 1.5)</li>
-<li>Packaging/Contingency: 2% of sales (added)</li>
-<li>Equipment: Leased initially, transitioning to purchase as cash flows permit</li>
-</ul>
-<p class="section-text"><strong>2027 Note:</strong> Revenue reflects 9 months of operations (April 1, 2027, start date) at 75% of annual production capacity.</p>
-</div>
-<div class="section"><div class="section-title">Totals (2027-2033)</div>
-<div class="info-grid">
-<div class="info-card"><div class="value">SAR 363.48M</div><div class="label">Total Projected Revenue</div></div>
-<div class="info-card"><div class="value">SAR 139.74M</div><div class="label">Total Projected Net Income</div></div>
-</div>
-</div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 15 -->
-<div class="section" id="item15">
-<div class="answer-header"><div class="answer-num">15</div><div><div class="answer-title">Operating Expenses (OPEX)</div><span class="toc-cat cat-opex">OpEx</span></div></div>
-<div class="section"><div class="section-title">Total OPEX Breakdown (SAR)</div>
-<div class="highlight-box">
-<table class="data-table">
-<thead><tr><th>Year</th><th>Direct Expenses</th><th>Overhead Expenses</th><th>Total OPEX</th></tr></thead>
-<tbody>
-<tr><td>2027</td><td>15,689,652</td><td>3,362,062</td><td>19,051,714</td></tr>
-<tr><td>2028</td><td>13,926,066</td><td>3,633,831</td><td>17,559,897</td></tr>
-<tr><td>2029</td><td>14,398,831</td><td>3,972,818</td><td>18,371,649</td></tr>
-<tr><td>2030</td><td>14,937,745</td><td>4,456,713</td><td>19,394,458</td></tr>
-<tr><td>2031</td><td>15,130,162</td><td>4,850,804</td><td>19,980,966</td></tr>
-<tr><td>2032</td><td>15,286,522</td><td>5,324,604</td><td>20,611,126</td></tr>
-<tr><td>2033</td><td>15,456,017</td><td>5,673,999</td><td>21,130,016</td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="section"><div class="section-title">Major Direct Expense Items (2027)</div>
-<div class="bar-chart-container">
-<h4 class="chart-title">Direct Expenses Breakdown 2027 (SAR)</h4>
-<div class="bar-chart">
-<div class="bar-row"><div class="bar-label">Depreciation</div><div class="bar-wrap"><div class="bar" style="height:42px;width:42%;background:linear-gradient(90deg,#ef4444,#f87171)"><span class="bar-val">6.65M</span></div></div></div>
-<div class="bar-row"><div class="bar-label">Utilities (Fuel/Elec)</div><div class="bar-wrap"><div class="bar" style="height:19px;width:19%;background:linear-gradient(90deg,#f59e0b,#fbbf24)"><span class="bar-val">2.92M</span></div></div></div>
-<div class="bar-row"><div class="bar-label">Equipment Rent</div><div class="bar-wrap"><div class="bar" style="height:13px;width:13%;background:linear-gradient(90deg,#8b5cf6,#a78bfa)"><span class="bar-val">1.98M</span></div></div></div>
-<div class="bar-row"><div class="bar-label">Spare Parts</div><div class="bar-wrap"><div class="bar" style="height:9px;width:9%;background:linear-gradient(90deg,#10b981,#34d399)"><span class="bar-val">1.33M</span></div></div></div>
-<div class="bar-row"><div class="bar-label">Land Rent</div><div class="bar-wrap"><div class="bar" style="height:6px;width:6%;background:linear-gradient(90deg,#2563eb,#60a5fa)"><span class="bar-val">1.02M</span></div></div></div>
-<div class="bar-row"><div class="bar-label">Prod. Salaries</div><div class="bar-wrap"><div class="bar" style="height:5px;width:5%;background:linear-gradient(90deg,#06b6d4,#22d3ee)"><span class="bar-val">0.83M</span></div></div></div>
-<div class="bar-row"><div class="bar-label">Other Direct</div><div class="bar-wrap"><div class="bar" style="height:4px;width:4%;background:linear-gradient(90deg,#64748b,#94a3b8)"><span class="bar-val">0.61M</span></div></div></div>
-</div>
-</div>
-</div>
-<div class="section"><div class="section-title">Key Overhead Items (2027)</div>
-<ul>
-<li><strong>Salaries (Admin):</strong> SAR 2,385,000 (71% of overhead)</li>
-<li><strong>Depreciation (Admin):</strong> SAR 290,000</li>
-<li><strong>GOSI (Admin):</strong> SAR 98,700</li>
-<li><strong>Security Guard:</strong> SAR 96,000</li>
-<li><strong>Office Rent:</strong> SAR 100,000</li>
-<li><strong>Consultant Expenses:</strong> SAR 35,000</li>
-</ul></div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 15b - Board Materials -->
-<div class="section" id="item15b">
-<div class="answer-header"><div class="answer-num">15b</div><div><div class="answer-title">Board Materials & Budget Approval</div><span class="toc-cat cat-governance">Governance</span></div></div>
-<div class="section"><div class="section-title">Internal Board Materials</div>
-<ul>
-<li>Market analysis and demand forecasts</li>
-<li>Technology readiness assessment (Addforce partnership)</li>
-<li>Updated feasibility study (2023 revision)</li>
-<li>Operational capacity and utilization plans (3,000 tonnes/day)</li>
-<li>Revenue projections by product line</li>
-<li>Cost structure and margin analysis</li>
-<li>CAPEX requirements and funding plan</li>
-<li>Risk assessment and mitigation strategies</li>
-</ul>
-</div>
-<div class="section"><div class="section-title">Budget Approval Process</div>
-<p class="section-text">The 2027-2033 Business Plan (updated July 2026) was reviewed and approved by the Board of Directors. The budget incorporates:</p>
-<ul>
-<li>Revised production assumptions (updated recovery rates: 4.5% Metal A, 1.5% Metal B)</li>
-<li>Updated salary structure (1.25x multiplier)</li>
-<li>Equipment lease strategy to optimize working capital</li>
-<li>Revised land rent (SAR 1,000,000/year) and utility costs</li>
-<li>Contingency provision of 2% on sales</li>
-</ul>
-</div>
-<div class="section"><div class="section-title">Board Conclusion</div>
-<div class="highlight-box" style="background:#d1fae5">
-The Board-approved budget demonstrates the Company's path to profitability with 2027 net income projected at <strong>SAR 11.02M</strong>, growing to <strong>SAR 23.40M in 2028</strong> at steady-state operations.
-</div>
-</div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 16 -->
-<div class="section" id="item16">
-<div class="answer-header"><div class="answer-num">16</div><div><div class="answer-title">Workforce / Number of Employees</div><span class="toc-cat cat-hr">HR</span></div></div>
-<div class="section"><div class="section-title">Total Headcount: 24 Employees (2027)</div>
-<div class="highlight-box">
-<table class="data-table">
-<thead><tr><th>Category</th><th>Count</th><th>2027 Salaries (SAR)</th></tr></thead>
-<tbody>
-<tr><td><strong>G&A (Management)</strong></td><td><strong>4</strong></td><td><strong>1,080,000</strong></td></tr>
-<tr><td>&nbsp;&nbsp;General Manager</td><td>1</td><td>450,000</td></tr>
-<tr><td>&nbsp;&nbsp;Finance Manager</td><td>1</td><td>300,000</td></tr>
-<tr><td>&nbsp;&nbsp;Internal Auditor</td><td>1</td><td>150,000</td></tr>
-<tr><td>&nbsp;&nbsp;HR</td><td>1</td><td>180,000</td></tr>
-<tr><td><strong>Production (Direct)</strong></td><td><strong>20</strong></td><td><strong>2,138,250</strong></td></tr>
-<tr><td>&nbsp;&nbsp;Production Manager</td><td>1</td><td>525,000</td></tr>
-<tr><td>&nbsp;&nbsp;Project Engineer</td><td>1</td><td>150,000</td></tr>
-<tr><td>&nbsp;&nbsp;Logistic In-charge</td><td>1</td><td>120,000</td></tr>
-<tr><td>&nbsp;&nbsp;Sales Representatives</td><td>2</td><td>300,000</td></tr>
-<tr><td>&nbsp;&nbsp;Site Supervisor</td><td>1</td><td>210,000</td></tr>
-<tr><td>&nbsp;&nbsp;Control Room Operators</td><td>2</td><td>405,000</td></tr>
-<tr><td>&nbsp;&nbsp;Electrician</td><td>1</td><td>27,000</td></tr>
-<tr><td>&nbsp;&nbsp;Mechanical Technical</td><td>1</td><td>45,000</td></tr>
-<tr><td>&nbsp;&nbsp;Drivers</td><td>4</td><td>172,500</td></tr>
-<tr><td>&nbsp;&nbsp;Laborers</td><td>6</td><td>183,500</td></tr>
-<tr><td><strong>TOTAL</strong></td><td><strong>24</strong></td><td><strong>3,218,250</strong></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="section"><div class="section-title">Department Breakdown</div>
-<div class="pie-chart-container">
-<svg viewBox="0 0 220 220" class="pie-svg">
-<circle cx="110" cy="110" r="70" fill="#f8fafc"/>
-<g transform="translate(110,110)">
-<path d="M 0,-70 A 70,70 0 1,1 -60.62,35 L 0,0 Z" fill="#2563eb"/>
-<path d="M -60.62,35 A 70,70 0 0,1 0,-70 L 0,0 Z" fill="#10b981"/>
-<text x="15" y="25" text-anchor="middle" fill="white" font-size="11" font-weight="bold">83%</text>
-<text x="-35" y="-15" text-anchor="middle" fill="white" font-size="10" font-weight="bold">17%</text>
-</g>
-</svg>
-<div class="pie-legend">
-<div class="pie-legend-item"><div class="pie-legend-color" style="background:#2563eb"></div><strong>Production: 83% (20 staff)</strong></div>
-<div class="pie-legend-item"><div class="pie-legend-color" style="background:#10b981"></div>G&A Management: 17% (4 staff)</div>
-</div>
-</div>
-</div>
-<div class="section"><div class="section-title">Salary Growth Assumption</div>
-<p class="section-text">Annual salary increase of 10% applied across all years. Total salary bill grows from <strong>SAR 3.22M in 2027</strong> to <strong>SAR 4.41M in 2033</strong>.</p></div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 16b - Audit Information -->
-<div class="section" id="item16b">
-<div class="answer-header"><div class="answer-num">16b</div><div><div class="answer-title">Audit Information & Accounting Standards</div><span class="toc-cat cat-financial">Financial</span></div></div>
-<div class="section"><div class="section-title">Audit Details</div>
-<div class="info-grid">
-<div class="info-card"><div class="value">Aldar Audit Bureau</div><div class="label">Auditor (Abdullah Al Basri & Co.)</div></div>
-<div class="info-card"><div class="value">IFRS for SMEs</div><div class="label">Accounting Standard (SOCPA endorsed)</div></div>
-<div class="info-card"><div class="value">Going Concern</div><div class="label">Supported by shareholder letters & Board plan</div></div>
-</div>
-</div>
-<div class="section"><div class="section-title">Audited Financial Summary Table</div>
-<div class="highlight-box">
-<table class="data-table">
-<thead><tr><th>Year</th><th>Revenue (SAR M)</th><th>Net Profit/(Loss) (SAR M)</th><th>Total Assets (SAR M)</th></tr></thead>
-<tbody>
-<tr><td>2021</td><td>0.71</td><td>(0.56)</td><td>20.14</td></tr>
-<tr><td>2022</td><td>5.67</td><td>(1.02)</td><td>30.94</td></tr>
-<tr><td>2023</td><td>11.44</td><td>1.33</td><td>33.66</td></tr>
-<tr><td>2024</td><td>16.98</td><td>1.47</td><td>40.33</td></tr>
-<tr><td>2025</td><td>6.23</td><td>(2.84)</td><td>45.54</td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 17 -->
-<div class="section" id="item17">
-<div class="answer-header"><div class="answer-num">17</div><div><div class="answer-title">Production Capacity</div><span class="toc-cat cat-ops">Operations</span></div></div>
-<div class="section"><div class="section-title">Processing Capacity Assumptions</div>
-<div class="highlight-box">
-<div class="highlight-title">Key Operating Parameters</div>
-<ul>
-<li><strong>Daily Processing Capacity:</strong> 3,000 tonnes/day</li>
-<li><strong>Annual Processing Capacity:</strong> 900,000 tonnes/year</li>
-<li><strong>Recovery Rate (Metal):</strong> 6%</li>
-<li><strong>Purity Rate:</strong> 75%</li>
-<li><strong>Recovered Steel A Quantity:</strong> 40,500 tonnes (4.5%)</li>
-<li><strong>Recovered Steel B Quantity:</strong> 13,500 tonnes (1.5%)</li>
-<li><strong>Tailings:</strong> 828,000 tonnes (92%)</li>
-<li><strong>Raw Material Purchase Price:</strong> SAR 12/tonne</li>
-</ul>
-</div>
-</div>
-<div class="section"><div class="section-title">Product Pricing</div>
-<div class="highlight-box">
-<table class="data-table">
-<thead><tr><th>Product</th><th>Price/tonne (SAR)</th></tr></thead>
-<tbody>
-<tr><td>Recovered Metal (Grade A)</td><td>900</td></tr>
-<tr><td>Recovered Metal (Grade B)</td><td>700</td></tr>
-<tr><td>Tailings</td><td>12</td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="section"><div class="section-title">Saleable Quantity Note</div>
-<p class="section-text">80% of recovered metal is saleable during the physical financial year. Scrap metal market price assumed at <strong>SAR 1,200/tonne</strong>.</p></div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 17b - 2025 Balance Sheet & Cash Flow -->
-<div class="section" id="item17b">
-<div class="answer-header"><div class="answer-num">17b</div><div><div class="answer-title">2025 Balance Sheet & Cash Flow</div><span class="toc-cat cat-performance">Performance</span></div></div>
-<div class="section"><div class="section-title">Balance Sheet (31 Dec 2025)</div>
-<div class="highlight-box">
-<table class="data-table">
-<thead><tr><th>Item</th><th>Amount (SAR)</th></tr></thead>
-<tbody>
-<tr><td>Cash</td><td>256,031</td></tr>
-<tr><td>Trade Receivables</td><td>660,354</td></tr>
-<tr><td>Inventory</td><td>1,238,504</td></tr>
-<tr><td>Total Current Assets</td><td>3,225,509</td></tr>
-<tr><td>PP&E (Net)</td><td>40,025,911</td></tr>
-<tr><td>Intangible Assets</td><td>2,285,670</td></tr>
-<tr><td><strong>Total Assets</strong></td><td><strong>45,537,090</strong></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="section"><div class="section-title">Cash Flow (2025)</div>
-<div class="highlight-box">
-<table class="data-table">
-<thead><tr><th>Item</th><th>Amount (SAR)</th></tr></thead>
-<tbody>
-<tr><td>Operating cash flow (before WC changes)</td><td>(1,204,420)</td></tr>
-<tr><td>Net cash from operating activities</td><td>9,913,959</td></tr>
-<tr><td>Cash used in investing activities</td><td>(8,559,937)</td></tr>
-<tr><td>Cash used in financing activities</td><td>(1,480,464)</td></tr>
-<tr><td><strong>Net decrease in cash</strong></td><td><strong>(126,442)</strong></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="section"><div class="section-title">P&L Summary Table (2021-2025)</div>
-<div class="highlight-box">
-<table class="data-table">
-<thead><tr><th>Year</th><th>Revenue (SAR M)</th><th>Gross Profit (SAR M)</th><th>Operating Profit (SAR M)</th><th>Net Profit (SAR M)</th></tr></thead>
-<tbody>
-<tr><td>2021</td><td>0.71</td><td>0.21</td><td>(0.55)</td><td>(0.56)</td></tr>
-<tr><td>2022</td><td>5.67</td><td>(0.18)</td><td>(1.28)</td><td>(1.02)</td></tr>
-<tr><td>2023</td><td>11.44</td><td>2.52</td><td>1.41</td><td>1.33</td></tr>
-<tr><td>2024</td><td>16.98</td><td>2.75</td><td>1.39</td><td>1.47</td></tr>
-<tr><td>2025</td><td>6.23</td><td>(1.31)</td><td>(2.40)</td><td>(2.84)</td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 18 -->
-<div class="section" id="item18">
-<div class="answer-header"><div class="answer-num">18</div><div><div class="answer-title">Raw Material Sources</div><span class="toc-cat cat-supply">Supply Chain</span></div></div>
-<div class="section"><div class="section-title">Raw Material Profile</div>
-<div class="highlight-box">
-<ul>
-<li><strong>Source:</strong> Mill scale (iron oxide waste from steel rolling)</li>
-<li><strong>Purchase Price:</strong> SAR 12/tonne</li>
-<li><strong>Annual Requirement:</strong> 900,000 tonnes</li>
-<li><strong>Total Raw Material Cost (2027):</strong> SAR 10,800,000 (Direct) + SAR 2,902,500 (Transport) = <strong>SAR 13,702,500</strong></li>
-<li><strong>Handling Loss:</strong> 2% (18,000 tonnes)</li>
-</ul>
-</div>
-</div>
-<div class="section"><div class="section-title">Transportation Costs</div>
-<div class="highlight-box">
-<table class="data-table">
-<thead><tr><th>Type</th><th>2027 Cost (SAR)</th><th>2028+ Cost (SAR)</th></tr></thead>
-<tbody>
-<tr><td>Slag IN (Transportation)</td><td>2,700,000</td><td>3,600,000</td></tr>
-<tr><td>Fe Metal OUT</td><td>202,500</td><td>270,000</td></tr>
-<tr><td><strong>Total Transportation</strong></td><td><strong>2,902,500</strong></td><td><strong>3,870,000</strong></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 18b - Sales Contracts Detail -->
-<div class="section" id="item18b">
-<div class="answer-header"><div class="answer-num">18b</div><div><div class="answer-title">Sales Contracts & Customer Agreements</div><span class="toc-cat cat-sales">Sales</span></div></div>
-<div class="section"><div class="section-title">Steel Slag Residue (Artificial Aggregate) Sales Agreements</div>
-<div class="highlight-box">
-<ul>
-<li><strong>Modern Arch-Establishment</strong> (Main Supplier of Saudi Aramco)</li>
-<li><strong>Al Rawaf</strong></li>
-<li><strong>Spot Sales (Arafat, Qamar)</strong></li>
-</ul>
-</div>
-</div>
-<div class="section"><div class="section-title">Recovered Metal Sales Agreements</div>
-<div class="highlight-box">
-<ul>
-<li><strong>Smart Gulf</strong></li>
-<li><strong>Samaa Elemar</strong></li>
-<li><strong>Jeddah Steel</strong></li>
-<li><strong>ASCO</strong> (Skull Metal Sales)</li>
-</ul>
-</div>
-</div>
-<div class="section"><div class="section-title">Revenue Structure (2025 Audited)</div>
-<ul>
-<li>Recovered metal products: ~90% of revenue</li>
-<li>Slag by-products: ~10% of revenue</li>
-<li>Revenue recognition follows delivery terms with risks/rewards transferred at point of delivery</li>
-</ul>
-</div>
-<div class="section"><div class="section-title">Customer Concentration</div>
-<p class="section-text">Modern Arch remains the primary offtake partner for recovered ferrous metals. The Company is actively developing additional customer relationships ahead of the full-scale plant's 2027 commencement.</p>
-</div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 19 -->
-<div class="section" id="item19">
-<div class="answer-header"><div class="answer-num">19</div><div><div class="answer-title">Revenue Breakdown by Product</div><span class="toc-cat cat-sales">Sales</span></div></div>
-<div class="section"><div class="section-title">Product Mix Revenue (2027)</div>
-<div class="pie-chart-container">
-<svg viewBox="0 0 220 220" class="pie-svg">
-<circle cx="110" cy="110" r="70" fill="#f8fafc"/>
-<g transform="translate(110,110)">
-<path d="M 0,-70 A 70,70 0 1,1 -32.9,61.87 L 0,0 Z" fill="#2563eb"/>
-<path d="M -32.9,61.87 A 70,70 0 0,1 0,-70 L 0,0 Z" fill="#10b981"/>
-<text x="22" y="10" text-anchor="middle" fill="white" font-size="11" font-weight="bold">85%</text>
-<text x="-25" y="-35" text-anchor="middle" fill="white" font-size="9" font-weight="bold">15%</text>
-</g>
-</svg>
-<div class="pie-legend">
-<div class="pie-legend-item"><div class="pie-legend-color" style="background:#2563eb"></div><strong>Recovered Metal: 85% (SAR 34.43M)</strong></div>
-<div class="pie-legend-item"><div class="pie-legend-color" style="background:#10b981"></div>Tailings Sales: 15% (SAR 5.96M)</div>
-</div>
-</div>
-</div>
-<div class="section"><div class="section-title">Unit Economics (2027)</div>
-<div class="highlight-box">
-<table class="data-table">
-<thead><tr><th>Metric</th><th>Value</th></tr></thead>
-<tbody>
-<tr><td>Average Revenue per tonne processed</td><td>SAR 44.87</td></tr>
-<tr><td>Average Cost per tonne processed</td><td>SAR 27.23</td></tr>
-<tr><td>Gross Margin per tonne</td><td>SAR 17.64</td></tr>
-<tr><td>Gross Margin %</td><td>39.3%</td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 19b - Feedstock Supply Detail -->
-<div class="section" id="item19b">
-<div class="answer-header"><div class="answer-num">19b</div><div><div class="answer-title">Feedstock Supply Agreements - Detailed</div><span class="toc-cat cat-supply">Supply Chain</span></div></div>
-<div class="section"><div class="section-title">Arab Steel Company (ASCO) / National Steel Company (NASCO)</div>
-<div class="highlight-box">
-<ul>
-<li><strong>Exclusive agreement executed in February 2022</strong></li>
-<li>Securing access to approximately <strong>2.5 million tonnes</strong> of legacy steel slag currently available on site</li>
-<li>Together with approximately <strong>450,000 tonnes</strong> of newly generated steel slag produced annually</li>
-<li>Ensuring a sustainable long-term supply of raw materials</li>
-</ul>
-</div>
-</div>
-<div class="section"><div class="section-title">Additional Feedstock Resources</div>
-<div class="highlight-box">
-<ul>
-<li>Existing accumulated slag stockpile estimated at <strong>2 million tons</strong></li>
-<li>Upcoming steel plants expected to generate additional <strong>1.4 million tons per year</strong> of fresh slag annually</li>
-</ul>
-</div>
-</div>
-<div class="section"><div class="section-title">Memorandums of Understanding (MOU)</div>
-<div class="highlight-box">
-<ul>
-<li><strong>SA/Bao Steel:</strong> MOU discussions ongoing regarding signing, Commencement in 2027</li>
-<li><strong>ESAR:</strong> MOU signed, Commencement in 2028</li>
-</ul>
-</div>
-</div>
-<div class="section"><div class="section-title">Hadeed Slag Stockpile - Jubail</div>
-<div class="highlight-box">
-<ul>
-<li>Negotiations underway with Hadeed to procure <strong>1 million tons</strong> of semi-processed slag</li>
-<li>Currently available for potential treatment and value recovery</li>
-<li>Hadeed is dissatisfied with current slag processing contractor due to failure to sell the tailings</li>
-<li>Current contractor contract expires in 2027, Hadeed willing to allow Rukam to bid</li>
-</ul>
-</div>
-</div>
-<div class="section"><div class="section-title">Kingdom-Wide & GCC Opportunities</div>
-<div class="info-grid">
-<div class="info-card"><div class="value">2M tons</div><div class="label">Kingdom-wide stockpiles</div></div>
-<div class="info-card"><div class="value">4M tons</div><div class="label">Qatar stockpiles (GCC)</div></div>
-</div>
-<p class="section-text">Total accessible slag supply exceeds projected processing requirements. Supply agreements provide reliable raw material for the planned industrial facility. Pricing structure (nominal fee) supports strong gross margins. Geographic proximity to suppliers minimizes transportation costs.</p>
-</div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 20 -->
-<div class="section" id="item20">
-<div class="answer-header"><div class="answer-num">20</div><div><div class="answer-title">Revenue Projections (Budget 2027-2033)</div><span class="toc-cat cat-sales">Sales</span></div></div>
-<div class="section"><div class="section-title">Budgeted Annual Revenue</div>
-<div class="chart-container">
-<h4 class="chart-title">Budgeted Annual Revenue (SAR millions)</h4>
-<div class="bar-chart">
-<div class="bar-row"><div class="bar-label">2027</div><div class="bar-wrap"><div class="bar" style="height:30px;width:75%;background:linear-gradient(90deg,#2563eb,#60a5fa)"><span class="bar-val">40.39M</span></div></div></div>
-<div class="bar-row"><div class="bar-label">2028</div><div class="bar-wrap"><div class="bar" style="height:40px;width:100%;background:linear-gradient(90deg,#2563eb,#60a5fa)"><span class="bar-val">53.85M</span></div></div></div>
-<div class="bar-row"><div class="bar-label">2029</div><div class="bar-wrap"><div class="bar" style="height:40px;width:100%;background:linear-gradient(90deg,#2563eb,#60a5fa)"><span class="bar-val">53.85M</span></div></div></div>
-<div class="bar-row"><div class="bar-label">2030</div><div class="bar-wrap"><div class="bar" style="height:40px;width:100%;background:linear-gradient(90deg,#2563eb,#60a5fa)"><span class="bar-val">53.85M</span></div></div></div>
-<div class="bar-row"><div class="bar-label">2031</div><div class="bar-wrap"><div class="bar" style="height:40px;width:100%;background:linear-gradient(90deg,#2563eb,#60a5fa)"><span class="bar-val">53.85M</span></div></div></div>
-<div class="bar-row"><div class="bar-label">2032</div><div class="bar-wrap"><div class="bar" style="height:40px;width:100%;background:linear-gradient(90deg,#2563eb,#60a5fa)"><span class="bar-val">53.85M</span></div></div></div>
-<div class="bar-row"><div class="bar-label">2033</div><div class="bar-wrap"><div class="bar" style="height:40px;width:100%;background:linear-gradient(90deg,#2563eb,#60a5fa)"><span class="bar-val">53.85M</span></div></div></div>
-</div>
-</div>
-</div>
-<div class="section"><div class="section-title">Revenue Composition</div>
-<div class="highlight-box">
-<table class="data-table">
-<thead><tr><th>Year</th><th>Recovered Metal (SAR)</th><th>Tailings (SAR)</th><th>Total (SAR)</th></tr></thead>
-<tbody>
-<tr><td>2027</td><td>34,425,000</td><td>5,961,600</td><td>40,386,600</td></tr>
-<tr><td>2028</td><td>45,900,000</td><td>7,948,800</td><td>53,848,800</td></tr>
-<tr><td>2029</td><td>45,900,000</td><td>7,948,800</td><td>53,848,800</td></tr>
-<tr><td>2030</td><td>45,900,000</td><td>7,948,800</td><td>53,848,800</td></tr>
-<tr><td>2031</td><td>45,900,000</td><td>7,948,800</td><td>53,848,800</td></tr>
-<tr><td>2032</td><td>45,900,000</td><td>7,948,800</td><td>53,848,800</td></tr>
-<tr><td>2033</td><td>45,900,000</td><td>7,948,800</td><td>53,848,800</td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="section"><div class="section-title">Revenue Drivers</div>
-<ul>
-<li>2027 is a ramp-up year (H2 only for metal recovery, full tailings sales)</li>
-<li>2028+ reaches steady-state at full 900,000 tonnes/year processing</li>
-<li>Metal recovery revenue represents ~85% of total revenue</li>
-<li>Tailings sales contribute ~15% as a by-product revenue stream</li>
-</ul></div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 20b - Finance Lease Terms -->
-<div class="section" id="item20b">
-<div class="answer-header"><div class="answer-num">20b</div><div><div class="answer-title">Finance Lease Terms & 2025 Movements</div><span class="toc-cat cat-debt">Debt</span></div></div>
-<div class="section"><div class="section-title">Finance Lease Terms</div>
-<div class="highlight-box">
-<ul>
-<li><strong>Interest rate:</strong> Implicit in lease (3-year term)</li>
-<li><strong>Assets:</strong> Vehicles and equipment (transferred to Company at lease end)</li>
-<li><strong>Lease terms:</strong> 3-year useful life, ownership transfers at end</li>
-</ul>
-</div>
-</div>
-<div class="section"><div class="section-title">2025 Movements</div>
-<div class="highlight-box">
-<table class="data-table">
-<thead><tr><th>Item</th><th>Amount (SAR)</th></tr></thead>
-<tbody>
-<tr><td>Finance lease payments</td><td>1,480,464</td></tr>
-<tr><td>Interest on finance leases</td><td>427,705</td></tr>
-<tr><td>Related party increase (funds received)</td><td>10,380,000</td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="section"><div class="section-title">Related Party Funding Detail</div>
-<div class="highlight-box">
-<ul>
-<li><strong>Due to Related Parties:</strong> SAR 43,018,956</li>
-<li>Unsecured, interest-free, repayable on demand</li>
-<li>Partners have confirmed intent to maintain balances until financial position improves</li>
-<li>Shareholder support letter provided confirming continued financial backing</li>
-</ul>
-</div>
-</div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 21 -->
-<div class="section" id="item21">
-<div class="answer-header"><div class="answer-num">21</div><div><div class="answer-title">Profitability Analysis (Budget 2027-2033)</div><span class="toc-cat cat-fin">Financial</span></div></div>
-<div class="section"><div class="section-title">Budgeted P&L Summary</div>
-<div class="chart-container">
-<h4 class="chart-title">Net Income (SAR millions) - PROFITABLE FROM YEAR 1</h4>
-<div class="bar-chart">
-<div class="bar-row"><div class="bar-label">2027</div><div class="bar-wrap"><div class="bar" style="height:27px;width:47%;background:linear-gradient(90deg,#10b981,#34d399)"><span class="bar-val">11.02M</span></div></div></div>
-<div class="bar-row"><div class="bar-label">2028</div><div class="bar-wrap"><div class="bar" style="height:40px;width:70%;background:linear-gradient(90deg,#10b981,#34d399)"><span class="bar-val">23.40M</span></div></div></div>
-<div class="bar-row"><div class="bar-label">2029</div><div class="bar-wrap"><div class="bar" style="height:39px;width:68%;background:linear-gradient(90deg,#10b981,#34d399)"><span class="bar-val">22.59M</span></div></div></div>
-<div class="bar-row"><div class="bar-label">2030</div><div class="bar-wrap"><div class="bar" style="height:37px;width:65%;background:linear-gradient(90deg,#10b981,#34d399)"><span class="bar-val">21.57M</span></div></div></div>
-<div class="bar-row"><div class="bar-label">2031</div><div class="bar-wrap"><div class="bar" style="height:36px;width:63%;background:linear-gradient(90deg,#10b981,#34d399)"><span class="bar-val">20.98M</span></div></div></div>
-<div class="bar-row"><div class="bar-label">2032</div><div class="bar-wrap"><div class="bar" style="height:35px;width:61%;background:linear-gradient(90deg,#10b981,#34d399)"><span class="bar-val">20.35M</span></div></div></div>
-<div class="bar-row"><div class="bar-label">2033</div><div class="bar-wrap"><div class="bar" style="height:34px;width:59%;background:linear-gradient(90deg,#10b981,#34d399)"><span class="bar-val">19.83M</span></div></div></div>
-</div>
-</div>
-</div>
-<div class="section"><div class="section-title">Detailed P&L (SAR)</div>
-<div class="highlight-box">
-<table class="data-table">
-<thead><tr><th>Year</th><th>Revenue</th><th>Cost of Sales</th><th>Gross Margin</th><th>OPEX</th><th>EBITDA</th><th>Depreciation</th><th>Net Income</th><th>Margin</th></tr></thead>
-<tbody>
-<tr><td>2027</td><td>40.39M</td><td>11.00M</td><td>29.38M</td><td>19.05M</td><td>17.96M</td><td>6.94M</td><td><strong>11.02M</strong></td><td>27.3%</td></tr>
-<tr><td>2028</td><td>53.85M</td><td>13.81M</td><td>40.04M</td><td>17.56M</td><td>30.34M</td><td>6.94M</td><td><strong>23.40M</strong></td><td>43.5%</td></tr>
-<tr><td>2029</td><td>53.85M</td><td>13.81M</td><td>40.04M</td><td>18.37M</td><td>29.53M</td><td>6.94M</td><td><strong>22.59M</strong></td><td>42.0%</td></tr>
-<tr><td>2030</td><td>53.85M</td><td>13.81M</td><td>40.04M</td><td>19.39M</td><td>28.50M</td><td>6.94M</td><td><strong>21.57M</strong></td><td>40.0%</td></tr>
-<tr><td>2031</td><td>53.85M</td><td>13.81M</td><td>40.04M</td><td>19.98M</td><td>27.92M</td><td>6.94M</td><td><strong>20.98M</strong></td><td>39.0%</td></tr>
-<tr><td>2032</td><td>53.85M</td><td>13.81M</td><td>40.04M</td><td>20.61M</td><td>27.29M</td><td>6.94M</td><td><strong>20.35M</strong></td><td>37.8%</td></tr>
-<tr><td>2033</td><td>53.85M</td><td>13.81M</td><td>40.04M</td><td>21.13M</td><td>26.77M</td><td>6.94M</td><td><strong>19.83M</strong></td><td>36.8%</td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="section"><div class="section-title">Key Profitability Insights</div>
-<div class="highlight-box" style="background:#d1fae5">
-<strong>Profitable from Year 1:</strong> Net income of SAR 11.02M in 2027 (27.3% margin), reaching peak of SAR 23.40M in 2028 (43.5% margin).
-</div>
-<ul>
-<li>Strong gross margin of ~74% (stable from 2028 onward)</li>
-<li>Net margins range from 27.3% (2027) to 43.5% (2028), stabilizing ~37-40%</li>
-<li>EBITDA margin exceeds 44% in all years</li>
-<li>Depreciation is the largest fixed cost at SAR 6.94M annually</li>
-<li>Cumulative net income (2027-2033): <strong>SAR 139.74M</strong></li>
-</ul></div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 21b - Zakat Details -->
-<div class="section" id="item21b">
-<div class="answer-header"><div class="answer-num">21b</div><div><div class="answer-title">Zakat Rate, Base & Status</div><span class="toc-cat cat-tax">Tax</span></div></div>
-<div class="section"><div class="section-title">Zakat Rate</div>
-<div class="highlight-box">
-<p class="section-text"><strong>2.577%</strong> of zakat base (effective from 2024, previously 2.5%)</p>
-</div>
-</div>
-<div class="section"><div class="section-title">Zakat Base Components</div>
-<div class="highlight-box">
-<ul>
-<li>Equity at year-end</li>
-<li>Non-current liabilities</li>
-<li>Less: Net book value of long-term assets</li>
-<li>Adjusted for provisions and reserves</li>
-</ul>
-</div>
-</div>
-<div class="section"><div class="section-title">Accumulated Tax Losses</div>
-<div class="highlight-box">
-<ul>
-<li>2025: Loss of SAR 2.84M added to accumulated losses</li>
-<li>Total accumulated losses: <strong>SAR 1.57M at 31 Dec 2025</strong></li>
-<li>These losses can be carried forward to offset future zakat-adjusted profits</li>
-</ul>
-</div>
-</div>
-<div class="section"><div class="section-title">Zakat Returns Status</div>
-<div class="highlight-box">
-<ul>
-<li>Returns submitted from incorporation to 31 Dec 2024</li>
-<li>Zakat certificates obtained for all filed years</li>
-<li>Assessments still under review by ZATCA</li>
-<li>No material disputes or assessments received to date</li>
-</ul>
-</div>
-</div>
-<a href="#" class="back-top">Back to Top</a></div>
-
-<!-- ITEM 22 -->
-<div class="section" id="item22">
-<div class="answer-header"><div class="answer-num">22</div><div><div class="answer-title">CAPEX, Depreciation & Funding</div><span class="toc-cat cat-fin">Financial</span></div></div>
-<div class="section"><div class="section-title">Capital Expenditure Breakdown</div>
-<div class="highlight-box">
-<table class="data-table">
-<thead><tr><th>Asset Category</th><th>Total Cost (SAR)</th><th>Depreciation Rate</th><th>Annual Depreciation</th></tr></thead>
-<tbody>
-<tr><td>Pilot Plant</td><td>6,336,275</td><td>10%</td><td>633,628</td></tr>
-<tr><td>Main Plant (Addforce)</td><td>47,304,420</td><td>10%</td><td>4,730,442</td></tr>
-<tr><td>Vehicles, Heavy Equipment & Generators</td><td>5,539,297</td><td>20%</td><td>1,107,859</td></tr>
-<tr><td>Tools</td><td>350,000</td><td>50%</td><td>175,000</td></tr>
-<tr><td><strong>Total Operational Assets</strong></td><td><strong>59,529,992</strong></td><td>-</td><td><strong>6,646,929</strong></td></tr>
-<tr><td>Furniture & Office Equipment</td><td>150,000</td><td>20%</td><td>30,000</td></tr>
-<tr><td>Computers & Software</td><td>50,000</td><td>20%</td><td>10,000</td></tr>
-<tr><td>Intangible Assets (Pre-Op/R&D)</td><td>2,500,000</td><td>10%</td><td>250,000</td></tr>
-<tr><td><strong>Other Capital Items</strong></td><td><strong>2,700,000</strong></td><td>-</td><td><strong>290,000</strong></td></tr>
-<tr><td><strong>Total Project Value</strong></td><td><strong>62,229,987</strong></td><td>-</td><td><strong>6,936,929</strong></td></tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="section"><div class="section-title">Equipment Lease Arrangement</div>
-<div class="highlight-box">
-<table class="data-table">
-<thead><tr><th>Item</th><th>Monthly Cost</th><th>Qty</th><th>2027 Cost (SAR)</th><th>2028+ Cost (SAR)</th></tr></thead>
-<tbody>
-<tr><td>Generators (Diesel)</td><td>35,000</td><td>3</td><td>1,260,000</td><td>0 (electricity connected)</td></tr>
-<tr><td>Excavators</td><td>15,000</td><td>2</td><td>360,000</td><td>360,000</td></tr>
-<tr><td>Wheel Loaders</td><td>15,000</td><td>2</td><td>360,000</td><td>360,000</td></tr>
-<tr><td><strong>Total Lease</strong></td><td>-</td><td>-</td><td><strong>1,980,000</strong></td><td><strong>720,000</strong></td></tr>
-</tbody>
-</table>
-<p class="section-text" style="font-size:0.85rem;color:#666;margin-top:8px"><em>Generators lease stops after electricity connection (estimated mid-2027). Heavy equipment leased until cash flow allows purchase.</em></p>
-</div>
-</div>
-<div class="section"><div class="section-title">Fuel vs Electricity Transition</div>
-<div class="highlight-box">
-<table class="data-table">
-<thead><tr><th>Year</th><th>Fuel Cost (SAR)</th><th>Electricity Cost (SAR)</th><th>Total Utilities</th></tr></thead>
-<tbody>
-<tr><td>2027 (H1=Generators, H2=Electricity)</td><td>2,920,704</td><td>included</td><td>2,920,704</td></tr>
-<tr><td>2028+ (Full Electricity)</td><td>1,318,272</td><td>1,077,312</td><td>1,318,272</td></tr>
-</tbody>
-</table>
-<p class="section-text" style="font-size:0.85rem;color:#666;margin-top:8px"><em>Electricity: 17,280 kWh/day x 26 days = 449,280 kWh/month x SAR 0.20/kWh = SAR 89,856/month</em></p>
-</div>
-</div>
-<a href="#" class="back-top">Back to Top</a></div>
-
+  <div class="highlight-box">
+    <span class="label">Key Notes</span>
+    1) 2027 is a 9-month operational year starting April 1. 2) Recovery rates: 4.5% Metal A + 1.5% Metal B. 3) Total recovered metal: 54,000 tonnes/year. 4) Tailings: 828,000 tonnes/year (92%). 5) 24 employees: 4 Admin + 20 Production. 6) Land rent: SAR 1,020,000/year. 7) Heavy equipment leased initially, purchased when cash flow permits.
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
 </div>
 
-<footer style="background:linear-gradient(135deg,#1e293b 0%,#334155 100%);color:white;padding:40px 30px;margin-top:60px;border-radius:12px 12px 0 0;text-align:center">
-<div style="font-size:1.3rem;font-weight:700;margin-bottom:15px">Rukam Industrial Company</div>
-<div style="opacity:0.9;margin-bottom:10px">PwC IRL Response - Interactive Dashboard</div>
-<div style="opacity:0.7;font-size:0.85rem">Data sourced from Audited Financial Statements 2021-2025 & Budget 2027-2033 (Updated 16 July 2026)</div>
-<div style="margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.2);font-size:0.8rem;opacity:0.6">
-&copy; 2025 Rukam Industrial Company. All rights reserved. | Prepared for PwC Independent Review.
-</div>
-</footer>
+<!-- ==================== 2. KEY ASSUMPTIONS ==================== -->
+<div class="section" id="assumptions">
+  <div class="section-title">Key Assumptions & Operating Parameters</div>
 
-<script>
-function toggleTOC(){var t=document.getElementById('toc');t.classList.toggle('collapsed');}
-function filterItems(){var s=document.getElementById('search').value.toLowerCase();var items=document.querySelectorAll('.section');items.forEach(function(item){var text=item.innerText.toLowerCase();if(text.includes(s)){item.style.display='block';}else{item.style.display='none';}});}
-</script>
-<!-- ITEM 22b - Going Concern Support -->
-<div class="section" id="item22b">
-<div class="answer-header"><div class="answer-num">22b</div><div><div class="answer-title">Going Concern Support</div><span class="toc-cat cat-gov">Governance</span></div></div>
-<div class="section"><div class="section-title">Going Concern Position</div>
-<p class="section-text">While the Company has not received direct government financial support, its going concern position is supported by:</p>
-<div class="highlight-box">
-<ul>
-<li><strong>Shareholder financial support letters</strong> (related party funding of SAR 43.02M)</li>
-<li><strong>Board-approved business plan</strong> demonstrating future profitability</li>
-<li><strong>Post-year-end profitability</strong> of SAR 8.03M as of 31 December 2026 (per Note 1.2 of 2025 FS)</li>
-</ul>
+  <div class="sub-section">
+    <div class="sub-section-title">Processing Capacity</div>
+    <div class="info-grid">
+      <div class="info-card"><div class="value">3,000</div><div class="label">Daily Processing (Tonnes)</div></div>
+      <div class="info-card"><div class="value">900,000</div><div class="label">Annual Processing (Tonnes)</div></div>
+      <div class="info-card"><div class="value">6%</div><div class="label">Total Recovery Rate</div></div>
+      <div class="info-card"><div class="value">75%</div><div class="label">Purity Rate</div></div>
+      <div class="info-card"><div class="value">80%</div><div class="label">Saleable Quantity Factor</div></div>
+      <div class="info-card"><div class="value">SAR 12</div><div class="label">Raw Material Purchase Price/tonne</div></div>
+    </div>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Recovery Output Calculation</div>
+    <div class="formula-box">
+      <span class="label">FORMULA: Recovered Metal A Quantity</span>
+      Yearly Processing Qty x Recovery Rate A = 900,000 x 4.5% = <strong>40,500 tonnes/year</strong>
+    </div>
+    <div class="formula-box">
+      <span class="label">FORMULA: Recovered Metal B Quantity</span>
+      Yearly Processing Qty x Recovery Rate B = 900,000 x 1.5% = <strong>13,500 tonnes/year</strong>
+    </div>
+    <div class="formula-box">
+      <span class="label">FORMULA: Total Recovered Metal (A+B)</span>
+      40,500 + 13,500 = <strong>54,000 tonnes/year (6%)</strong>
+    </div>
+    <div class="formula-box">
+      <span class="label">FORMULA: Tailings Quantity</span>
+      900,000 - 54,000 = <strong>828,000 tonnes/year (92%)</strong>
+    </div>
+    <div class="formula-box">
+      <span class="label">FORMULA: Raw Material Handling Loss</span>
+      900,000 x 2% = <strong>18,000 tonnes/year</strong>
+    </div>
+    <div class="formula-box">
+      <span class="label">FORMULA: Saleable Metal A (80% during physical financial year)</span>
+      40,500 x 80% = <strong>32,400 tonnes</strong>
+    </div>
+    <div class="formula-box">
+      <span class="label">FORMULA: Saleable Metal B (80% during physical financial year)</span>
+      13,500 x 80% = <strong>10,800 tonnes</strong>
+    </div>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Pricing Assumptions</div>
+    <table class="data-table">
+      <tr><th>Parameter</th><th>Value</th><th>Unit</th></tr>
+      <tr><td>Scrap Metal Market Price</td><td>1,200</td><td>SAR/tonne</td></tr>
+      <tr><td>Selling Price A (Recovered Metal A)</td><td>900</td><td>SAR/tonne</td></tr>
+      <tr><td>Selling Price B (Recovered Metal B)</td><td>700</td><td>SAR/tonne</td></tr>
+      <tr><td>Tailings Sales Price</td><td>12</td><td>SAR/tonne</td></tr>
+    </table>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Revenue Calculation Formulas</div>
+    <div class="formula-box">
+      <span class="label">FORMULA: Recovered Metal Sales (A&B) - Annual</span>
+      (32,400 x 900) + (10,800 x 700) = 29,160,000 + 7,560,000 = <strong>SAR 45,900,000/year</strong>
+    </div>
+    <div class="formula-box">
+      <span class="label">FORMULA: Tailings Sales - Annual</span>
+      828,000 x 12 = <strong>SAR 9,936,000/year</strong> | Monthly = <strong>SAR 828,000/month (H2)</strong> | <strong>SAR 513,240/month (H1)</strong>
+    </div>
+    <div class="formula-box">
+      <span class="label">FORMULA: Total Annual Sales (Steady-State)</span>
+      45,900,000 + 9,936,000 = <strong>SAR 53,850,000/year</strong> = <strong>SAR 53,848,800 (detailed calc)</strong>
+    </div>
+    <div class="formula-box">
+      <span class="label">FORMULA: 2027 Sales (9-month year, April 1 start, ramp-up)</span>
+      Metal Sales (H2 only, 75% capacity) + Tailings (full year) = 34,425,000 + 5,961,600 = <strong>SAR 40,386,600</strong>
+    </div>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
 </div>
+
+<!-- ==================== 3. 2022 SALES TARGET ==================== -->
+<div class="section" id="sales-target">
+  <div class="section-title">2022 Sales Target (Historical Reference Model)</div>
+  <div class="section-text">The 2022 sales target sheet served as the initial financial model template for the project. It demonstrates the monthly revenue composition across different product lines during the pre-commercial phase.</div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Monthly Revenue Composition (2022 Model)</div>
+    <table class="data-table">
+      <tr><th>Product Line</th><th>Monthly (SAR)</th><th>Annual (SAR)</th><th>% of Total</th></tr>
+      <tr><td>Mill Scale 1500 (Trading)</td><td>138,000</td><td>1,656,000</td><td>4.4%</td></tr>
+      <tr><td>Recover Metal SSP</td><td>1,248,000</td><td>13,728,000</td><td>36.2%</td></tr>
+      <tr><td>Aggregate</td><td>504,400</td><td>5,548,400</td><td>14.6%</td></tr>
+      <tr><td>Recover Metal Main</td><td>3,744,000</td><td>14,976,000</td><td>39.5%</td></tr>
+      <tr><td>Tailing</td><td>513,240</td><td>2,052,960</td><td>5.4%</td></tr>
+      <tr class="total-row"><td>Total Sales Revenues</td><td>6,147,640</td><td>37,961,360</td><td>100%</td></tr>
+    </table>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Cost Structure (2022 Model)</div>
+    <table class="data-table">
+      <tr><th>Product Line</th><th>Cost/Month</th><th>Annual Cost</th><th>Margin Rate</th></tr>
+      <tr><td>Trading</td><td>105,000</td><td>1,260,000</td><td>76.1%</td></tr>
+      <tr><td>Recover Metal</td><td>443,040</td><td>4,873,440</td><td>35.5%</td></tr>
+      <tr><td>Aggregate</td><td>180,960</td><td>1,990,560</td><td>35.9%</td></tr>
+      <tr><td>Metal (Main)</td><td>1,466,400</td><td>5,865,600</td><td>39.2%</td></tr>
+      <tr><td>Tailing</td><td>93,600</td><td>374,400</td><td>18.2%</td></tr>
+      <tr class="total-row"><td>Total Cost of Sales</td><td>2,289,000</td><td>13,764,000</td><td>37.8%</td></tr>
+    </table>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Transportation Costs (2022 Model)</div>
+    <table class="data-table">
+      <tr><th>Type</th><th>Monthly</th><th>Annual</th><th>% of Revenue</th></tr>
+      <tr><td>Recover Metal Transport</td><td>239,980</td><td>2,639,780</td><td>6.9%</td></tr>
+      <tr><td>Aggregate Transport</td><td>98,020</td><td>1,078,220</td><td>2.8%</td></tr>
+      <tr><td>Metal Transport (Main)</td><td>30,420</td><td>121,680</td><td>0.3%</td></tr>
+      <tr class="total-row"><td>Total Transportation</td><td>368,420</td><td>3,839,680</td><td>10.1%</td></tr>
+    </table>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
 </div>
-<a href="#" class="back-top">Back to Top</a></div>
+
+<!-- ==================== 4. P&L STATEMENT ==================== -->
+<div class="section" id="pnl">
+  <div class="section-title">Profit & Loss Statement (2027-2033)</div>
+
+  <table class="data-table">
+    <tr><th>Description</th><th>2027</th><th>2028</th><th>2029</th><th>2030</th><th>2031</th><th>2032</th><th>2033</th><th>Total</th></tr>
+    <tr class="total-row"><td>Total Sales</td><td>40,386,600</td><td>53,848,800</td><td>53,848,800</td><td>53,848,800</td><td>53,848,800</td><td>53,848,800</td><td>53,848,800</td><td>363,479,400</td></tr>
+    <tr><td>Cost Of Raw Material</td><td>11,002,500</td><td>13,806,000</td><td>13,806,000</td><td>13,806,000</td><td>13,806,000</td><td>13,806,000</td><td>13,806,000</td><td>93,838,500</td></tr>
+    <tr><td>Direct Expenses</td><td>8,354,223</td><td>6,361,138</td><td>6,833,903</td><td>7,372,817</td><td>7,565,234</td><td>7,721,593</td><td>7,891,088</td><td>52,099,996</td></tr>
+    <tr class="subtotal-row"><td>Total Gross Margin</td><td>21,029,877</td><td>33,681,662</td><td>33,208,897</td><td>32,669,983</td><td>32,477,566</td><td>32,321,207</td><td>32,151,712</td><td>217,540,904</td></tr>
+    <tr><td>Expenses on Sales</td><td>40,387</td><td>53,849</td><td>107,698</td><td>107,698</td><td>107,698</td><td>161,546</td><td>161,546</td><td>740,421</td></tr>
+    <tr><td>Overhead Expenses</td><td>3,031,675</td><td>3,289,983</td><td>3,575,121</td><td>4,059,015</td><td>4,453,107</td><td>4,873,057</td><td>5,222,453</td><td>28,504,411</td></tr>
+    <tr><td>Consulting & Addforce</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr class="subtotal-row"><td>Total Indirect Expenses</td><td>3,072,062</td><td>3,343,831</td><td>3,682,818</td><td>4,166,713</td><td>4,560,804</td><td>5,034,604</td><td>5,383,999</td><td>29,244,832</td></tr>
+    <tr class="total-row"><td>EBITDA</td><td>17,957,815</td><td>33,337,831</td><td>29,526,079</td><td>28,503,271</td><td>27,916,762</td><td>27,286,603</td><td>26,767,713</td><td>188,296,073</td></tr>
+    <tr style="background:#f1f5f9"><td>EBITDA Margin %</td><td>44.5%</td><td>61.9%</td><td>54.8%</td><td>52.9%</td><td>51.8%</td><td>50.7%</td><td>49.7%</td><td>51.8%</td></tr>
+    <tr><td>Depreciation</td><td>6,936,928</td><td>6,936,928</td><td>6,936,928</td><td>6,936,928</td><td>6,936,928</td><td>6,936,928</td><td>6,936,928</td><td>48,558,499</td></tr>
+    <tr class="total-row" style="background:#ecfdf5"><td>Net Income</td><td>11,020,887</td><td>26,400,903</td><td>22,589,151</td><td>21,566,343</td><td>20,979,834</td><td>20,349,675</td><td>19,830,785</td><td>139,737,573</td></tr>
+    <tr style="background:#f1f5f9"><td><strong>Net Margin %</strong></td><td><strong>27.3%</strong></td><td><strong>49.0%</strong></td><td><strong>42.0%</strong></td><td><strong>40.0%</strong></td><td><strong>39.0%</strong></td><td><strong>37.8%</strong></td><td><strong>36.8%</strong></td><td><strong>38.4%</strong></td></tr>
+  </table>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Revenue vs Net Income Chart (SAR M)</div>
+    <div class="multi-bar-chart">
+      <div class="multi-group">
+        <div class="multi-bars" style="height:75px">
+          <div class="multi-bar-seg" style="height:100%;background:#2563eb">40.4</div>
+        </div>
+        <div class="multi-total" style="color:#10b981">11.0</div>
+        <div class="multi-lbl">2027</div>
+      </div>
+      <div class="multi-group">
+        <div class="multi-bars" style="height:100px">
+          <div class="multi-bar-seg" style="height:100%;background:#2563eb">53.8</div>
+        </div>
+        <div class="multi-total" style="color:#10b981">26.4</div>
+        <div class="multi-lbl">2028</div>
+      </div>
+      <div class="multi-group">
+        <div class="multi-bars" style="height:100px">
+          <div class="multi-bar-seg" style="height:100%;background:#2563eb">53.8</div>
+        </div>
+        <div class="multi-total" style="color:#10b981">22.6</div>
+        <div class="multi-lbl">2029</div>
+      </div>
+      <div class="multi-group">
+        <div class="multi-bars" style="height:100px">
+          <div class="multi-bar-seg" style="height:100%;background:#2563eb">53.8</div>
+        </div>
+        <div class="multi-total" style="color:#10b981">21.6</div>
+        <div class="multi-lbl">2030</div>
+      </div>
+      <div class="multi-group">
+        <div class="multi-bars" style="height:100px">
+          <div class="multi-bar-seg" style="height:100%;background:#2563eb">53.8</div>
+        </div>
+        <div class="multi-total" style="color:#10b981">21.0</div>
+        <div class="multi-lbl">2031</div>
+      </div>
+      <div class="multi-group">
+        <div class="multi-bars" style="height:100px">
+          <div class="multi-bar-seg" style="height:100%;background:#2563eb">53.8</div>
+        </div>
+        <div class="multi-total" style="color:#10b981">20.3</div>
+        <div class="multi-lbl">2032</div>
+      </div>
+      <div class="multi-group">
+        <div class="multi-bars" style="height:100px">
+          <div class="multi-bar-seg" style="height:100%;background:#2563eb">53.8</div>
+        </div>
+        <div class="multi-total" style="color:#10b981">19.8</div>
+        <div class="multi-lbl">2033</div>
+      </div>
+    </div>
+    <div class="chart-legend">
+      <div class="legend-item"><div class="legend-color" style="background:#2563eb"></div>Revenue (SAR M)</div>
+      <div class="legend-item"><div class="legend-color" style="background:#10b981"></div>Net Income (SAR M)</div>
+    </div>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">EBITDA Trend Chart (SAR M)</div>
+    <div class="bar-chart">
+      <div class="bar-group"><div class="bar" style="height:54px;background:#f59e0b"><span class="bar-inner-label">18.0</span></div><div class="bar-val">SAR 18.0M</div><div class="bar-lbl">2027</div></div>
+      <div class="bar-group"><div class="bar" style="height:100px;background:#f59e0b"><span class="bar-inner-label">33.3</span></div><div class="bar-val">SAR 33.3M</div><div class="bar-lbl">2028</div></div>
+      <div class="bar-group"><div class="bar" style="height:89px;background:#f59e0b"><span class="bar-inner-label">29.5</span></div><div class="bar-val">SAR 29.5M</div><div class="bar-lbl">2029</div></div>
+      <div class="bar-group"><div class="bar" style="height:86px;background:#f59e0b"><span class="bar-inner-label">28.5</span></div><div class="bar-val">SAR 28.5M</div><div class="bar-lbl">2030</div></div>
+      <div class="bar-group"><div class="bar" style="height:84px;background:#f59e0b"><span class="bar-inner-label">27.9</span></div><div class="bar-val">SAR 27.9M</div><div class="bar-lbl">2031</div></div>
+      <div class="bar-group"><div class="bar" style="height:82px;background:#f59e0b"><span class="bar-inner-label">27.3</span></div><div class="bar-val">SAR 27.3M</div><div class="bar-lbl">2032</div></div>
+      <div class="bar-group"><div class="bar" style="height:80px;background:#f59e0b"><span class="bar-inner-label">26.8</span></div><div class="bar-val">SAR 26.8M</div><div class="bar-lbl">2033</div></div>
+    </div>
+    <div class="chart-legend"><div class="legend-item"><div class="legend-color" style="background:#f59e0b"></div>EBITDA (SAR M)</div></div>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== 5. SALES REVENUE DETAIL ==================== -->
+<div class="section" id="sales-detail">
+  <div class="section-title">Sales Revenue Detailed Breakdown</div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Revenue Composition by Product Line</div>
+    <table class="data-table">
+      <tr><th>Revenue Line</th><th>2027</th><th>2028</th><th>2029</th><th>2030</th><th>2031</th><th>2032</th><th>2033</th><th>7-Year Total</th></tr>
+      <tr><td>Recovered Metal Sales (A&B)</td><td>34,425,000</td><td>45,900,000</td><td>45,900,000</td><td>45,900,000</td><td>45,900,000</td><td>45,900,000</td><td>45,900,000</td><td>309,825,000</td></tr>
+      <tr><td>Tailing Sales</td><td>5,961,600</td><td>7,948,800</td><td>7,948,800</td><td>7,948,800</td><td>7,948,800</td><td>7,948,800</td><td>7,948,800</td><td>53,654,400</td></tr>
+      <tr class="total-row"><td>Total Sales</td><td>40,386,600</td><td>53,848,800</td><td>53,848,800</td><td>53,848,800</td><td>53,848,800</td><td>53,848,800</td><td>53,848,800</td><td>363,479,400</td></tr>
+    </table>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Product Mix (Pie Chart - Steady State)</div>
+    <div class="pie-wrap">
+      <div class="pie-svg-container">
+        <svg width="200" height="200" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="40" fill="#2563eb" stroke="#fff" stroke-width="1.5"/>
+          <path d="M50,50 L90,50 A40,40 0 0,1 32.4,82.7 Z" fill="#10b981" stroke="#fff" stroke-width="1.5"/>
+          <text x="70" y="35" text-anchor="middle" font-size="6" fill="#fff" font-weight="800">85.2%</text>
+          <text x="30" y="82" text-anchor="middle" font-size="5" fill="#fff" font-weight="700">14.8%</text>
+        </svg>
+        <div class="pie-center">
+          <div class="pie-center-label">Steady State</div>
+          <div class="pie-center-value">SAR 53.8M</div>
+        </div>
+      </div>
+      <div class="pie-legend">
+        <div class="pie-legend-item"><div class="pie-legend-color" style="background:#2563eb"></div><strong>Recovered Metal (A&B): 85.2%</strong></div>
+        <div class="pie-legend-item"><div class="pie-legend-color" style="background:#10b981"></div>Tailings Sales: 14.8%</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">2027 Revenue Adjustment (9-Month Ramp-Up Year)</div>
+    <div class="formula-box">
+      <span class="label">2027 Revenue Calculation Detail</span>
+      Recovered Metal sales start H2 2027 only (ramp-up phase):<br><br>
+      Metal A: 32,400 tonnes x SAR 900 x 75% capacity factor = <strong>SAR 21,870,000</strong><br>
+      Metal B: 10,800 tonnes x SAR 700 x 75% capacity factor = <strong>SAR 5,670,000</strong><br>
+      Total Metal: <strong>SAR 34,425,000</strong><br><br>
+      Tailings (full 9 months): 828,000 x 12 x 75% = <strong>SAR 5,961,600</strong> (H1 partial + H2 full)<br><br>
+      <strong>Grand Total 2027: SAR 40,386,600</strong>
+    </div>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== 6. COGS ==================== -->
+<div class="section" id="cogs">
+  <div class="section-title">Cost of Sales & Raw Materials Detail</div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Raw Material Cost Breakdown</div>
+    <table class="data-table">
+      <tr><th>Cost Component</th><th>2027</th><th>2028</th><th>2029</th><th>2030</th><th>2031</th><th>2032</th><th>2033</th><th>Total</th></tr>
+      <tr><td>Cost of RM - Recovered Metal</td><td>8,100,000</td><td>9,936,000</td><td>9,936,000</td><td>9,936,000</td><td>9,936,000</td><td>9,936,000</td><td>9,936,000</td><td>67,716,000</td></tr>
+      <tr><td>Cost of RM - Tailing</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr class="subtotal-row"><td>Total Raw Material Cost</td><td>8,100,000</td><td>9,936,000</td><td>9,936,000</td><td>9,936,000</td><td>9,936,000</td><td>9,936,000</td><td>9,936,000</td><td>67,716,000</td></tr>
+      <tr><td>Transportation - Slag IN</td><td>2,700,000</td><td>3,600,000</td><td>3,600,000</td><td>3,600,000</td><td>3,600,000</td><td>3,600,000</td><td>3,600,000</td><td>24,300,000</td></tr>
+      <tr><td>Transportation - Fe Metal OUT</td><td>202,500</td><td>270,000</td><td>270,000</td><td>270,000</td><td>270,000</td><td>270,000</td><td>270,000</td><td>1,822,500</td></tr>
+      <tr><td>Transportation - Tailing (Ex-Work)</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr class="subtotal-row"><td>Total Transportation</td><td>2,902,500</td><td>3,870,000</td><td>3,870,000</td><td>3,870,000</td><td>3,870,000</td><td>3,870,000</td><td>3,870,000</td><td>26,122,500</td></tr>
+      <tr class="total-row"><td>Total Cost of Sales</td><td>11,002,500</td><td>13,806,000</td><td>13,806,000</td><td>13,806,000</td><td>13,806,000</td><td>13,806,000</td><td>13,806,000</td><td>93,838,500</td></tr>
+    </table>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Raw Material Calculation</div>
+    <div class="formula-box">
+      <span class="label">Raw Material Purchase Calculation</span>
+      Purchase Price per Tonne: <strong>SAR 12</strong><br>
+      Total Processing: 900,000 tonnes/year<br><br>
+      Metal RM Cost (Recovered Metal):<br>
+      2027: 750,000 tonnes (75% capacity) x SAR 12 x 90% = <strong>SAR 8,100,000</strong><br>
+      2028+: 900,000 tonnes x SAR 12 x 92% = <strong>SAR 9,936,000</strong><br><br>
+      Tailing RM Cost: <strong>SAR 0</strong> (tailings are by-product, not purchased)
+    </div>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Transportation Cost Detail</div>
+    <div class="formula-box">
+      <span class="label">Transportation Cost Formulas</span>
+      Slag IN Transportation: 900,000 tonnes x SAR 4/tonne = <strong>SAR 3,600,000/year</strong><br>
+      Fe Metal OUT: 54,000 tonnes x SAR 5/tonne = <strong>SAR 270,000/year</strong><br>
+      Tailing: Ex-Work (customer picks up) = <strong>SAR 0</strong><br><br>
+      2027 Adjustment (75% capacity):<br>
+      Slag IN: 3,600,000 x 75% = <strong>SAR 2,700,000</strong><br>
+      Fe OUT: 270,000 x 75% = <strong>SAR 202,500</strong>
+    </div>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== 7. OPEX FULL DETAIL ==================== -->
+<div class="section" id="opex">
+  <div class="section-title">Operating Expenses (OPEX) - Full Detail</div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Direct Expenses Detail (2027-2033)</div>
+    <table class="data-table">
+      <tr><th>Expense Item</th><th>2027</th><th>2028</th><th>2029</th><th>2030</th><th>2031</th><th>2032</th><th>2033</th><th>Total</th></tr>
+      <tr><td>Production Salaries</td><td>833,250</td><td>916,575</td><td>1,008,233</td><td>1,134,965</td><td>1,248,461</td><td>1,373,307</td><td>1,510,638</td><td>8,025,429</td></tr>
+      <tr><td>Iqama Production & Re-entry</td><td>126,600</td><td>126,600</td><td>126,600</td><td>126,600</td><td>126,600</td><td>126,600</td><td>126,600</td><td>886,200</td></tr>
+      <tr><td>Food Expenses</td><td>18,000</td><td>18,000</td><td>18,000</td><td>18,000</td><td>18,000</td><td>18,000</td><td>18,000</td><td>126,000</td></tr>
+      <tr><td>GOSI Production</td><td>8,565</td><td>9,422</td><td>10,364</td><td>11,918</td><td>13,110</td><td>14,421</td><td>15,863</td><td>83,663</td></tr>
+      <tr><td>Tickets Production</td><td>24,000</td><td>24,000</td><td>24,000</td><td>24,000</td><td>24,000</td><td>24,000</td><td>24,000</td><td>168,000</td></tr>
+      <tr><td>EOS Production</td><td>34,719</td><td>38,191</td><td>42,010</td><td>47,290</td><td>52,019</td><td>57,221</td><td>62,943</td><td>334,393</td></tr>
+      <tr><td>Medical Insurance Production</td><td>24,000</td><td>24,000</td><td>24,000</td><td>24,000</td><td>24,000</td><td>24,000</td><td>24,000</td><td>168,000</td></tr>
+      <tr><td>Rent Land</td><td>1,020,000</td><td>1,020,000</td><td>1,020,000</td><td>1,020,000</td><td>1,020,000</td><td>1,020,000</td><td>1,020,000</td><td>7,140,000</td></tr>
+      <tr><td>Utilities (Fuel H1 / Electricity H2+)</td><td>2,920,704</td><td>1,318,272</td><td>1,318,272</td><td>1,318,272</td><td>1,318,272</td><td>1,318,272</td><td>1,318,272</td><td>10,830,336</td></tr>
+      <tr><td>Equipment Rent</td><td>1,980,000</td><td>720,000</td><td>720,000</td><td>720,000</td><td>720,000</td><td>720,000</td><td>720,000</td><td>6,300,000</td></tr>
+      <tr><td>Maintenance</td><td>20,000</td><td>80,000</td><td>100,000</td><td>125,000</td><td>150,000</td><td>175,000</td><td>200,000</td><td>850,000</td></tr>
+      <tr><td>Spare Parts</td><td>1,329,386</td><td>1,994,079</td><td>2,326,425</td><td>2,658,771</td><td>2,658,771</td><td>2,658,771</td><td>2,658,771</td><td>16,284,975</td></tr>
+      <tr><td>Vehicles Expenses</td><td>15,000</td><td>72,000</td><td>96,000</td><td>144,000</td><td>192,000</td><td>192,000</td><td>192,000</td><td>903,000</td></tr>
+      <tr><td>Depreciation Production</td><td>6,646,928</td><td>6,646,928</td><td>6,646,928</td><td>6,646,928</td><td>6,646,928</td><td>6,646,928</td><td>6,646,928</td><td>46,528,499</td></tr>
+      <tr><td>Packaging/Contingency (2% of Sales)</td><td>688,500</td><td>918,000</td><td>918,000</td><td>918,000</td><td>918,000</td><td>918,000</td><td>918,000</td><td>6,196,500</td></tr>
+      <tr class="total-row"><td>Total Direct Expenses</td><td>15,689,652</td><td>13,926,066</td><td>14,398,831</td><td>14,937,745</td><td>15,130,162</td><td>15,286,522</td><td>15,456,017</td><td>99,724,995</td></tr>
+    </table>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Indirect (Overhead) Expenses Detail (2027-2033)</div>
+    <table class="data-table">
+      <tr><th>Expense Item</th><th>2027</th><th>2028</th><th>2029</th><th>2030</th><th>2031</th><th>2032</th><th>2033</th><th>Total</th></tr>
+      <tr><td>Salaries (Admin)</td><td>2,385,000</td><td>2,623,500</td><td>2,885,850</td><td>3,311,468</td><td>3,642,614</td><td>4,006,876</td><td>4,407,563</td><td>23,262,871</td></tr>
+      <tr><td>Iqama Production & Re-entry</td><td>44,600</td><td>44,600</td><td>44,600</td><td>44,600</td><td>44,600</td><td>44,600</td><td>44,600</td><td>312,200</td></tr>
+      <tr><td>Food Expenses</td><td>6,000</td><td>6,000</td><td>6,000</td><td>6,000</td><td>6,000</td><td>6,000</td><td>6,000</td><td>42,000</td></tr>
+      <tr><td>GOSI Production</td><td>98,700</td><td>108,570</td><td>119,427</td><td>136,470</td><td>150,117</td><td>165,129</td><td>181,641</td><td>960,054</td></tr>
+      <tr><td>Tickets Production</td><td>32,000</td><td>32,000</td><td>32,000</td><td>32,000</td><td>32,000</td><td>32,000</td><td>32,000</td><td>224,000</td></tr>
+      <tr><td>EOS Production</td><td>99,375</td><td>109,313</td><td>120,244</td><td>137,978</td><td>151,776</td><td>166,953</td><td>183,648</td><td>969,286</td></tr>
+      <tr><td>Medical Insurance Production</td><td>54,000</td><td>54,000</td><td>54,000</td><td>54,000</td><td>54,000</td><td>54,000</td><td>54,000</td><td>378,000</td></tr>
+      <tr><td>Security Guard</td><td>96,000</td><td>96,000</td><td>96,000</td><td>96,000</td><td>96,000</td><td>96,000</td><td>96,000</td><td>672,000</td></tr>
+      <tr><td>Office Rent</td><td>100,000</td><td>100,000</td><td>100,000</td><td>100,000</td><td>100,000</td><td>100,000</td><td>100,000</td><td>700,000</td></tr>
+      <tr><td>Utilities</td><td>25,000</td><td>25,000</td><td>25,000</td><td>25,000</td><td>25,000</td><td>25,000</td><td>25,000</td><td>175,000</td></tr>
+      <tr><td>Audit Charges</td><td>25,000</td><td>25,000</td><td>25,000</td><td>30,000</td><td>35,000</td><td>35,000</td><td>40,000</td><td>215,000</td></tr>
+      <tr><td>Bank Charges</td><td>10,000</td><td>10,000</td><td>10,000</td><td>10,000</td><td>10,000</td><td>10,000</td><td>10,000</td><td>70,000</td></tr>
+      <tr><td>Interest Loan</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>Stationary</td><td>7,500</td><td>7,500</td><td>7,500</td><td>7,500</td><td>7,500</td><td>7,500</td><td>7,500</td><td>52,500</td></tr>
+      <tr><td>Government Expenses</td><td>7,500</td><td>7,500</td><td>7,500</td><td>8,000</td><td>8,500</td><td>9,000</td><td>9,500</td><td>57,500</td></tr>
+      <tr><td>Business Trip</td><td>6,000</td><td>6,000</td><td>7,000</td><td>10,000</td><td>15,000</td><td>15,000</td><td>15,000</td><td>74,000</td></tr>
+      <tr><td>Consultant Expenses</td><td>35,000</td><td>35,000</td><td>35,000</td><td>50,000</td><td>75,000</td><td>100,000</td><td>10,000</td><td>340,000</td></tr>
+      <tr><td>Sales Commissions</td><td>40,387</td><td>53,849</td><td>107,698</td><td>107,698</td><td>107,698</td><td>161,546</td><td>161,546</td><td>740,421</td></tr>
+      <tr><td>Depreciation Admin</td><td>290,000</td><td>290,000</td><td>290,000</td><td>290,000</td><td>290,000</td><td>290,000</td><td>290,000</td><td>2,030,000</td></tr>
+      <tr class="total-row"><td>Total Indirect Expenses</td><td>3,362,062</td><td>3,633,831</td><td>3,972,818</td><td>4,456,713</td><td>4,850,804</td><td>5,324,604</td><td>5,673,999</td><td>31,274,832</td></tr>
+    </table>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Total OPEX Stacked Chart (Direct vs Indirect)</div>
+    <div class="stacked-chart">
+      <div class="stacked-group">
+        <div class="stacked-bars" style="height:220px">
+          <div class="stacked-seg" style="height:157px;background:#ef4444"><span>Dir<br>15.7M</span></div>
+          <div class="stacked-seg" style="height:34px;background:#f59e0b"><span>Ind<br>3.4M</span></div>
+        </div>
+        <div class="stacked-total">SAR 19.1M</div>
+        <div class="stacked-lbl">2027</div>
+      </div>
+      <div class="stacked-group">
+        <div class="stacked-bars" style="height:200px">
+          <div class="stacked-seg" style="height:140px;background:#ef4444"><span>Dir<br>13.9M</span></div>
+          <div class="stacked-seg" style="height:37px;background:#f59e0b"><span>Ind<br>3.6M</span></div>
+        </div>
+        <div class="stacked-total">SAR 17.6M</div>
+        <div class="stacked-lbl">2028</div>
+      </div>
+      <div class="stacked-group">
+        <div class="stacked-bars" style="height:210px">
+          <div class="stacked-seg" style="height:144px;background:#ef4444"><span>Dir<br>14.4M</span></div>
+          <div class="stacked-seg" style="height:40px;background:#f59e0b"><span>Ind<br>4.0M</span></div>
+        </div>
+        <div class="stacked-total">SAR 18.4M</div>
+        <div class="stacked-lbl">2029</div>
+      </div>
+      <div class="stacked-group">
+        <div class="stacked-bars" style="height:222px">
+          <div class="stacked-seg" style="height:149px;background:#ef4444"><span>Dir<br>14.9M</span></div>
+          <div class="stacked-seg" style="height:45px;background:#f59e0b"><span>Ind<br>4.5M</span></div>
+        </div>
+        <div class="stacked-total">SAR 19.4M</div>
+        <div class="stacked-lbl">2030</div>
+      </div>
+      <div class="stacked-group">
+        <div class="stacked-bars" style="height:228px">
+          <div class="stacked-seg" style="height:151px;background:#ef4444"><span>Dir<br>15.1M</span></div>
+          <div class="stacked-seg" style="height:49px;background:#f59e0b"><span>Ind<br>4.9M</span></div>
+        </div>
+        <div class="stacked-total">SAR 20.0M</div>
+        <div class="stacked-lbl">2031</div>
+      </div>
+      <div class="stacked-group">
+        <div class="stacked-bars" style="height:237px">
+          <div class="stacked-seg" style="height:153px;background:#ef4444"><span>Dir<br>15.3M</span></div>
+          <div class="stacked-seg" style="height:53px;background:#f59e0b"><span>Ind<br>5.3M</span></div>
+        </div>
+        <div class="stacked-total">SAR 20.6M</div>
+        <div class="stacked-lbl">2032</div>
+      </div>
+      <div class="stacked-group">
+        <div class="stacked-bars" style="height:247px">
+          <div class="stacked-seg" style="height:155px;background:#ef4444"><span>Dir<br>15.5M</span></div>
+          <div class="stacked-seg" style="height:57px;background:#f59e0b"><span>Ind<br>5.7M</span></div>
+        </div>
+        <div class="stacked-total">SAR 21.1M</div>
+        <div class="stacked-lbl">2033</div>
+      </div>
+    </div>
+    <div class="chart-legend">
+      <div class="legend-item"><div class="legend-color" style="background:#ef4444"></div>Direct Expenses</div>
+      <div class="legend-item"><div class="legend-color" style="background:#f59e0b"></div>Indirect Expenses</div>
+    </div>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== 8. PERSONNEL & SALARIES ==================== -->
+<div class="section" id="salaries">
+  <div class="section-title">Personnel Plan & Salary Structure (24 Employees)</div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Headcount Summary</div>
+    <div class="info-grid">
+      <div class="info-card"><div class="value">4</div><div class="label">G&A Admin Staff</div></div>
+      <div class="info-card"><div class="value">20</div><div class="label">Production Staff</div></div>
+      <div class="info-card"><div class="value">24</div><div class="label">Total Employees</div></div>
+      <div class="info-card"><div class="value">SAR 3.22M</div><div class="label">2027 Total Salaries</div></div>
+      <div class="info-card"><div class="value">SAR 4.41M</div><div class="label">2033 Total Salaries</div></div>
+      <div class="info-card"><div class="value">10%</div><div class="label">Annual Salary Increase</div></div>
+    </div>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">G&A Administration Staff (4 Employees) - 2027 Salaries</div>
+    <table class="data-table">
+      <tr><th>No</th><th>Position</th><th>2027 (SAR)</th><th>2028</th><th>2029</th><th>2030</th><th>2031</th><th>2032</th><th>2033</th><th>7-Year Total</th><th>Type</th></tr>
+      <tr><td>1</td><td>General Manager</td><td>450,000</td><td>495,000</td><td>544,500</td><td>626,175</td><td>688,793</td><td>757,672</td><td>833,439</td><td>4,395,578</td><td>Admin</td></tr>
+      <tr><td>2</td><td>Finance Manager</td><td>300,000</td><td>330,000</td><td>363,000</td><td>417,450</td><td>459,195</td><td>505,115</td><td>555,626</td><td>2,930,385</td><td>Admin</td></tr>
+      <tr><td>3</td><td>Internal Auditor</td><td>150,000</td><td>165,000</td><td>181,500</td><td>208,725</td><td>229,598</td><td>252,557</td><td>277,813</td><td>1,465,193</td><td>Admin</td></tr>
+      <tr><td>4</td><td>HR</td><td>180,000</td><td>198,000</td><td>217,800</td><td>250,470</td><td>275,517</td><td>303,069</td><td>333,376</td><td>1,758,231</td><td>Admin</td></tr>
+      <tr class="subtotal-row"><td colspan="2">G&A Subtotal</td><td>1,080,000</td><td>1,188,000</td><td>1,306,800</td><td>1,502,820</td><td>1,653,102</td><td>1,818,412</td><td>2,000,253</td><td>10,549,388</td><td>-</td></tr>
+    </table>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Production Staff (20 Employees) - 2027 Salaries</div>
+    <table class="data-table">
+      <tr><th>No</th><th>Position</th><th>2027 (SAR)</th><th>2028</th><th>2029</th><th>2030</th><th>2031</th><th>2032</th><th>2033</th><th>7-Year Total</th><th>Type</th></tr>
+      <tr class="subtotal-row" style="background:#dbeafe"><td colspan="11"><strong>Management / Supervisory (5 staff)</strong></td></tr>
+      <tr><td>1</td><td>Production Manager</td><td>525,000</td><td>577,500</td><td>635,250</td><td>730,538</td><td>803,591</td><td>883,950</td><td>972,345</td><td>5,128,175</td><td>Supervisory</td></tr>
+      <tr><td>2</td><td>Project Engineer</td><td>150,000</td><td>165,000</td><td>181,500</td><td>208,725</td><td>229,598</td><td>252,557</td><td>277,813</td><td>1,465,193</td><td>Supervisory</td></tr>
+      <tr><td>3</td><td>Logistic In-charge</td><td>120,000</td><td>132,000</td><td>145,200</td><td>159,720</td><td>175,692</td><td>193,261</td><td>212,587</td><td>1,138,461</td><td>Supervisory</td></tr>
+      <tr><td>6</td><td>Sales Representative</td><td>150,000</td><td>165,000</td><td>181,500</td><td>208,725</td><td>229,598</td><td>252,557</td><td>277,813</td><td>1,465,193</td><td>Supervisory</td></tr>
+      <tr><td>7</td><td>Sales Representative</td><td>150,000</td><td>165,000</td><td>181,500</td><td>208,725</td><td>229,598</td><td>252,557</td><td>277,813</td><td>1,465,193</td><td>Supervisory</td></tr>
+      <tr><td>8</td><td>Site Supervisor</td><td>210,000</td><td>231,000</td><td>254,100</td><td>292,215</td><td>321,437</td><td>353,580</td><td>388,938</td><td>2,051,270</td><td>Supervisory</td></tr>
+      <tr class="subtotal-row" style="background:#dbeafe"><td colspan="11"><strong>Technical Operators (2 staff)</strong></td></tr>
+      <tr><td>4</td><td>Control Room Operator (1)</td><td>225,000</td><td>247,500</td><td>272,250</td><td>299,475</td><td>329,423</td><td>362,365</td><td>398,601</td><td>2,134,613</td><td>Operator</td></tr>
+      <tr><td>5</td><td>Control Room Operator (2)</td><td>180,000</td><td>198,000</td><td>217,800</td><td>239,580</td><td>263,538</td><td>289,892</td><td>318,881</td><td>1,707,691</td><td>Operator</td></tr>
+      <tr class="subtotal-row" style="background:#dbeafe"><td colspan="11"><strong>Skilled / Semi-Skilled (13 staff)</strong></td></tr>
+      <tr><td>9</td><td>Electrician</td><td>27,000</td><td>29,700</td><td>32,670</td><td>37,571</td><td>41,328</td><td>45,460</td><td>50,006</td><td>263,735</td><td>Daily</td></tr>
+      <tr><td>10</td><td>Driver</td><td>48,750</td><td>53,625</td><td>58,988</td><td>67,836</td><td>74,619</td><td>82,081</td><td>90,289</td><td>476,188</td><td>Daily</td></tr>
+      <tr><td>11</td><td>Labor</td><td>49,500</td><td>54,450</td><td>59,895</td><td>68,879</td><td>75,767</td><td>83,344</td><td>91,678</td><td>483,514</td><td>Daily</td></tr>
+      <tr><td>12</td><td>Labor</td><td>39,000</td><td>42,900</td><td>47,190</td><td>54,269</td><td>59,695</td><td>65,665</td><td>72,231</td><td>380,950</td><td>Daily</td></tr>
+      <tr><td>13</td><td>Labor</td><td>34,500</td><td>37,950</td><td>41,745</td><td>48,007</td><td>52,807</td><td>58,088</td><td>63,897</td><td>336,994</td><td>Daily</td></tr>
+      <tr><td>14</td><td>Labor</td><td>18,000</td><td>19,800</td><td>21,780</td><td>25,047</td><td>27,552</td><td>30,307</td><td>33,338</td><td>175,823</td><td>Daily</td></tr>
+      <tr><td>15</td><td>Labor</td><td>27,000</td><td>29,700</td><td>32,670</td><td>37,571</td><td>41,328</td><td>45,460</td><td>50,006</td><td>263,735</td><td>Daily</td></tr>
+      <tr><td>16</td><td>Labor</td><td>27,000</td><td>29,700</td><td>32,670</td><td>37,571</td><td>41,328</td><td>45,460</td><td>50,006</td><td>263,735</td><td>Daily</td></tr>
+      <tr><td>17</td><td>Driver</td><td>37,500</td><td>41,250</td><td>45,375</td><td>52,181</td><td>57,399</td><td>63,139</td><td>69,453</td><td>366,298</td><td>Daily</td></tr>
+      <tr><td>18</td><td>Driver</td><td>37,500</td><td>41,250</td><td>45,375</td><td>52,181</td><td>57,399</td><td>63,139</td><td>69,453</td><td>366,298</td><td>Daily</td></tr>
+      <tr><td>19</td><td>Driver</td><td>37,500</td><td>41,250</td><td>45,375</td><td>52,181</td><td>57,399</td><td>63,139</td><td>69,453</td><td>366,298</td><td>Daily</td></tr>
+      <tr><td>20</td><td>Mechanical Technical</td><td>45,000</td><td>49,500</td><td>54,450</td><td>62,618</td><td>68,879</td><td>75,767</td><td>83,344</td><td>439,558</td><td>Daily</td></tr>
+      <tr class="total-row"><td colspan="2">Production Subtotal</td><td>2,138,250</td><td>2,352,075</td><td>2,587,283</td><td>2,943,612</td><td>3,237,974</td><td>3,561,771</td><td>3,917,948</td><td>20,738,913</td><td>-</td></tr>
+    </table>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Salary Allocation Summary</div>
+    <table class="data-table">
+      <tr><th>Category</th><th>2027</th><th>2028</th><th>2029</th><th>2030</th><th>2031</th><th>2032</th><th>2033</th><th>Total</th></tr>
+      <tr><td>Direct Production Salaries</td><td>833,250</td><td>916,575</td><td>1,008,233</td><td>1,134,965</td><td>1,248,461</td><td>1,373,307</td><td>1,510,638</td><td>8,025,429</td></tr>
+      <tr><td>Overhead (Admin) Salaries</td><td>2,385,000</td><td>2,623,500</td><td>2,885,850</td><td>3,311,468</td><td>3,642,614</td><td>4,006,876</td><td>4,407,563</td><td>23,262,871</td></tr>
+      <tr class="total-row"><td>Grand Total Salaries</td><td>3,218,250</td><td>3,540,075</td><td>3,894,083</td><td>4,446,433</td><td>4,891,075</td><td>5,380,183</td><td>5,918,201</td><td>31,288,300</td></tr>
+    </table>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Department Breakdown (Pie Chart)</div>
+    <div class="pie-wrap">
+      <div class="pie-svg-container">
+        <svg width="200" height="200" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="40" fill="#2563eb" stroke="#fff" stroke-width="1.5"/>
+          <path d="M50,50 L90,50 A40,40 0 0,1 12.4,70.7 Z" fill="#10b981" stroke="#fff" stroke-width="1.5"/>
+          <text x="72" y="35" text-anchor="middle" font-size="6" fill="#fff" font-weight="800">74.1%</text>
+          <text x="22" y="72" text-anchor="middle" font-size="5" fill="#fff" font-weight="700">25.9%</text>
+        </svg>
+        <div class="pie-center">
+          <div class="pie-center-label">2027 Total</div>
+          <div class="pie-center-value">SAR 3.2M</div>
+        </div>
+      </div>
+      <div class="pie-legend">
+        <div class="pie-legend-item"><div class="pie-legend-color" style="background:#2563eb"></div><strong>Admin (OH): SAR 2,385K (74.1%)</strong></div>
+        <div class="pie-legend-item"><div class="pie-legend-color" style="background:#10b981"></div>Direct Production: SAR 833K (25.9%)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Salary Growth Formula</div>
+    <div class="formula-box">
+      <span class="label">Annual Salary Increase: 10% Year-over-Year</span>
+      Formula: Salary(Y+1) = Salary(Y) x 1.10<br><br>
+      <strong>Example:</strong> Production Manager<br>
+      2027: 525,000 | 2028: 525,000 x 1.10 = 577,500 | 2029: 577,500 x 1.10 = 635,250<br>
+      2030: 635,250 x 1.15 = 730,538 (Year 4 bump to 15%) | ... | 2033: 972,345<br><br>
+      <strong>G&A staff (Years 1-3):</strong> 10% increase<br>
+      <strong>G&A staff (Year 4):</strong> 15% increase | <strong>Years 5-7:</strong> 10% increase<br>
+      <strong>Production staff:</strong> 10% increase every year
+    </div>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== 9. CAPEX ==================== -->
+<div class="section" id="capex">
+  <div class="section-title">Capital Expenditure (CAPEX) Budget</div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Operational Assets - Depreciation Schedule</div>
+    <table class="data-table">
+      <tr><th>Asset Category</th><th>Total Cost (SAR)</th><th>Depreciation Rate</th><th>Annual Depreciation</th><th>Notes</th></tr>
+      <tr><td>Pilot Plant</td><td>6,336,275</td><td>10%</td><td>633,628</td><td>SSP phase</td></tr>
+      <tr><td>Main Plant (Addforce)</td><td>47,304,420</td><td>10%</td><td>4,730,442</td><td>Primary processing</td></tr>
+      <tr><td>Vehicles, Heavy Equipment & Generators</td><td>5,539,297</td><td>20%</td><td>1,107,859</td><td>Details in Equipment tab</td></tr>
+      <tr><td>Tools</td><td>350,000</td><td>50%</td><td>175,000</td><td>Short life assets</td></tr>
+      <tr class="total-row"><td>Total Operational Assets</td><td>59,529,992</td><td>-</td><td>6,646,929</td><td>-</td></tr>
+    </table>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Other Capital Items</div>
+    <table class="data-table">
+      <tr><th>Asset Category</th><th>Total Cost (SAR)</th><th>Depreciation Rate</th><th>Annual Depreciation</th></tr>
+      <tr><td>Furniture & Office Equipment</td><td>150,000</td><td>20%</td><td>30,000</td></tr>
+      <tr><td>Computers & Software</td><td>50,000</td><td>20%</td><td>10,000</td></tr>
+      <tr><td>Intangible Assets (Pre-Op/R&D)</td><td>2,500,000</td><td>10%</td><td>250,000</td></tr>
+      <tr class="total-row"><td>Total Other Capital</td><td>2,700,000</td><td>-</td><td>290,000</td></tr>
+    </table>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Total Project Value</div>
+    <div class="info-grid">
+      <div class="info-card"><div class="value">SAR 59.5M</div><div class="label">Operational Assets</div></div>
+      <div class="info-card"><div class="value">SAR 2.7M</div><div class="label">Other Capital Items</div></div>
+      <div class="info-card"><div class="value">SAR 62.2M</div><div class="label">Total Project Value</div></div>
+      <div class="info-card"><div class="value">SAR 6.94M</div><div class="label">Total Annual Depreciation</div></div>
+    </div>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">CAPEX Composition Chart</div>
+    <div class="pie-wrap">
+      <div class="pie-svg-container">
+        <svg width="200" height="200" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="40" fill="#2563eb" stroke="#fff" stroke-width="1.5"/>
+          <path d="M50,50 L90,50 A40,40 0 0,1 32.4,82.7 Z" fill="#10b981" stroke="#fff" stroke-width="1.5"/>
+          <path d="M50,50 L32.4,82.7 A40,40 0 0,1 10,50 Z" fill="#f59e0b" stroke="#fff" stroke-width="1.5"/>
+          <path d="M50,50 L10,50 A40,40 0 0,1 50,10 Z" fill="#8b5cf6" stroke="#fff" stroke-width="1.5"/>
+          <text x="72" y="30" text-anchor="middle" font-size="5" fill="#fff" font-weight="800">76.0%</text>
+          <text x="28" y="82" text-anchor="middle" font-size="4" fill="#fff" font-weight="700">8.9%</text>
+          <text x="15" y="42" text-anchor="middle" font-size="4" fill="#fff" font-weight="700">10.2%</text>
+          <text x="35" y="18" text-anchor="middle" font-size="3" fill="#fff" font-weight="700">4.9%</text>
+        </svg>
+        <div class="pie-center">
+          <div class="pie-center-label">Total CAPEX</div>
+          <div class="pie-center-value">SAR 62.2M</div>
+        </div>
+      </div>
+      <div class="pie-legend">
+        <div class="pie-legend-item"><div class="pie-legend-color" style="background:#2563eb"></div><strong>Main Addforce Plant: SAR 47.3M (76.0%)</strong></div>
+        <div class="pie-legend-item"><div class="pie-legend-color" style="background:#10b981"></div>Vehicles & Equipment: SAR 5.5M (8.9%)</div>
+        <div class="pie-legend-item"><div class="pie-legend-color" style="background:#f59e0b"></div>Pilot Plant: SAR 6.3M (10.2%)</div>
+        <div class="pie-legend-item"><div class="pie-legend-color" style="background:#8b5cf6"></div>Tools + Other: SAR 3.1M (4.9%)</div>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== 10. ADDFORCE MAIN PLANT ==================== -->
+<div class="section" id="addforce">
+  <div class="section-title">Addforce Main Plant CAPEX Detail</div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Addforce Plant Cost Breakdown</div>
+    <table class="data-table">
+      <tr><th>Item</th><th>Value (SAR)</th><th>Comments</th><th>Spent to Date</th><th>Balance to Go</th><th>Not Invoiced</th></tr>
+      <tr><td>Equipment Value</td><td>29,916,101</td><td>Not to include 50% share of storage (count as receivables from Addforce)</td><td>29,355,800</td><td>560,301</td><td>124,511</td></tr>
+      <tr><td>Total Construction & Erections</td><td>9,888,314</td><td>Estimated all construction activities and structures</td><td>0</td><td>9,888,314</td><td>-</td></tr>
+      <tr><td>Project / Development Management Costs</td><td>7,500,000</td><td>Capitalized Rukam project management and follow up costs</td><td>6,743,230</td><td>756,770</td><td>-</td></tr>
+      <tr class="total-row"><td>Total Addforce Plant CAPEX</td><td>47,304,420</td><td>Totals</td><td>36,099,030</td><td>11,205,385</td><td>124,511</td></tr>
+    </table>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Payment Status Analysis</div>
+    <div class="info-grid">
+      <div class="info-card"><div class="value">SAR 47.3M</div><div class="label">Total Contract Value</div></div>
+      <div class="info-card"><div class="value">SAR 36.1M</div><div class="label">Spent to Date (76.3%)</div></div>
+      <div class="info-card"><div class="value">SAR 11.2M</div><div class="label">Balance to Go (23.7%)</div></div>
+      <div class="info-card"><div class="value">SAR 124K</div><div class="label">Not Yet Invoiced</div></div>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <span class="label">Important Note on Storage</span>
+    The 50% share of storage costs should be counted as receivables from Addforce, not as part of the capitalized equipment value. This ensures proper segregation of shared assets between the parties.
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== 11. VEHICLES & EQUIPMENT ==================== -->
+<div class="section" id="vehicles">
+  <div class="section-title">Vehicles & Heavy Equipment Detail</div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">SSP Phase Assets (Already Purchased)</div>
+    <table class="data-table">
+      <tr><th>Code</th><th>Asset Name</th><th>Cost (SAR)</th><th>Spent to Date</th><th>Balance</th><th>Status</th></tr>
+      <tr><td>FA-V-00001</td><td>Mitsubishi L2000 2.4 DC 4x4</td><td>83,400</td><td>83,400</td><td>0</td><td>Fully Paid</td></tr>
+      <tr><td>FA-V-00002</td><td>MG T60 4X4 D/C Diesel, Model 2021</td><td>67,217</td><td>67,217</td><td>0</td><td>Fully Paid</td></tr>
+      <tr><td>FA-V-00003</td><td>MG RX5 STD 1.5t a/t 2wd</td><td>57,700</td><td>57,700</td><td>0</td><td>Fully Paid</td></tr>
+      <tr><td>FA-V-00005</td><td>Mitsubishi Pajero 2018</td><td>50,000</td><td>50,000</td><td>0</td><td>Fully Paid</td></tr>
+      <tr><td>FA-V-00006</td><td>Mitsubishi Pajero 2017</td><td>25,000</td><td>25,000</td><td>0</td><td>Fully Paid</td></tr>
+      <tr><td>FA-V-00004</td><td>JAC Dump Truck 2024</td><td>1,282,500</td><td>849,296</td><td>433,204</td><td>Partially Paid</td></tr>
+      <tr><td>HE-Crawler</td><td>Develon Crawler Excavator 5510 NAA</td><td>2,373,480</td><td>1,513,892</td><td>859,588</td><td>Partially Paid</td></tr>
+      <tr><td>HE-Crawler 1</td><td>Develon Crawler Excavator 5507 NAA</td><td>-</td><td>-</td><td>-</td><td>Not Yet Procured</td></tr>
+      <tr><td>HE-Wheel Loader</td><td>Develon Wheel Loader 5505 NAA</td><td>-</td><td>-</td><td>-</td><td>Not Yet Procured</td></tr>
+      <tr><td>HE-Wheel Loader 1</td><td>Develon Wheel Loader 5512 NAA</td><td>-</td><td>-</td><td>-</td><td>Not Yet Procured</td></tr>
+      <tr class="total-row"><td colspan="2">SSP Assets Subtotal</td><td>3,939,297</td><td>2,646,506</td><td>1,292,792</td><td>-</td></tr>
+    </table>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Main Project Assets (To Be Leased Initially)</div>
+    <table class="data-table">
+      <tr><th>Asset</th><th>Cost (SAR)</th><th>Spent</th><th>Balance</th><th>Strategy</th></tr>
+      <tr><td>Excavator (1)</td><td>350,000</td><td>0</td><td>350,000</td><td>Leased from startup until cash flow allows purchase</td></tr>
+      <tr><td>Excavator (2)</td><td>350,000</td><td>0</td><td>350,000</td><td>Leased from startup until cash flow allows purchase</td></tr>
+      <tr><td>Wheel Loader (1)</td><td>450,000</td><td>0</td><td>450,000</td><td>Leased from startup until cash flow allows purchase</td></tr>
+      <tr><td>Wheel Loader (2)</td><td>450,000</td><td>0</td><td>450,000</td><td>Leased from startup until cash flow allows purchase</td></tr>
+      <tr><td>Generators</td><td>0</td><td>0</td><td>0</td><td>To be leased until electricity connected (mid-2027 est.)</td></tr>
+      <tr class="total-row"><td>Main Project Assets Subtotal</td><td>1,600,000</td><td>0</td><td>1,600,000</td><td>-</td></tr>
+    </table>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Total Equipment Summary</div>
+    <div class="info-grid">
+      <div class="info-card"><div class="value">SAR 5.54M</div><div class="label">Total Equipment Value</div></div>
+      <div class="info-card"><div class="value">SAR 2.65M</div><div class="label">Spent to Date</div></div>
+      <div class="info-card"><div class="value">SAR 2.89M</div><div class="label">Remaining Balance</div></div>
+      <div class="info-card"><div class="value">48%</div><div class="label">Spent %</div></div>
+    </div>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== 12. EQUIPMENT LEASE ==================== -->
+<div class="section" id="equipment-lease">
+  <div class="section-title">Equipment Lease & Fuel Costs</div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Equipment Lease Schedule</div>
+    <table class="data-table">
+      <tr><th>Item</th><th>Unit Cost/Month</th><th>Qty</th><th>2027 Period (Months)</th><th>2027 Cost (SAR)</th><th>2028+ Period</th><th>2028+ Cost (SAR)</th><th>Notes</th></tr>
+      <tr><td>Generators (Diesel)</td><td>35,000</td><td>3</td><td>12</td><td>1,260,000</td><td>0</td><td>0</td><td>Leased until electricity connected (mid-2027)</td></tr>
+      <tr><td>Excavators</td><td>15,000</td><td>2</td><td>12</td><td>360,000</td><td>12</td><td>360,000</td><td>Leased until cash flow allows purchase</td></tr>
+      <tr><td>Wheel Loaders</td><td>15,000</td><td>2</td><td>12</td><td>360,000</td><td>12</td><td>360,000</td><td>Leased until cash flow allows purchase</td></tr>
+      <tr class="total-row"><td colspan="4">Total Lease Cost</td><td>1,980,000</td><td>-</td><td>720,000</td><td>-</td></tr>
+    </table>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Key Lease Notes</div>
+    <div class="highlight-box">
+      <span class="label">Lease Strategy Summary</span>
+      1. Generator lease stops after electricity connection (estimated mid-2027).<br>
+      2. Heavy equipment (Excavators & Loaders) leased from project startup until cash flows allow purchase.<br>
+      3. All lease costs are estimates and subject to actual lease agreements.<br>
+      4. 2027 total lease cost = SAR 1,980,000 (Generators 12 months + Heavy equipment 12 months).<br>
+      5. 2028+ total lease cost = SAR 720,000 (Heavy equipment only, no generators).
+    </div>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Fuel Cost Detail</div>
+    <table class="data-table">
+      <tr><th>Equipment</th><th>Liters/Unit</th><th>Qty</th><th>Months</th><th>Diesel Price/Liter</th><th>2027 Cost (SAR)</th><th>2028 Cost (SAR)</th></tr>
+      <tr><td>Generators</td><td>41,600</td><td>3</td><td>12</td><td>1.79</td><td>2,680,704</td><td>1,078,272</td></tr>
+      <tr><td>Excavators</td><td>5,000</td><td>2</td><td>12</td><td>1.79</td><td>120,000</td><td>120,000</td></tr>
+      <tr><td>Wheel Loaders</td><td>5,000</td><td>2</td><td>12</td><td>1.79</td><td>120,000</td><td>120,000</td></tr>
+      <tr class="total-row"><td colspan="5">Total Fuel Cost</td><td>2,920,704</td><td>1,318,272</td></tr>
+    </table>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Electricity Cost (Post-Generator)</div>
+    <div class="formula-box">
+      <span class="label">Electricity Consumption Calculation</span>
+      Daily Power: 17,280 kWh/day<br>
+      Monthly: 17,280 x 26 days = 449,280 kWh/month<br>
+      Cost: 449,280 kWh x SAR 0.20/kWh = <strong>SAR 89,856/month</strong><br>
+      Annual: 89,856 x 12 = <strong>SAR 1,078,272/year</strong><br><br>
+      <strong>Fuel to Electricity Savings:</strong><br>
+      2027 (Fuel): SAR 2,920,704 | 2028+ (Electricity): SAR 1,318,272<br>
+      Net Savings from 2028: <strong>SAR 1,602,432/year (55% reduction)</strong>
+    </div>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Equipment Lease Cost Chart</div>
+    <div class="bar-chart">
+      <div class="bar-group">
+        <div class="bar" style="height:110px;background:#ef4444"><span class="bar-inner-label">1.98M</span></div>
+        <div class="bar-val">SAR 1.98M</div>
+        <div class="bar-lbl">2027</div>
+      </div>
+      <div class="bar-group">
+        <div class="bar" style="height:40px;background:#10b981"><span class="bar-inner-label">0.72M</span></div>
+        <div class="bar-val">SAR 0.72M</div>
+        <div class="bar-lbl">2028</div>
+      </div>
+      <div class="bar-group">
+        <div class="bar" style="height:40px;background:#10b981"><span class="bar-inner-label">0.72M</span></div>
+        <div class="bar-val">SAR 0.72M</div>
+        <div class="bar-lbl">2029</div>
+      </div>
+      <div class="bar-group">
+        <div class="bar" style="height:40px;background:#10b981"><span class="bar-inner-label">0.72M</span></div>
+        <div class="bar-val">SAR 0.72M</div>
+        <div class="bar-lbl">2030</div>
+      </div>
+      <div class="bar-group">
+        <div class="bar" style="height:40px;background:#10b981"><span class="bar-inner-label">0.72M</span></div>
+        <div class="bar-val">SAR 0.72M</div>
+        <div class="bar-lbl">2031</div>
+      </div>
+      <div class="bar-group">
+        <div class="bar" style="height:40px;background:#10b981"><span class="bar-inner-label">0.72M</span></div>
+        <div class="bar-val">SAR 0.72M</div>
+        <div class="bar-lbl">2032</div>
+      </div>
+      <div class="bar-group">
+        <div class="bar" style="height:40px;background:#10b981"><span class="bar-inner-label">0.72M</span></div>
+        <div class="bar-val">SAR 0.72M</div>
+        <div class="bar-lbl">2033</div>
+      </div>
+    </div>
+    <div class="chart-legend">
+      <div class="legend-item"><div class="legend-color" style="background:#ef4444"></div>Generators + Heavy Equipment (2027)</div>
+      <div class="legend-item"><div class="legend-color" style="background:#10b981"></div>Heavy Equipment Only (2028+)</div>
+    </div>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== 13. CASH FLOW ==================== -->
+<div class="section" id="cashflow">
+  <div class="section-title">Project Cash Flow Analysis</div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Plant Project Funding Schedule (Monthly Breakdown)</div>
+    <div class="section-text">The Analysis Plant Project sheet tracks the monthly cash requirements for plant construction from October 2025 through March 2027.</div>
+
+    <table class="data-table">
+      <tr><th>Category</th><th>Oct-Dec 2025</th><th>Aug 2026</th><th>Sep 2026</th><th>Oct 2026</th><th>Nov 2026</th><th>Dec 2026</th><th>Jan 2027</th><th>Feb 2027</th><th>Mar 2027</th><th>Total (SAR)</th><th>Total (USD)</th></tr>
+      <tr class="subtotal-row" style="background:#dbeafe"><td colspan="12"><strong>A. Land Development & Site Preparation</strong></td></tr>
+      <tr><td>Land preparation & compaction</td><td>-</td><td>100,000</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>100,000</td><td>26,667</td></tr>
+      <tr><td>Internal Access Roads & pavement</td><td>-</td><td>200,000</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>200,000</td><td>53,333</td></tr>
+      <tr><td>Fencing & demolishing</td><td>-</td><td>200,000</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>200,000</td><td>53,333</td></tr>
+      <tr><td>Soil testing</td><td>-</td><td>15,000</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>15,000</td><td>4,000</td></tr>
+      <tr><td>Relocation from ASCO</td><td>-</td><td>150,000</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>150,000</td><td>40,000</td></tr>
+      <tr class="subtotal-row" style="background:#dbeafe"><td colspan="12"><strong>B. Civil Works</strong></td></tr>
+      <tr><td>Equipment, Annex Bldgs & W-Bridge foundations</td><td>-</td><td>800,000</td><td>400,000</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>1,200,000</td><td>320,000</td></tr>
+      <tr><td>Maintenance workshop portable</td><td>-</td><td>100,000</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>100,000</td><td>26,667</td></tr>
+      <tr><td>Receiving & shipping yard</td><td>-</td><td>-</td><td>150,000</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>150,000</td><td>40,000</td></tr>
+      <tr><td>Ramp Erection</td><td>-</td><td>200,000</td><td>300,000</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>500,000</td><td>133,333</td></tr>
+      <tr><td>Admin office & Meeting Room (Portables)</td><td>-</td><td>100,000</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>100,000</td><td>26,667</td></tr>
+      <tr><td>Weight bridge (relocation)</td><td>-</td><td>-</td><td>50,000</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>50,000</td><td>13,333</td></tr>
+      <tr><td>Control Room (mounting)</td><td>-</td><td>-</td><td>10,000</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>10,000</td><td>2,667</td></tr>
+      <tr><td>Main Gate Guardhouse</td><td>-</td><td>20,000</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>20,000</td><td>5,333</td></tr>
+      <tr><td>Store (spares + tools)</td><td>-</td><td>100,000</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>100,000</td><td>26,667</td></tr>
+      <tr><td>Worker's Change Room</td><td>-</td><td>50,000</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>50,000</td><td>13,333</td></tr>
+      <tr><td>Generator house (construction)</td><td>-</td><td>100,000</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>100,000</td><td>26,667</td></tr>
+      <tr class="subtotal-row" style="background:#dbeafe"><td colspan="12"><strong>D. Electro-Mechanical & Utilities</strong></td></tr>
+      <tr><td>Electrical panel, cables & trunches</td><td>-</td><td>-</td><td>500,000</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>500,000</td><td>133,333</td></tr>
+      <tr><td>Plant lighting</td><td>-</td><td>-</td><td>100,000</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>100,000</td><td>26,667</td></tr>
+      <tr><td>Firefighting system</td><td>-</td><td>100,000</td><td>100,000</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>200,000</td><td>53,333</td></tr>
+      <tr class="subtotal-row" style="background:#dbeafe"><td colspan="12"><strong>E. Contracts & Specialized Systems</strong></td></tr>
+      <tr><td>Dust suppression (Donaldson)</td><td>-</td><td>880,000</td><td>-</td><td>660,000</td><td>660,000</td><td>-</td><td>-</td><td>-</td><td>-</td><td>2,200,000</td><td>586,667</td></tr>
+      <tr><td>Installation & Consulting (FABA)</td><td>-</td><td>200,000</td><td>200,000</td><td>200,000</td><td>200,000</td><td>200,000</td><td>200,000</td><td>-</td><td>600,000</td><td>2,000,000</td><td>533,333</td></tr>
+      <tr><td>OEM supervision (Addforce & MEKA)</td><td>-</td><td>-</td><td>100,000</td><td>100,000</td><td>100,000</td><td>-</td><td>-</td><td>-</td><td>-</td><td>300,000</td><td>80,000</td></tr>
+      <tr><td>Crane Rental (EQ SAU0238-005)</td><td>-</td><td>-</td><td>379,500</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>379,500</td><td>-</td></tr>
+      <tr class="total-row"><td colspan="9"><strong>Project Subtotal (before misc)</strong></td><td><strong>9,284,801</strong></td><td><strong>2,374,747</strong></td></tr>
+      <tr><td colspan="9">Miscellaneous & Contingencies (6.5%)</td><td>603,512</td><td>154,359</td></tr>
+      <tr class="total-row" style="background:#fef3c7"><td colspan="9"><strong>Total Plant Required Funding</strong></td><td><strong>9,888,314</strong></td><td><strong>2,529,106</strong></td></tr>
+    </table>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Net Cash Flow Position</div>
+    <div class="formula-box">
+      <span class="label">Cumulative Cash Flow Analysis</span>
+      Starting from SAR 0 at project inception:<br><br>
+      Aug 2026: -4,020,696 (Land prep + civil works starts)<br>
+      Sep 2026: -6,299,264 (Construction peaks)<br>
+      Oct 2026: -7,481,414 (Equipment & systems)<br>
+      Nov 2026: -8,503,814 (Dust suppression payment)<br>
+      Dec 2026: -8,823,314 (FABA consulting)<br>
+      Jan 2027: -9,036,314 (OEM supervision)<br>
+      Feb 2027: -9,249,314 (Crane rental)<br>
+      Mar 2027: -9,888,314 <strong>(Peak funding requirement)</strong><br><br>
+      <strong>Total construction funding required: SAR 9,888,314 (approx. USD 2.53M at 3.75 SAR/USD)</strong>
+    </div>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<!-- ==================== 14. KEY RATIOS ==================== -->
+<div class="section" id="ratios">
+  <div class="section-title">Key Financial Ratios & Metrics</div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Profitability Ratios</div>
+    <table class="data-table">
+      <tr><th>Ratio</th><th>2027</th><th>2028</th><th>2029</th><th>2030</th><th>2031</th><th>2032</th><th>2033</th><th>7-Year Avg</th></tr>
+      <tr><td>Gross Margin %</td><td>52.1%</td><td>62.5%</td><td>61.7%</td><td>60.7%</td><td>60.3%</td><td>60.0%</td><td>59.7%</td><td>59.9%</td></tr>
+      <tr><td>EBITDA Margin %</td><td>44.5%</td><td>61.9%</td><td>54.8%</td><td>52.9%</td><td>51.8%</td><td>50.7%</td><td>49.7%</td><td>51.8%</td></tr>
+      <tr><td>Operating Margin %</td><td>41.5%</td><td>55.7%</td><td>48.0%</td><td>46.0%</td><td>44.9%</td><td>43.7%</td><td>42.8%</td><td>44.6%</td></tr>
+      <tr><td>Net Profit Margin %</td><td>27.3%</td><td>49.0%</td><td>42.0%</td><td>40.0%</td><td>39.0%</td><td>37.8%</td><td>36.8%</td><td>38.4%</td></tr>
+    </table>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Efficiency Metrics</div>
+    <table class="data-table">
+      <tr><th>Metric</th><th>2027</th><th>2028</th><th>Steady-State</th></tr>
+      <tr><td>Revenue per Employee (SAR)</td><td>1,682,775</td><td>2,242,033</td><td>2,242,033</td></tr>
+      <tr><td>Revenue per Tonne Processed</td><td>44.87</td><td>59.83</td><td>59.83</td></tr>
+      <tr><td>Cost per Tonne Processed</td><td>27.23</td><td>34.25</td><td>34.25</td></tr>
+      <tr><td>Net Income per Tonne</td><td>12.26</td><td>29.31</td><td>25.37</td></tr>
+    </table>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">Margin Trend Chart</div>
+    <div class="bar-chart">
+      <div class="bar-group"><div class="bar" style="height:52px;background:#8b5cf6"><span class="bar-inner-label">52%</span></div><div class="bar-val">Gross</div><div class="bar-lbl">2027</div></div>
+      <div class="bar-group"><div class="bar" style="height:45px;background:#2563eb"><span class="bar-inner-label">45%</span></div><div class="bar-val">EBITDA</div><div class="bar-lbl">2027</div></div>
+      <div class="bar-group"><div class="bar" style="height:27px;background:#10b981"><span class="bar-inner-label">27%</span></div><div class="bar-val">Net</div><div class="bar-lbl">2027</div></div>
+      <div class="bar-group"><div class="bar" style="height:62px;background:#8b5cf6"><span class="bar-inner-label">62%</span></div><div class="bar-val">Gross</div><div class="bar-lbl">2028</div></div>
+      <div class="bar-group"><div class="bar" style="height:62px;background:#2563eb"><span class="bar-inner-label">62%</span></div><div class="bar-val">EBITDA</div><div class="bar-lbl">2028</div></div>
+      <div class="bar-group"><div class="bar" style="height:49px;background:#10b981"><span class="bar-inner-label">49%</span></div><div class="bar-val">Net</div><div class="bar-lbl">2028</div></div>
+    </div>
+    <div class="chart-legend">
+      <div class="legend-item"><div class="legend-color" style="background:#8b5cf6"></div>Gross Margin %</div>
+      <div class="legend-item"><div class="legend-color" style="background:#2563eb"></div>EBITDA Margin %</div>
+      <div class="legend-item"><div class="legend-color" style="background:#10b981"></div>Net Margin %</div>
+    </div>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-section-title">7-Year Cumulative Summary</div>
+    <div class="info-grid">
+      <div class="info-card"><div class="value">SAR 363.5M</div><div class="label">Total Revenue</div></div>
+      <div class="info-card"><div class="value">SAR 217.5M</div><div class="label">Total Gross Margin</div></div>
+      <div class="info-card"><div class="value">SAR 188.3M</div><div class="label">Total EBITDA</div></div>
+      <div class="info-card"><div class="value">SAR 139.7M</div><div class="label">Total Net Income</div></div>
+      <div class="info-card"><div class="value">38.4%</div><div class="label">Avg Net Margin</div></div>
+      <div class="info-card"><div class="value">SAR 62.2M</div><div class="label">Total CAPEX</div></div>
+      <div class="info-card"><div class="value">SAR 48.6M</div><div class="label">Total Depreciation</div></div>
+      <div class="info-card"><div class="value">2.2x</div><div class="label">ROI (Net Inc/CAPEX)</div></div>
+    </div>
+  </div>
+  <a href="#" class="back-top">Back to Top</a>
+</div>
+
+<div class="footer">
+  <p><strong>Rukam Industrial Company</strong> | Board-Approved Budget 2027-2033 | Updated 16 July 2026</p>
+  <p>Confidential - For PwC Independent Review Purposes Only</p>
+  <p style="margin-top:8px">Data Sources: Sales Target, P&L, Sales, Salaries, OPEX, CAPEX, Vehicles & Equipment, Addforce Plant, Analysis Plant, Equipment Lease sheets</p>
+</div>
 
 </div>
 </body>
